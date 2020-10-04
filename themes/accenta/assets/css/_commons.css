@@ -18,7 +18,7 @@ a, a:hover, a:focus, button:hover, button:focus{
 body {
     background: #fff;
     color: #8489A8;;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -94,7 +94,8 @@ Containers
 	
 }
 .container-lg{
-
+	max-width: 1790px;
+	width: 100%;
 }
 .container{
 	max-width: 1470px;
