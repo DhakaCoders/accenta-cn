@@ -16,14 +16,20 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
-    font-size: 18px;
+    background: #fff;
+    color: #8489A8;;
+    font-size: 14px;
     line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto', sans-serif;
 }
 p{
-	line-height: 1.2;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
 	margin-bottom: 15px;
+	font-weight: 400;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -91,7 +97,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1470px;
 	width: 100%;
 }
 .container-md{
