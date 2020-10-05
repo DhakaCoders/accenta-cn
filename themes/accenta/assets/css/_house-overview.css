@@ -1,14 +1,9 @@
-.banner{
+.page-bnr-cntlr{
+	position: relative;
 	padding: 0 80px;
 	margin-top: -74px;
-	position: relative;
 }
-.banner:before{
-	content: "";
-	clear: both;
-	display: block;
-}
-.banner:after{
+.page-bnr-cntlr:after{
 	content: "";
 	position: absolute;
 	right: 1px;
@@ -17,11 +12,11 @@
 	height: 163px;
 	width: 80px;
 }
-.banner-bg{
-	min-height: 250px;
+.page-bnr-cntlr-inr{
 	position: relative;
+	overflow: hidden;
 }
-.banner-bg:after{
+.page-bnr-cntlr-inr:after{
 	content: "";
 	position: absolute;
 	left: 159px;
@@ -30,10 +25,27 @@
 	height: 107px;
 	width: 2px;
 }
-.banner-inr{
-	padding-top: 98px;
-	padding-bottom: 20px;
-	position: relative;
+.page-banner{
+	height: 250px;
+}
+.page-banner-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.page-banner-title-cntlr{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 50px 0;
 }
 .banner-title{
 	letter-spacing: 0.1em;
@@ -54,6 +66,7 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 3;
 }
 .bnr-breadcum > ul{
 	display: flex;
