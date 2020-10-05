@@ -299,7 +299,7 @@
 .ftr-content-img{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-right: 30px;
+	margin-right: 30px;
 }
 .ftr-des{
 	display: inline-block;
