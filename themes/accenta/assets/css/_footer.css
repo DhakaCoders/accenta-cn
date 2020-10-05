@@ -8,8 +8,8 @@
 .ftr-top-grd-item{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-left: 132px;
-	padding-right: 132px;
+	padding-left: 60px;
+	padding-right: 60px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	position: relative;
@@ -52,7 +52,7 @@
 }
 .ftr-logo{
 	float: left;
-	width:  26.0416%;
+	width:  25.0416%;
 }
 .ftr-partner-policy{
 	float: left;
@@ -240,8 +240,8 @@
 .ftr-contact ul li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-left: 45px;
+	padding-right: 45px;
 }
 .ftr-contact-grd-item{
 	text-align: center;
@@ -284,11 +284,11 @@
 .ftr-content-inr ul li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .ftr-content-inr ul li:first-child{
-	padding-left: 60px;
+	padding-left: 30px;
 }
 
 
