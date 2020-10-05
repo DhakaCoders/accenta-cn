@@ -1,0 +1,44 @@
+.house-view-sec{
+
+}
+.house-view-items-contlr{
+
+}
+.house-view-items-contlr > ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+}
+.house-view-items-contlr > ul > li{
+	padding: 0 12px;
+	margin-bottom: 60px;
+}
+.house-item{
+
+}
+.house-item-img-cntlr{
+	overflow: hidden;
+	position: relative;
+}
+.house-item-img{
+	min-height: 300px;
+}
+.house-item-img-btn{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.house-item-img-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	width: 150px;
+	line-height: 1;
+	margin-bottom: 0;
+	color: #1D2B5B;
+	background: #f9f9f9;
+	font-size: 13px;
+	font-weight: 500;
+}
