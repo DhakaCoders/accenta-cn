@@ -1,0 +1,90 @@
+.banner{
+	padding: 0 80px;
+	margin-top: -74px;
+	position: relative;
+}
+.banner:before{
+	content: "";
+	clear: both;
+	display: block;
+}
+.banner:after{
+	content: "";
+	position: absolute;
+	right: 1px;
+	top: 63px;
+	background: #1d2b5a;
+	height: 163px;
+	width: 80px;
+}
+.banner-bg{
+	min-height: 250px;
+	position: relative;
+}
+.banner-bg:after{
+	content: "";
+	position: absolute;
+	left: 159px;
+	bottom: 0;
+	background: #8c8e8d;
+	height: 107px;
+	width: 2px;
+}
+.banner-inr{
+	padding-top: 98px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.banner-title{
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-size: 64px;
+	line-height: 1;
+	color: #fff;
+	margin-bottom: 0;
+	text-align: center;
+}
+.bnr-breadcum{
+	max-width: 660px;
+	width: 100%;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.25);
+	padding: 18px 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bnr-breadcum > ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bnr-breadcum > ul > li{
+	padding: 0 26px;
+	position: relative;
+}
+.bnr-breadcum > ul > li:after{
+	position: absolute;
+	content: "";
+	background: #c2c1bf;
+	width: 22px;
+	height: 2px;
+	right: -10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.bnr-breadcum > ul > li:last-child:after{
+	content: none;
+}
+.bnr-breadcum > ul > li > a{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.bnr-breadcum > ul > li > a:hover{
+	color: #1D2B5B;
+}
