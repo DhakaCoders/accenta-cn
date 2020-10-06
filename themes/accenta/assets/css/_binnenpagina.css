@@ -331,14 +331,19 @@ Gallery design
     line-height: 1;
 }
 
-.dftServiceModuleSlider{
+.dftServiceModuleSlider,
+.dftJobModuleSlider{
 	margin: 0 -12px!important;
 }
-.dftServiceModuleSlideItem{
+.dftServiceModuleSlideItem,
+.dftJobModuleSlideItem{
 	padding: 0 12px 0;
 }
 .dft-service-module{
 	padding-bottom: 40px;
+}
+.dft-job-module{
+	padding-bottom: 50px;
 }
 
 
