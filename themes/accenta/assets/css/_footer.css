@@ -1,23 +1,39 @@
 .ftr-top-sec{
 	padding-left: 60px;
 	padding-right: 60px;
+	margin-bottom: 45px;
 }
 .ftr-top-sec-inr{
 	background: #1D2B5B;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 200px;
+}
+.ftr-top-grd-items{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.ftr-top-sec-inr:after{
+	content: "";
+    display: table;
+    min-height: inherit;
+    font-size: 0;
 }
 .ftr-top-grd-item{
-	display: inline-block;
-	vertical-align: baseline;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	width: 25%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	position: relative;
 }
 .ftr-top-grd-item:after{
 	content: "";
 	position: absolute;
-	bottom: 0;
+	bottom: -45px;
 	right: 0;
 	transform: translateX(-50%);
 	height: 140px;
@@ -28,7 +44,7 @@
 	content: none;
 }
 .ftr-top-grd-item:nth-child(even):after{
-	top: 0;
+	top: -45px;
 }
 .ftr-top-grd-item-ctlr{
 	text-align: center;
@@ -37,23 +53,26 @@
 	display: block;
 	margin-bottom: 15px;
 }
-.ftr-top-grd-item-ctlr strong{
+.ftr-top-grd-item-title{
+	display: block;
 	color: #fff;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 15px;
+	line-height: 1;
 }
 
 
 .ftr-top{
-	padding-top: 145px;
+	padding-top: 100px;
 	padding-bottom: 45px;
 	border-bottom: 1px solid #EFEFEF;
 }
 .ftr-logo{
 	float: left;
 	width:  25.0416%;
+	padding-right: 20px;
 }
 .ftr-partner-policy{
 	float: left;
@@ -82,10 +101,7 @@
 .ftr-vat{
 	padding-bottom: 40px;
 }
-.ftr-partner label,
-.ftr-policy label,
-.ftr-vat label,
-.ftr-socilas-media label{
+.ftr-grd-item label{
 	display: block;
 	font-size: 12px;
 	line-height: 14px;
@@ -94,9 +110,7 @@
 	font-weight: 500;
 	margin-bottom: 0;
 }
-.ftr-partner strong,
-.ftr-policy strong,
-.ftr-vat strong{
+.ftr-grd-item strong{
 	font-size: 13px;
 	line-height: 16px;
 	color: #1D2B5B;
@@ -104,7 +118,7 @@
 	letter-spacing: 0.1em;
 	font-weight: 500;
 }
-.ftr-vat strong{
+.ftr-grd-item .ftr-vat strong{
 	font-size: 15px;
 }
 
@@ -218,6 +232,7 @@
     -webkit-transform: translateY(-50%);
     right: 10px;
     line-height: 15px;
+    z-index: 100;
 }
 .ftr-language ul{
 	position: absolute;
@@ -231,8 +246,11 @@
 	background-color: rgb(255,255,255);
 	text-align: right;
 }
+.ftr-language:hover:after{
+	content: "\f106"!important;
+}
 .ftr-language:hover{
-	overflow: initial;
+	overflow: initial!important;
 }
 .ftr-language:hover li.lang-active,
 .ftr-language:hover li{
@@ -248,10 +266,8 @@
 	padding-bottom: 80px;
 }
 .ftr-contact ul li{
-	display: inline-block;
-	vertical-align: baseline;
-	padding-left: 45px;
-	padding-right: 45px;
+	float: left;
+	width: 33.3333%;
 }
 .ftr-contact-grd-item{
 	text-align: center;
@@ -261,30 +277,13 @@
 .ftr-contact-tel{
 	padding-bottom: 30px;
 }
-.ftr-contact-location label,
-.ftr-contact-tel label,
-.ftr-contact-mail label{
-	display: block;
-	font-size: 12px;
-	line-height: 14px;
-	text-transform: uppercase;
-	color: #9095A6;
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-.ftr-contact-location strong,
-.ftr-contact-tel strong,
-.ftr-contact-mail strong{
-	color: #1D2B5B;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: 500;
+.ftr-contact-grd-item.ftr-grd-item strong{
 	font-size: 15px;
 }
-.ftr-contact-tel strong a,
-.ftr-contact-mail strong a{
+.ftr-contact-grd-item.ftr-grd-item strong a{
 	color: #1D2B5B;
 }
+
 .ftr-contact-tel strong a:hover,
 .ftr-contact-mail strong a:hover{
 	color: #9095A6;
@@ -296,14 +295,22 @@
 	background: #1D2B5B;
 }
 
+.ftr-content-inr ul{
+	display: flex;
+	align-items: center;
+}
 .ftr-content-inr ul li{
-	display: inline-block;
-	vertical-align: baseline;
-	padding-left: 15px;
-	padding-right: 15px;
+	float: left;
+	width: 33.3333%;
 }
 .ftr-content-inr ul li:first-child{
 	padding-left: 30px;
+}
+.ftr-content-inr ul li:first-child .ftr-content-img img{
+	max-width: 80px;
+}
+.ftr-content-inr ul li:nth-child(2){
+	padding-left: 50px;
 }
 
 
@@ -325,7 +332,7 @@
 	color: #8489A8;
 	letter-spacing: 0.02em;
 	margin-bottom: 0;
-	font-size: 13px;
+	font-size: 12px;
 }
 .ftr-des strong{
 	font-size: 12px;

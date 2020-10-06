@@ -154,14 +154,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 $('.hu-dtls-gallery-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   fade: true,
+  prevArrow: $('.fl-prv-nxt .fl-prev'),
+  nextArrow: $('.fl-prv-nxt .fl-next'),
   asNavFor: '.hu-dtls-gallery-pg-slider'
 });
 $('.hu-dtls-gallery-pg-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.hu-dtls-gallery-slider',
+  arrows: false,
   dots: false,
   responsive: [
         {
@@ -169,6 +172,7 @@ $('.hu-dtls-gallery-pg-slider').slick({
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
+            dots:false,
             infinite: true,
           }
         },
@@ -192,40 +196,8 @@ $('.hu-dtls-gallery-pg-slider').slick({
       ]
 });
 
-$('[data-toggle="tooltip"]').tooltip();
 
-if( $('#ex2').length ){
-  var slider = new Slider('#ex2', {
-    formatter: function(value) {
-      var val = $("#ex2").val();
-      var array = val.split(',');
-    },
-  });
 
-  var initval = $('#ex2').data('slider-value');
-  var min = initval[0]+'.00$';
-  var max = initval[1]+'.00$';
-  $('vn-price-filter-label .from').text( min );
-  $('vn-price-filter-label .to').text( max );
-
-  $("#ex2").slider().on('slide', function(event, ui){
-      var val = $("#ex2").val();
-      var initval = val.split(',');
-      var min = initval[0]+'.00$';
-      var max = initval[1]+'.00$';
-      $('.vn-price-filter-label .from').text( min );
-      $('.vn-price-filter-label .to').text( max );
-      console.log(initval);
-  });
-  $("#ex2").slider().on('slideStop', function(event, ui){
-      var val = $("#ex2").val();
-      var initval = val.split(',');
-      var min = initval[0]+'.00$';
-      var max = initval[1]+'.00$';
-      $('.vn-price-filter-label .from').text( min );
-      $('.vn-price-filter-label .to').text( max );
-  });
-}
 
 /*----- End of Milon -----*/
 
@@ -303,33 +275,108 @@ if( $('.contact-info-slider').length ){
 }
 
 
-/* BS form Validator*/
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-
 /*----- End of Noyon -----*/
 
 /*----- End of Shoriful -----*/
+
+
+
+if( $('.dftServiceModuleSlider').length ){
+    $('.dftServiceModuleSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
+
+if( $('.dftJobModuleSlider').length ){
+    $('.dftJobModuleSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
 
 /*----- End of Rannojit -----*/
 
 
 
+
+
+
+
     new WOW().init();
+
+
+
 
 })(jQuery);
