@@ -18,7 +18,7 @@ a, a:hover, a:focus, button:hover, button:focus{
 body {
     background: #fff;
     color: #8489A8;;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -323,4 +323,45 @@ form .dropdown-menu li a{
 }
 .dropdown-menu.show{
 	width: 100%;
+}
+
+
+/*button*/
+
+.act-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 57px;
+    width: 185px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #1D2B5B;
+    background: #fff;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    border: 1px solid #1D2B5B;
+}
+.act-btn:after{
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1D2B5B;
+    height: 1px;
+    width: 21px;
+    z-index: 11;
+}
+.act-tranparent-btn{
+	background: transparent!important;
+	color: #fff!important;
+	border-color: #fff!important;
+}
+
+.act-tranparent-btn:after{
+	background: #fff!important;
 }

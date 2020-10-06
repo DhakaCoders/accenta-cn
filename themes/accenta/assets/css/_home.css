@@ -181,11 +181,3 @@
 	position: absolute;
 	right: 32px;
 }
-
-.beautiful-house-des .house-item-btn a{
-	background: #1D2B5B;
-	color: #fff;
-}
-.beautiful-house-des .house-item-btn a:after{
-	background: #fff;
-}
