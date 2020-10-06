@@ -232,6 +232,7 @@
     -webkit-transform: translateY(-50%);
     right: 10px;
     line-height: 15px;
+    z-index: 100;
 }
 .ftr-language ul{
 	position: absolute;
