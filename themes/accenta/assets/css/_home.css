@@ -106,3 +106,78 @@
 .bnr-breadcum > ul > li > a:hover{
 	color: #1D2B5B;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.psearch-form-modiule{
+	padding-top: 500px;
+}
+.psearch-form-fields .pfm-item{
+	max-width: 21%;
+	width: 100%;
+	float: left;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle .filter-option{
+	background: #fff;
+}
+
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle .filter-option-inner{
+	padding-top: 9px;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+	font-weight: 500;
+	color: #9095A6;
+	text-transform: uppercase;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle{
+	min-height: 57px;
+    border-radius: initial;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle::before{
+	z-index: 11;
+	color: #9095A6;
+	font-size: 16px;
+}
+.psearch-form-fields .zoeken{
+	max-width: 16%;
+	width: 100%;
+	float: left;
+}
+.psearch-form-fields .max-prj{
+	border: 0;
+}
+.psearch-form-fields .submit button{
+	position: relative;
+	width: 100%;
+	height: 57px;
+	color: #fff;
+	background: #1D2B5B;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 2px;
+}
+.psearch-form-fields .submit button i{
+	position: absolute;
+	right: 32px;
+}
