@@ -331,7 +331,15 @@ Gallery design
     line-height: 1;
 }
 
-
+.dftServiceModuleSlider{
+	margin: 0 -12px!important;
+}
+.dftServiceModuleSlideItem{
+	padding: 0 12px 0;
+}
+.dft-service-module{
+	padding-bottom: 40px;
+}
 
 
 @media(max-width: 1199px){
