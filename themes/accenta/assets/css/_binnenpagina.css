@@ -24,14 +24,14 @@
 	padding-top: 20px;
 }
 .dfp-text-module{
-	
+	font-size: 14px;
 }
 .default-page-con ul,
 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 25px;
+	padding-left: 35px;
 	padding-bottom: 10px;
 }
 .default-page-con ul li,
@@ -46,18 +46,16 @@ ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 5px;
-	background: url(../images/list-icon.svg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	width: 24px;
-	height: 24px;
+	top: 15px;
+	width: 22px;
+	height: 2px;
+	background: #1D2B5B;;
 }
 ul li.refGridItem:before{
 	display: none;
 }
 .default-page-con ol, ol {
-	padding: 0 0 0 25px;
+	padding: 0 0 0 40px;
 	list-style: none;
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
@@ -73,7 +71,7 @@ ul li.refGridItem:before{
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
-	color: #C01718;
+	color: #4F54B9;
 	font-weight: 700;
 	margin-right: 17px;
 	text-align: center;
@@ -1022,3 +1020,9 @@ Gallery design
 
 }
 
+
+
+.cln-rv-grid-item-img-ctlr,
+.hm-nieuws-sec-grd-item-fea-img-cntlr{
+	position: relative;
+}
