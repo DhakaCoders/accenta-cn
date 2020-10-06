@@ -179,8 +179,8 @@ ol li::before {
 
 .default-page-con hr{
 	border-top: 2px solid #F5F5F5;
-	margin-bottom: 38px;
-	margin-top: 0;
+	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
 /*
@@ -358,6 +358,7 @@ Gallery design
 .team-grd-item-fea-img{
 	height: 480px;
 	overflow: hidden;
+	position: relative;
 }
 .team-grd-item-fea-img div{
 	width: 100%;
@@ -370,6 +371,40 @@ Gallery design
 	padding: 0 12px;
 }
 
+
+.dft-contact-info-slider .contact-info-slider{
+	margin: 0 -12px!important;
+}
+.dft-contact-info-slider .contact-info-dsc-tp-btm ul,
+.dft-contact-info-slider .contact-info-dsc-tp-btm ul li{
+	padding-left: 0!important;
+}
+.dft-contact-info-slider .contact-info-dsc-nnr{
+	padding-left: 50px;
+	padding-right: 20px;
+}
+.tgid-title{
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 20px!important;
+}
+.tgid-title a{
+	color: #1D2B5B;
+}
+.team-grd-item-des{
+	text-align: center;
+	padding: 42px 15px 20px;
+}
+.team-grd-item-des strong{
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #1D2B5B;
+}
 
 @media(max-width: 1199px){
 	#main-content .default-page-con-inner{
