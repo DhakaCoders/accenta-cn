@@ -106,26 +106,6 @@
 .bnr-breadcum > ul > li > a:hover{
 	color: #1D2B5B;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**/
 .psearch-form-modiule{
 	margin-top: 500px;
@@ -232,4 +212,13 @@
 	height: 1px;
 	width: 21px;
 	z-index: 11;
+	right: 32px;
+}
+
+.beautiful-house-des .house-item-btn a{
+	background: #1D2B5B;
+	color: #fff;
+}
+.beautiful-house-des .house-item-btn a:after{
+	background: #fff;
 }
