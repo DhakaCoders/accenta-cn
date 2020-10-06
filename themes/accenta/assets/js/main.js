@@ -149,6 +149,84 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
+
+
+$('.hu-dtls-gallery-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.hu-dtls-gallery-pg-slider'
+});
+$('.hu-dtls-gallery-pg-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.hu-dtls-gallery-slider',
+  dots: false,
+  responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+});
+
+$('[data-toggle="tooltip"]').tooltip();
+
+if( $('#ex2').length ){
+  var slider = new Slider('#ex2', {
+    formatter: function(value) {
+      var val = $("#ex2").val();
+      var array = val.split(',');
+    },
+  });
+
+  var initval = $('#ex2').data('slider-value');
+  var min = initval[0]+'.00$';
+  var max = initval[1]+'.00$';
+  $('vn-price-filter-label .from').text( min );
+  $('vn-price-filter-label .to').text( max );
+
+  $("#ex2").slider().on('slide', function(event, ui){
+      var val = $("#ex2").val();
+      var initval = val.split(',');
+      var min = initval[0]+'.00$';
+      var max = initval[1]+'.00$';
+      $('.vn-price-filter-label .from').text( min );
+      $('.vn-price-filter-label .to').text( max );
+      console.log(initval);
+  });
+  $("#ex2").slider().on('slideStop', function(event, ui){
+      var val = $("#ex2").val();
+      var initval = val.split(',');
+      var min = initval[0]+'.00$';
+      var max = initval[1]+'.00$';
+      $('.vn-price-filter-label .from').text( min );
+      $('.vn-price-filter-label .to').text( max );
+  });
+}
+
 /*----- End of Milon -----*/
 
 
