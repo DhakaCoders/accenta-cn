@@ -239,7 +239,8 @@
 	border: 1px solid #fff;
 }
 .house-blue-item-btn a:hover{
-	color: 
+	color: #1D2B5B;
+	background: #fff;
 }
 .house-blue-item-btn a:after{
 	content: '';
@@ -251,6 +252,9 @@
 	height: 1px;
 	width: 21px;
 	z-index: 11;
+}
+.house-blue-item-btn a:hover:after{
+	background: #1D2B5B;
 }
 
 
