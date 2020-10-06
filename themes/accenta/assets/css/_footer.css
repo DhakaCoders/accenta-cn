@@ -1,6 +1,6 @@
 .ftr-top-sec{
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 .ftr-top-sec-inr{
 	background: #1D2B5B;
@@ -151,7 +151,7 @@
 	width: 50%;
 }
 .ftr-menu ul li{
-	padding-bottom: 25px;
+	padding-bottom: 22px;
 }
 .ftr-menu ul li a{
 	display: inline-block;
