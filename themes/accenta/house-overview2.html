@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Overview 2</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->	
+
+  <svg style="display: none;">
+
+  <!-- End of Milon -->
+   <svg id="play-icon-white-svg" width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M68.2842 11.7156C60.7292 4.16063 50.6844 0 40 0C29.3155 0 19.2705 4.16078 11.7156 11.7156C4.16063 19.2706 0 29.3156 0 40C0 50.6844 4.16063 60.7294 11.7156 68.2844C19.2705 75.8392 29.3155 80 40 80C50.6844 80 60.7292 75.8394 68.2842 68.2844C75.8392 60.7292 80 50.6844 80 40C80 29.3156 75.8392 19.2708 68.2842 11.7156ZM40 75.3125C20.5286 75.3125 4.6875 59.4714 4.6875 40C4.6875 20.5286 20.5286 4.6875 40 4.6875C59.4714 4.6875 75.3125 20.5286 75.3125 40C75.3125 59.4714 59.4714 75.3125 40 75.3125Z"/>
+    <path d="M62.6389 38.05L32.5139 17.9664C31.7946 17.487 30.8701 17.4422 30.1079 17.8501C29.3459 18.2579 28.8701 19.0522 28.8701 19.9165V60.0831C28.8701 60.9475 29.3459 61.7417 30.1079 62.1495C30.4545 62.335 30.8345 62.4268 31.2137 62.4268C31.6684 62.4268 32.1218 62.2947 32.5139 62.0332L62.6389 41.9501C63.2909 41.5154 63.6826 40.7836 63.6826 40C63.6825 39.2165 63.2909 38.4847 62.6389 38.05ZM33.5575 55.704V24.2961L57.1134 40.0001L33.5575 55.704Z"/>
+   </svg>
+
+
+
+  <!-- End of Noyon -->
+
+
+  <!-- End of Shoriful -->
+
+
+  <!-- End of Rannojit -->
+
+
+  </svg>
+
+</head>
+<body>
+<div class="bdoverlay"></div>
+<header class="header">
+  <div class="header-inr">
+    <div class="hdr-lft">
+      <div class="logo">
+        <a href="#"><img src="assets/images/logo.png"></a>
+      </div>
+      <div class="hdr-lft-btn">
+        <div class="hdr-lft-btn-col hdr-lft-tell">
+          <a class="active" href="#">053/41.57.92</a>
+        </div>
+        <div class="hdr-lft-btn-col hdr-lft-mail">
+          <a href="#">info@immoaccenta.be</a>
+        </div>
+      </div>
+    </div>
+    <div class="hdr-rgt">
+      <div class="hdr-rgt-top">
+        <div class="hdr-rgt-top-menu">
+          <ul class="reset-list">
+            <li><a href="#">Wie zijn we</a></li>
+            <li><a href="#">Realisaties</a></li>
+            <li><a href="#">Onze troeven</a></li>
+            <li><a href="#">Vacatures</a></li>
+          </ul>
+        </div>
+        <div class="hdr-rgt-top-social">
+          <ul class="reset-list">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+        <div class="hdr-rgt-top-lan">
+          <div class="fl-lang reset-slect">
+            <div class="fl-lang-cntlr">
+              <ul class="reset-list hide-sm">
+                <li  class="lang-active"><a href="#">NL</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">FR</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="closebtn show-md">
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="reset-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Te Koop</a></li>
+          <li><a href="#">Te Huur</a></li>
+          <li><a href="#">Nieuwbouw</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Advies</a>
+            <ul class="sub-menu">
+              <li><a href="#">waardebepaling</a></li>
+              <li><a href="#">opstellen van verkoop-verhuurdossier</a></li>
+              <li><a href="#">aankoopadvies</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="page-bnr-cntlr">
+  <div class="page-bnr-cntlr-inr">
+    <div class="page-banner">
+      <div class="inline-bg page-banner-bg" style="background: url('assets/images/banner.jpg');">
+      </div>
+      <div class="page-banner-title-cntlr">
+        <h1 class="banner-title">Gerealiseerd</h1>
+      </div>
+      <div class="bnr-breadcum">
+      <ul class="reset-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Binnenpagina</a></li>
+        <li><a href="#">Binnenpagina</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="house-view-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="house-view-items-contlr">
+          <ul class="reset-list">
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-blue-item secound-house-blue-item">
+                <div class="house-blue-item-icon">
+                  <img src="assets/images/house-blue-item-icon.svg" alt="">
+                </div>
+                <h3 class="house-blue-item-title"><a href="#">Heb je je droomwoning nog niet gevonden?</a></h3>
+                <div class="house-blue-item-btn">
+                  <a href="#">Contacteer ons</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="house-item">
+                <div class="house-item-img-cntlr">
+                  <div class="house-item-img inline-bg" style="background: url('assets/images/house-item-img-001.jpg');">
+                    
+                  </div>
+                  <div class="house-item-img-btn">
+                    <a href="#">Meer info</a>
+                  </div>
+                  <div class="house-item-img-hover">
+                    <ul class="reset-list">
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-1.svg"></i>
+                        <span>3 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-2.svg"></i>
+                        <span>2 Badkamers</span>
+                      </li>
+                      <li>
+                        <i><img src="assets/images/hu-dtls-sidebar-btm-dsc-icon-3.svg"></i>
+                        <span>200 m<sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="house-item-desc secound-house-item-desc">
+                  <h4 class="house-item-sub-title mHc">Franklin Rooseveltlaan 41, 8790 Waregem</h4>
+                  <h3 class="house-item-title mHc1"><a href="#">Hoekappartement Fase 2 Residentie Roosevelt</a></h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pagination-cntlr">
+          <ul class="reset-list page-numbers">
+            <li><span class="page-numbers current">1</span></li>
+            <li><a class="page-numbers" href="#">2</a></li>
+            <li><a class="page-numbers" href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ftr-top-sec">
+  <div class="ftr-top-sec-inr">
+    <div class="ftr-top-grd-items">
+      <ul class="reset-list">
+        <li>
+          <div class="ftr-top-grd-item">
+            <i>
+              <img src="assets/images/ftr-top-grd-item-img.svg">
+            </i>
+            <strong>Gevarieerd aanbod</strong>
+          </div>
+        </li>
+        <li>
+          <div class="ftr-top-grd-item">
+            <i>
+              <img src="assets/images/ftr-top-grd-item-img.svg">
+            </i>
+            <strong>Persoonlijke aanpak</strong>
+          </div>
+        </li>
+        <li>
+          <div class="ftr-top-grd-item">
+            <i>
+              <img src="assets/images/ftr-top-grd-item-img.svg">
+            </i>
+            <strong>Flexibiliteit</strong>
+          </div>
+        </li>
+        <li>
+          <div class="ftr-top-grd-item">
+            <i>
+              <img src="assets/images/ftr-top-grd-item-img.svg">
+            </i>
+            <strong>Dynamisch team</strong>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-wrp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-top clearfix">
+          <div class="ftr-logo">
+            <a href="#"><img src="assets/images/ftr-logo.png"></a>
+          </div>
+          <div class="ftr-partner-policy">
+            <div class="ftr-partner">
+              <label>Vennootschap:</label>
+              <strong>IMMO ACCENTA bvba</strong>
+            </div>
+            <div class="ftr-policy">
+              <label>Polisnr. verzekering:</label>
+              <strong>730390160</strong>
+            </div>
+          </div>
+          <div class="ftr-vat-social-media">
+            <div class="ftr-vat">
+              <label>BTW</label>
+              <strong>BE 0473.360.889</strong>
+            </div>
+            <div class="ftr-socilas-media">
+              <label>Volg ons op:</label>
+              <ul class="reset-list">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftr-menu clearfix">
+            <ul class="reset-list">
+              <li><a href="#">Te Koop</a></li>
+              <li><a href="#">Te Huur</a></li>
+              <li><a href="#">Nieuwbouw</a></li>
+              <li><a href="#">Realisaties</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="reset-list">
+              <li><a href="#">Wie zijn we</a></li>
+              <li><a href="#">Onze Troven</a></li>
+              <li><a href="#">vacatures</a></li>
+            </ul>
+          </div>
+          <div class="ftr-language">
+            <ul class="reset-list">
+              <li class="lang-active"><a href="#">NL</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Dutch</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftr-contact">
+          <ul class="reset-list">
+            <li>
+              <div class="ftr-contact-grd-item">
+                <div class="ftr-contact-location">
+                  <label>Accenta Vastgoed Affilgem</label>
+                  <strong>Brusselbaan 110, 1790 Affligem</strong>
+                </div>
+                <div class="ftr-contact-tel">
+                  <label>Telefoon</label>
+                  <strong><a href="#">053/41.57.92</a></strong>
+                </div>
+                <div class="ftr-contact-mail">
+                  <label>E-mailadres</label>
+                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ftr-contact-grd-item">
+                <div class="ftr-contact-location">
+                  <label>Accenta Vastgoed herne</label>
+                  <strong>Ninoofsesteenweg 4A, 1540 Herne</strong>
+                </div>
+                <div class="ftr-contact-tel">
+                  <label>Telefoon</label>
+                  <strong><a href="#">053/41.57.92</a></strong>
+                </div>
+                <div class="ftr-contact-mail">
+                  <label>E-mailadres</label>
+                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="ftr-contact-grd-item">
+                <div class="ftr-contact-location">
+                  <label>Accenta Vastgoed Ninove</label>
+                  <strong>Nederwijk 4, 9400 Ninove</strong>
+                </div>
+                <div class="ftr-contact-tel">
+                  <label>Telefoon</label>
+                  <strong><a href="#">053/41.57.92</a></strong>
+                </div>
+                <div class="ftr-contact-mail">
+                  <label>E-mailadres</label>
+                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="ftr-content">
+          <div class="ftr-content-inr">
+            <ul class="reset-list">
+              <li>
+                <div class="ftr-content-ctlr">
+                  <div class="ftr-content-img">
+                    <img src="assets/images/ftr-content-img-01.png">
+                  </div>
+                  <div class="ftr-des">
+                    <p>Onderworpen aan de deontologische code BIV <br> Toezichthoudende autoriteit: Beroepsinstituut <br> van Vastgoedmakelaars (BIV), <br> Luxemburgstraat 16B, 1000 Brussel.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ftr-content-ctlr">
+                  <div class="ftr-content-img">
+                    <img src="assets/images/ftr-content-img-02.png">
+                  </div>
+                  <div class="ftr-des">
+                    <p>Lid van de Confederatie van <br> Immobiliënberoepen Vlaanderen</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ftr-content-ctlr">
+                  <div class="ftr-content-img">
+                    <!-- <img src="assets/images/ftr-content-img-01.png"> -->
+                  </div>
+                  <div class="ftr-des">
+                    <strong>Erkend vastgoedmakelaar-bemiddelaar</strong>
+                    <p>Kurt Muylaert - BIV 501370 - België <br> Sofie Muylaert - BIV 507261 - België <br> Sophie Van Bellinghen - BIV 501370 - België</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftr-bottom">
+          <div class="ftr-btm-inr">
+            <div class="ftr-copywrite">
+              <p>&copy; 2020 Immo Accenta BVBA. All Rights Reserved.</p>
+            </div>
+            <div class="ftr-btm-menu">
+              <ul class="reset-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="ftr-btm-designby">
+              <a href="#">webdesign by conversal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
