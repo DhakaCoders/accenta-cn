@@ -661,3 +661,20 @@ Gallery design
 .hm-nieuws-sec-grd-item-fea-img-cntlr{
 	position: relative;
 }
+
+
+
+
+
+/* home code */
+
+
+.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	height: 4px;
+	width: 175px;
+	background: #fff;
+}
