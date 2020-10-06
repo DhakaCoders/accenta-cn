@@ -106,34 +106,22 @@
 .bnr-breadcum > ul > li > a:hover{
 	color: #1D2B5B;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**/
 .psearch-form-modiule{
-	padding-top: 500px;
+	margin-top: 500px;
+	padding: 30px 20px 10px 20px;
+	background: rgba(255, 255, 255, 0.25);
+
+}
+.psearch-form-fields{
+	margin: 0 -10px;
 }
 .psearch-form-fields .pfm-item{
-	max-width: 21%;
+	max-width: 20.8%;
 	width: 100%;
 	float: left;
+	padding: 0 10px;
+	margin-bottom: 20px;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle .filter-option{
 	background: #fff;
@@ -151,10 +139,41 @@
 	min-height: 57px;
     border-radius: initial;
 }
+.psearch-form-fields .pfm-item .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+	width: 100%;
+
+}
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle::before{
 	z-index: 11;
 	color: #9095A6;
 	font-size: 16px;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu{
+	border-radius: initial;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-top: 0;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li{
+	padding: 0;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu .inner{
+	overflow-y: initial;
+} 
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li a{
+	display: inline-block;
+	text-align: center;
+	background: #1D2B5B;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li a:hover{
+	background: #111a38;
+}
+.psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li::before{
+	content: none;
 }
 .psearch-form-fields .zoeken{
 	max-width: 16%;
@@ -163,6 +182,9 @@
 }
 .psearch-form-fields .max-prj{
 	border: 0;
+}
+.psearch-form-fields .submit{
+	padding-left: 10px;
 }
 .psearch-form-fields .submit button{
 	position: relative;
@@ -175,9 +197,20 @@
 	line-height: 19px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 2px;
+	cursor: pointer;
 }
-.psearch-form-fields .submit button i{
+.psearch-form-fields .submit button:hover{
+	background: #111a38;
+}
+.psearch-form-fields .submit button:after{
+	content: '';
 	position: absolute;
+	right: -1px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #fff;
+	height: 1px;
+	width: 21px;
+	z-index: 11;
 	right: 32px;
 }
