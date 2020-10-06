@@ -277,6 +277,34 @@ if( $('.contact-info-slider').length ){
 
 /*----- End of Noyon -----*/
 
+if (windowWidth <= 767) {
+  $('.ftr-menu h6').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('h6').removeClass('active');
+    $(this).parent().find('ul').slideToggle(300);
+    $(this).parent().siblings().find('ul').slideUp(300);
+  });
+
+}
+
+
+if (windowWidth <= 767){
+  if( $('.xs-usp-slider').length ){
+    $('.xs-usp-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  };
+}
+
+
+
 /*----- End of Shoriful -----*/
 
 $('.recentlyAddedSlider').slick({
