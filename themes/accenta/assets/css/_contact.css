@@ -25,7 +25,7 @@ contact-form-sec-wrp
 }
 .contact-info-dsc-nnr{
 	background: #1D2B5B;
-	padding: 45px 50px 35px;
+	padding: 45px 30px 35px;
 }
 .contact-info-dsc-tp span{
 	display: inline-block;
@@ -76,8 +76,8 @@ contact-form-sec-wrp
 .contact-info-dsc-tp-btm ul li a{
 	display: inline-block;
 	vertical-align: baseline;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 15px;
+	line-height: 17px;
 	letter-spacing: 0.1em;
 	color: #fff;
 	font-weight: 500;
@@ -370,7 +370,7 @@ estimate-list-sec-wrp
 ---------------------
 */
 .estimate-form-sec-wrp .cr-contact-form-block-wrp{
-	padding-top: 75px;
+	padding-top: 0;
 }
 .estimate-list-wrp{
 	background: #1D2B5B;
