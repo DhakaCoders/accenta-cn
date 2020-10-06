@@ -347,6 +347,30 @@ Gallery design
 }
 
 
+.team-module-hdr{
+	text-align: center;
+}
+.tmhdr-title{
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 35px;
+}
+.team-grd-item-fea-img{
+	height: 480px;
+	overflow: hidden;
+}
+.team-grd-item-fea-img div{
+	width: 100%;
+	height: 100%;
+}
+.teamModuleGrdsSlider{
+	margin: 0 -12px!important;
+}
+.teamModuleGrdsSlideItem{
+	padding: 0 12px;
+}
+
+
 @media(max-width: 1199px){
 	#main-content .default-page-con-inner{
 		padding-right: 0;
