@@ -82,19 +82,20 @@
 	padding: 14px 0;
 	position: relative;
 }
-.house-item-img-hover > ul > li img{
+.house-item-img-hover > ul > li i{
 	position: absolute;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 }
-.house-item-img-hover > ul > li > a{
+.house-item-img-hover > ul > li span{
 	font-size: 16px;
 	line-height: 1;
 	color: #FFFFFF;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	padding-left: 54px;
+	display: inline-block;
 }
 .house-item:hover .house-item-img-hover{
 	transform: scale(1,1,1);
@@ -225,7 +226,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 57px;
-	width: 385px;
+	width: 315px;
 	line-height: 1;
 	margin-bottom: 0;
 	color: #fff;
