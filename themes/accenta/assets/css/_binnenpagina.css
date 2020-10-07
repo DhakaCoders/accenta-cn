@@ -406,6 +406,9 @@ Gallery design
 .tgid-title a{
 	color: #1D2B5B;
 }
+.tgid-title a:hover{
+	color: #8489A8;
+}
 .team-grd-item-des{
 	text-align: center;
 	padding: 42px 15px 20px;
