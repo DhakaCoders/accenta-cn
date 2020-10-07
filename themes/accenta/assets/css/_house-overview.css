@@ -1,6 +1,16 @@
 .house-view-sec{
 
 }
+.ho-psearch-form-modiule{
+	padding: 60px 0;
+}
+.ho-psearch-form-modiule .psearch-form-modiule{
+	background: #1d2b5a;
+}
+.ho-psearch-form-modiule .psearch-form .psearch-form-fields .submit button{
+	border: 1px solid #FFFFFF;
+}
+
 .house-view-items-contlr{
 	position: relative;
 	padding-bottom: 40px;
@@ -284,4 +294,116 @@
 .pagination-cntlr > ul > li > span.current,
 .pagination-cntlr > ul > li > a:hover{
 	border-color: #1D2B5B;
+}
+
+
+/*responsive*/
+@media(max-width: 1599px){
+
+}
+@media(max-width: 1499px){
+	.page-bnr-cntlr{
+		margin-top: -61px;
+		padding: 0 60px;
+	}
+	.page-bnr-cntlr:after{
+		width: 60px;
+	}
+	
+}
+@media(max-width: 1399px){
+	.page-bnr-cntlr{
+		padding: 0 40px;
+	}
+	.page-bnr-cntlr:after{
+		width: 40px;
+	}
+}
+@media(max-width: 1299px){
+	.page-bnr-cntlr{
+		padding: 0 20px;
+	}
+	.page-bnr-cntlr:after{
+		width: 20px;
+	}
+}
+@media(max-width: 1199px){
+	.page-bnr-cntlr{
+		padding: 0;
+	}
+	.page-bnr-cntlr:after{
+		content: none;
+	}
+}
+@media(max-width: 991px){
+	.ho-psearch-form-modiule{
+		padding: 55px 0;
+	}
+	.house-view-items-contlr > ul{
+		padding: 0 50px;
+	}
+	.house-view-items-contlr > ul > li{
+		width: 50%;
+	}
+	.house-item-title{
+		font-size: 27px;
+	}
+	.house-item-img-cntlr{
+		height: 260px;
+	}
+}
+@media(max-width: 767px){
+	.ho-psearch-form-modiule{
+		padding: 50px 0;
+	}
+	.house-view-items-contlr > ul{
+		padding: 0;
+	}
+	.house-item-img-cntlr{
+		height: 220px;
+	}
+}
+@media(max-width: 639px){
+	.house-view-items-contlr > ul > li{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+	.house-item,
+	.house-blue-item{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.house-item-img-cntlr{
+		height: 220px;
+	}
+	.house-item-btn a{
+		margin-left: auto;
+		margin-right: auto;
+		background: #1D2B5B;
+		color: #fff;
+	}
+	.house-item-btn a:after{
+		background: #fff;
+	}
+
+}
+@media(max-width: 575px){
+	.ho-psearch-form-modiule{
+		padding: 45px 0;
+	}
+}
+@media(max-width: 479px){
+	
+}
+
+
+
+
+.footer-wrp,
+.ftr-top-sec{
+	display: none;
 }

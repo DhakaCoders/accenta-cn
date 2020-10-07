@@ -194,6 +194,10 @@
 	.vacatures-grd-item-title{
 		font-size: 32px;
 	}
+	.vacatures-grd-item-title:after {
+	    left: -30px;
+	    width: 275px;
+	}
 
 }
 

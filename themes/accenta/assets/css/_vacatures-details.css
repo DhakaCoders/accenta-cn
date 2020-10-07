@@ -194,3 +194,205 @@
 /*.vacancy-desc-btn a:hover:after{
 	background: #1D2B5B;
 }*/
+
+
+.vd-ctlr .vacatures-grd-items {
+    border-bottom: none;
+}
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+	.Vacancy-content-inr {
+	    padding-top: 45px;
+	    padding-bottom: 85px;
+	}
+	.back-btn {
+	    margin-bottom: 40px;
+	}
+	.vacancy-hadding {
+	    padding: 45px 45px;
+	}
+	.vacancy-hadding-title {
+	    font-size: 32px;
+	}
+	.vacancy-socials > ul > li > a {
+	    font-size: 14px;
+	}
+	.vacancy-desc-top {
+	    padding: 35px 0;
+	}
+	.vacancy-desc-cntlr {
+	    padding: 0 50px 0 50px;
+	}
+	.vacancy-desc-modiule {
+	    padding-top: 50px;
+	}
+	.vacancy-desc-title {
+	    font-size: 28px;
+	    margin-bottom: 28px;
+	}
+	.vacancy-desc-btn {
+	    margin-bottom: 45px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+	.Vacancy-content-inr {
+	    padding-top: 40px;
+	    padding-bottom: 70px;
+	}
+	.back-btn {
+	    margin-bottom: 30px;
+	}
+	.vacancy-hadding {
+	    padding: 35px 35px;
+	}
+	.vacancy-hadding-title {
+	    font-size: 30px;
+	}
+	.vacancy-desc-top {
+	    padding: 30px 0;
+	}
+	.vacancy-desc-top > ul > li {
+	    padding-left: 85px;
+	    padding-right: 45px;
+	}
+	.vacancy-desc-cntlr {
+	    padding: 0 40px 0 40px;
+	}
+	.vacancy-desc-modiule {
+	    padding-top: 40px;
+	}
+	.vacancy-desc-title {
+	    font-size: 26px;
+	    margin-bottom: 25px;
+	}
+	.vacancy-desc-modiule p {
+	    margin-bottom: 25px;
+	}
+	.vacancy-desc-btn {
+	    margin-bottom: 35px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+	.Vacancy-content-inr {
+	    padding-top: 40px;
+	    padding-bottom: 60px;
+	}
+	.vacancy-hadding {
+	    padding: 30px 20px;
+	}
+	.vacancy-hadding-title {
+	    font-size: 28px;
+	}
+	.vacancy-desc-top > ul {
+	    padding: 0 30px;
+	}
+	.vacancy-desc-top > ul > li {
+	    padding-left: 60px;
+	    padding-right: 35px;
+	}
+	.vacancy-desc-top > ul > li:after {
+	    width: 45px;
+	}
+	.vacancy-desc-cntlr {
+	    padding: 0 20px 0 20px;
+	}
+	.vacancy-desc-modiule {
+	    padding-top: 30px;
+	}
+	.vacancy-desc-title {
+	    font-size: 24px;
+	    margin-bottom: 25px;
+	}
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+	.vacancy-hadding-title {
+	    font-size: 26px;
+	}
+	.vacancy-desc-top > ul {
+	    padding: 0 15px;
+	}
+	.vacancy-desc-top > ul > li {
+	    padding-left: 50px;
+	    padding-right: 25px;
+	    font-size: 11px;
+	}
+	.vacancy-desc-top > ul > li:after {
+	    width: 38px;
+	}
+	.vacancy-desc-title {
+	    font-size: 22px;
+	    margin-bottom: 20px;
+	}
+	.vacancy-desc-modiule .default-page-con ul li::before, .vacancy-desc-modiule ul li::before {
+	    width: 22px;
+	    height: 2px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.vacancy-desc-title{
+		font-size: 20px;
+	}
+	.vacancy-desc-top > ul {
+	    display: inherit;
+	}
+	.vacancy-desc-top > ul > li {
+	    padding-bottom: 15px;
+	}
+	.vacancy-desc-top > ul > li:after {
+	    top: 20%;
+	}
+	.vacancy-desc-modiule:after {
+	    width: 250px;
+	    margin-left: -20px;
+	}
+
+}
+
+@media(max-width: 359px){
+	.vacancy-desc-title {
+	    font-size: 18px;
+	}
+}

@@ -2,12 +2,16 @@
 All Transitions
 */
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
-a,input,img,textarea,button,svg{
+.dft-rent-module-item-fea-img,
+.team-grd-item-fea-img > div,
+a,input,img,textarea,button,svg,{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
+.dft-rent-module-item:hover .dft-rent-module-item-fea-img,
+.team-grd-item:hover .team-grd-item-fea-img > div
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -15,6 +19,12 @@ a,input,img,textarea,button,svg{
 	-o-transform: scale(1.1);
 }
 
+
+.dft-rent-module-item-fea-img-cnltr,
+.team-grd-item-fea-img{
+	overflow: hidden;
+	position: relative;
+}
 /**
 All Hovers
 */

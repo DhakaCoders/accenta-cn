@@ -17,6 +17,25 @@
 	.show-lg{
 		display: block!important;
 	}
+	h1{
+		font-size: 45px;
+	}
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 36px;
+	}
+	h4{
+		font-size: 30px;
+	}
+	h5{
+		font-size: 24px;
+	}
+	h6{
+		font-size: 16px;
+	}
+
 
 }
 
@@ -26,6 +45,24 @@
 	}
 	.show-md{
 		display: block!important;
+	}
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 35px;
+	}
+	h3{
+		font-size: 32px;
+	}
+	h4{
+		font-size: 28px;
+	}
+	h5{
+		font-size: 24px;
+	}
+	h6{
+		font-size: 16px;
 	}
 	
 }
@@ -37,6 +74,24 @@
 	.show-sm{
 		display: block!important;
 	}
+	h1{
+		font-size: 38px;
+	}
+	h2{
+		font-size: 33px;
+	}
+	h3{
+		font-size: 30px;
+	}
+	h4{
+		font-size: 25px;
+	}
+	h5{
+		font-size: 20px;
+	}
+	h6{
+		font-size: 16px;
+	}
 }
 
 @media(max-width: 575px){
@@ -45,6 +100,24 @@
 	}
 	.show-xs{
 		display: block!important;
+	}
+	h1{
+		font-size: 35px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	h4{
+		font-size: 23px;
+	}
+	h5{
+		font-size: 20px;
+	}
+	h6{
+		font-size: 16px;
 	}
 
 }
