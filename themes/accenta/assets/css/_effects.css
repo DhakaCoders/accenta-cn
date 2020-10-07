@@ -1,11 +1,13 @@
 /**
 All Transitions
 */
+.hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
 a,input,img,textarea,button,svg{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
