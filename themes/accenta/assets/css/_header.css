@@ -554,6 +554,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 
 }
 @media(max-width: 1499px){
+	.header {
+		padding-right: 60px;
+	}
 	.logo{
 		width: 250px;
 		padding-left: 10px;
@@ -600,11 +603,14 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		padding: 0 20px;
 	}
 	.h-slider-banner{
-		margin-top: -62px!important;
+		margin-top: -61px!important;
 	}
 }
 
 @media(max-width: 1399px){
+	.header {
+		padding-right: 40px;
+	}
 	nav.main-nav > ul > li > a{
 		padding: 0 15px;
 		font-size: 15px;
@@ -626,6 +632,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 }
 
 @media(max-width: 1299px){
+	.header {
+		padding-right: 20px;
+	}
 	.logo{
 		width: 200px;
 	}
@@ -651,6 +660,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 }
 
 @media(max-width: 1199px){
+	.header {
+		padding-right: 0;
+	}
 	.bdoverlay.active {
 		z-index: 9999;
 		opacity: 1;
