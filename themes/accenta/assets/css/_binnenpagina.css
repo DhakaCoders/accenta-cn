@@ -673,12 +673,169 @@ Gallery design
 	content: "";
 	position: absolute;
 	right: 0;
-	bottom: 50px;
+	bottom: 45px;
 	height: 4px;
 	width: 175px;
 	background: #fff;
 }
 
-.beautiful-house-des > a{
+.beautiful-house-des .house-item-btn a{
+	background: #1D2B5B;
+	color: #fff;
+}
+.beautiful-house-des .house-item-btn a:after{
+	background: #fff;
+}
+
+
+.recently-added-sec{
+	
+}
+
+.recently-added-sec-top{
+	color: #fff;
+	min-height: 375px;
+	position: relative;
+	background: #1D2B5B;
+}
+.recently-added-sec-lft{
+	padding-top: 95px;
+	position: relative;
+}
+.recently-added-sec-lft:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	background: #FFFFFF;
+	height: 205px;
+}
+.rasl-title{
+	color: #fff;
+	font-size: 54px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.recently-added-sec-rgt{
+	position: relative;
+}
+
+.rgt-white-bg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 177px;
+	z-index: 5;
+	background: #fff;
+}
+.recently-added-sec-btm{
+	overflow: hidden;
+}
+.recentlyAddedPagiSlider{
+	margin: 0 -17px!important;
+}
+.recentlyAddedPagiSlideItem{
+	padding: 0 17px;
+}
+.recentlyAddedPagiSlideItem > div{
+	height: 428px;
+	width: 100%;
+}
+.recentlyAddedSliderCntlr{
+	max-width: 520px;
+	width: 100%;
+	margin-left: auto;
+}
+.recently-added-sec-rgt{
+	padding: 65px 0 115px;
+}
+.recentlyAddedItem strong{
+	display: block;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #8489A8;
+	margin-bottom: 10px;
+
+}
+.rai-title{
+	color: #fff;
+	font-size: 30px;
+	line-height: 1.2;
+	text-transform: initial;
+}
+.recentlyAddedItem ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 35px;
+	padding-bottom: 20px;
+}
+.recentlyAddedItem ul li:last-child{
+	padding-right: 0;
+}
+.act-fea-col{
+	display: flex;
+	align-items: center;
+}
+.act-fea-col i{
+	margin-right: 20px;
+}
+.recentlyAddedItemBtn{
+	padding-top: 20px;
+}
+
+.recentlyAddedSliderPrevNext{
+	position: absolute;
+	right: 5px;
+	bottom: 130px;
+}
+.recentlyAddedSliderPrevNext span{
+	cursor: pointer;
+	margin: 0 15px;
+}
+
+@media(max-width: 1499px){
+	.rgt-white-bg{
+		width: 80px;
+	}
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
 
 }
