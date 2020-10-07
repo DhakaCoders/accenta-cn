@@ -1,18 +1,25 @@
 /**
 All Transitions
 */
-a,input,img,textarea,button,svg{
+a,input,img,textarea,button,svg,
+.dft-rent-module-item-fea-img{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale{
+.scale,
+.dft-rent-module-item:hover .dft-rent-module-item-fea-img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
 
+
+.dft-rent-module-item-fea-img-cnltr{
+	overflow: hidden;
+	position: relative;
+}
 /**
 All Hovers
 */

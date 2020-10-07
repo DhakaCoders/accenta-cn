@@ -271,6 +271,21 @@ Gallery design
 	height: 287px;
 	position: relative;
 }
+.dft-rent-module-item-fea-img,
+.dft-rent-module-item-fea-img-cnltr{
+	width: 100%;
+	height: 100%;
+}
+.dft-rent-module-item-fea-img-cnltr:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 52px;
+	width: 107px;
+	height: 1px;
+	background: #FFFFFF;
+
+}
 .drmi-des{
 	position: absolute;
 	left: 0;
