@@ -150,6 +150,74 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 
 
+/*
+-----------------------
+Start Contact Google Map ->> 
+-----------------------
+*/
+if( $('#googlemap').length ){
+    var latitude = $('#googlemap').data('latitude');
+    var longitude = $('#googlemap').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : CustomMapStyles
+      };
+      var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+if( $('.contact-info-slider').length ){
+    $('.contact-info-slider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+
+          }
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
 
 $('.hu-dtls-gallery-slider').slick({
   slidesToShow: 1,
@@ -202,77 +270,7 @@ $('.hu-dtls-gallery-pg-slider').slick({
 /*----- End of Milon -----*/
 
 
-/*
------------------------
-Start Contact Google Map ->> 
------------------------
-*/
-if( $('#googlemap').length ){
-    var latitude = $('#googlemap').data('latitude');
-    var longitude = $('#googlemap').data('longitude');
 
-    var myCenter= new google.maps.LatLng(latitude,  longitude);
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    function initialize(){
-        var mapProp = {
-          center:myCenter,
-
-          mapTypeControl:false,
-          scrollwheel: false,
-
-          zoomControl: false,
-          disableDefaultUI: true,
-          zoom:17,
-          streetViewControl: false,
-          rotateControl: false,
-          mapTypeId:google.maps.MapTypeId.ROADMAP,
-          styles : CustomMapStyles
-      };
-      var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-}
-
-if( $('.contact-info-slider').length ){
-    $('.contact-info-slider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 2000,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
 
 
 
@@ -329,7 +327,7 @@ if (windowWidth <= 767){
       dots: true,
       arrows: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: false,
       speed: 300,
       slidesToShow: 1,
@@ -395,7 +393,7 @@ if( $('.dftServiceModuleSlider').length ){
       dots: false,
       arrows: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 2,
@@ -438,7 +436,7 @@ if( $('.dftJobModuleSlider').length ){
       dots: false,
       arrows: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 2,
@@ -479,7 +477,7 @@ if( $('.teamModuleGrdsSlider').length ){
       dots: false,
       arrows: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,

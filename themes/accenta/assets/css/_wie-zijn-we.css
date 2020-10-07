@@ -327,6 +327,16 @@
 		width: 72px;
 		background: #fff;
 	}
+	.img-des-module{
+		max-width: 350px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.wzw-team-grd-item{
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
+	}
 	
 }
 
@@ -396,5 +406,7 @@
 }
 
 @media(max-width: 359px){
-
+	.wzw-team-grd-item-left .wzw-team-grd-item-title {
+	    font-size: 29px;
+	}
 }
