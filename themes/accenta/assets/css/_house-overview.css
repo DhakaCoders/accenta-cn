@@ -1,6 +1,16 @@
 .house-view-sec{
 
 }
+.ho-psearch-form-modiule{
+	padding: 60px 0;
+}
+.ho-psearch-form-modiule .psearch-form-modiule{
+	background: #1d2b5a;
+}
+.ho-psearch-form-modiule .psearch-form .psearch-form-fields .submit button{
+	border: 1px solid #FFFFFF;
+}
+
 .house-view-items-contlr{
 	position: relative;
 	padding-bottom: 40px;
