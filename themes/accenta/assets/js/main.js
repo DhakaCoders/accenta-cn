@@ -289,6 +289,17 @@ if( $('.homeSlider').length ){
         var thumb = $(slider.$slides[i]).data();
         return '<a class="dot">'+i+'</a>';
       },
+      responsive: [
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:false,
+            infinite: true,
+          }
+        },
+      ]
     });
 }
 
