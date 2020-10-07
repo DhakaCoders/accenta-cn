@@ -1,9 +1,6 @@
 .h-slider-banner{
-	
 	margin-top: -74px;
 	padding: 0 80px;
-
-
 }
 .h-banner:after{
 	content: "";
@@ -305,16 +302,120 @@
 	color: #fff!important;
 }
 
-/*.slick-slider .slick-dots li button:before{
-    content: '1';
-    font-size: 22px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    opacity: 1;
-    color: #fff;
-}*/
+
+
+
+
+
+/*responsive*/
+@media(max-width: 1599px){
+	.h-slider-banner{
+		padding: 0 60px;
+	}
+}
+@media(max-width: 1499px){
+	.h-slider-banner{
+		padding: 0 40px;
+	}
+}
+@media(max-width: 1399px){
+	.h-slider-banner{
+		padding: 0 20px;
+	}
+	.h-slider-banner-desc-title{
+		font-size: 86px;
+		line-height: 1;
+	}
+}
+@media(max-width: 1299px){
+	.h-slider-banner{
+		padding: 0;
+	}
+	.h-slider-item{
+		min-height: 800px;
+	}
+	.h-slider-banner-desc-title{
+		font-size: 76px;
+	}
+}
+@media(max-width: 1199px){
+	.h-slider-banner{
+		margin-top: 0!important;
+	}
+	.h-slider-item{
+		min-height: 760px;
+	}
+	.h-slider-banner-desc-sub-title{
+		font-size: 30px;
+	}
+	.h-slider-banner-desc-title{
+		font-size: 66px;
+	}
+}
+@media(max-width: 991px){
+	.h-slider-item{
+		min-height: 720px;
+	}
+	.h-slider-banner-desc-sub-title{
+		font-size: 25px;
+	}
+	.h-slider-banner-desc-title{
+		margin-bottom: 35px;
+		font-size: 56px;
+	}
+	.psearch-form-modiule{
+		padding-bottom: 30px;
+	}
+	.psearch-form-modiule .psearch-form .psearch-form-fields .pfm-item{
+		max-width: 50%!important;
+	}
+	.psearch-form-fields .zoeken{
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		max-width: 100%;
+		width: 150px;
+	}
+}
+@media(max-width: 767px){
+	.h-slider-item{
+		min-height: 680px;
+	}
+	.h-slider-banner-desc-sub-title{
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	.h-slider-banner-desc-title{
+		margin-bottom: 32px;
+		font-size: 46px;
+	}
+}
+@media(max-width: 639px){
+	
+}
+@media(max-width: 575px){
+	.h-slider-banner-cntrl:after,
+	.h-slider-banner-cntrl:before{
+		content: none;
+	}
+	.h-slider-item{
+		min-height: 700px;
+	}
+	.psearch-form-modiule .psearch-form .psearch-form-fields .pfm-item{
+		max-width: 100%!important;
+	}
+	.h-slider-banner-desc-sub-title{
+		font-size: 16px;
+	}
+	.h-slider-banner-desc-title{
+		font-size: 36px;
+		margin-bottom: 28px;
+	}
+	.psearch-form-fields .zoeken{
+		padding-right: 10px;
+		width: 100%;
+	}
+}
+@media(max-width: 479px){
+	
+}

@@ -132,6 +132,131 @@
 	font-size: 13px;
 	font-weight: 500;
 }
+.hdr-rgt-top-menu > ul > li > a:hover{
+	color: #474b58;
+}
+
+
+
+
+.hdr-rgt-top-menu > ul > li.menu-item-has-children{
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+}
+
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > a:after{
+    content: "";
+    background: url(../images/down-arrow-menu.svg);
+    width: 7px;
+    height: 5px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 0;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children:hover > a:after{
+	transform: rotate(180deg);
+	background-position: center top;
+	margin-top: -3px;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children:after{
+	content: ""!important;
+	background: url(../images/dropdown-polygon.png);
+	position: absolute;
+	z-index: 10;
+	bottom: 1px;
+	width: 18px;
+	height: 15px;
+	right: 4px;
+	background-size: 100% auto;
+	background-position: bottom center;
+	opacity: 0;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children:hover:after{
+	opacity: 1;
+}
+
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	min-width: 120px;
+	padding: 5px 12px;
+	background: #fff;
+	z-index: 30;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+    transform-origin: top;
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    opacity: 0;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children:hover ul.sub-menu{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li{
+	padding-top: 8px;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li:last-child{
+	padding-bottom: 10px;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a{
+	display: inline-block;
+	color: #9095A6;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 22px;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a:hover{
+	color: #61687d;
+}
+
+.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 12px;
+	background: #1D2B5B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hdr-rgt-top-social{
 	position: relative;
 	padding: 0 52px;
@@ -559,6 +684,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	}
 	.logo{
 		width: 354px;
+		padding-bottom: 50px;
 	}
 	.hdr-lft-btn-col a{
 		width: 245px!important;
@@ -566,7 +692,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.hdr-lft-btn{
 		padding-top: 0;
 		position: absolute;
-		bottom: -57px;
+		bottom: -27px;
 		left: 0;
 	}
 	.hdr-lft-mail{
@@ -579,12 +705,13 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		padding: 0 0 45px 0;
 		position: fixed;
 		top: 0;
-		right: 0;
+		bottom: 0;
+		right: -320px;
 		width: 0;
 		opacity: 0;
-		-ms-transition: all 0.3s ease-out;
-		-webkit-transition: all 0.3s ease-out;
-		transition: all 0.3s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		-webkit-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
 		background: #fff;
 	}
 	.mobile-hdr.opacity-1 {
@@ -592,6 +719,10 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		z-index: 9999999;
 		text-indent: initial;
 		width: 100%;
+		right: 0;
+		-ms-transition: all 0.5s ease-out;
+		-webkit-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
 	}
 	.mbl-hdr-lft{
 		position: relative;
@@ -717,4 +848,12 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		font-weight: 500;
 	}
 
+}
+@media(max-width: 991px){
+	.logo{
+		padding-bottom: 50px;
+	}
+	.hdr-lft-btn{
+		bottom: -27px;
+	}
 }
