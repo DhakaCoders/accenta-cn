@@ -186,7 +186,7 @@ if( $('.contact-info-slider').length ){
     $('.contact-info-slider').slick({
       dots: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,
@@ -273,9 +273,97 @@ $('.hu-dtls-gallery-pg-slider').slick({
 
 
 
+
+
+if( $('.homeSlider').length ){
+    $('.homeSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+}
 /*----- End of Noyon -----*/
 
+if (windowWidth <= 767) {
+  $('.ftr-menu h6').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parent().siblings().find('h6').removeClass('active');
+    $(this).parent().find('ul').slideToggle(300);
+    $(this).parent().siblings().find('ul').slideUp(300);
+  });
+
+}
+
+
+if (windowWidth <= 767){
+  if( $('.xs-usp-slider').length ){
+    $('.xs-usp-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  };
+}
+
+
+
 /*----- End of Shoriful -----*/
+
+$('.recentlyAddedSlider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  prevArrow: $('.recentlyAddedSliderCntlr .ras-prev'),
+  nextArrow: $('.recentlyAddedSliderCntlr .ras-next'),
+  asNavFor: '.recentlyAddedPagiSlider'
+});
+$('.recentlyAddedPagiSlider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.recentlyAddedSlider',
+  arrows: false,
+  dots: false,
+  responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots:false,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+});
+
 
 
 
@@ -284,10 +372,94 @@ if( $('.dftServiceModuleSlider').length ){
       dots: false,
       arrows: false,
       infinite: false,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
+
+if( $('.dftJobModuleSlider').length ){
+    $('.dftJobModuleSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+if( $('.teamModuleGrdsSlider').length ){
+    $('.teamModuleGrdsSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
         {

@@ -1,0 +1,65 @@
+Uw droomhuis nog niet gevonden? 
+---------------------
+Desktop--->
+
+1. https://prnt.sc/uubmwu
+	banner ar title ta h1 or strong use hote pare,
+	tai ai title ta h2 daw
+
+2. https://prnt.sc/uubof4
+	 2 tar font-weight 2 rokom keno ?
+
+3. https://prnt.sc/uubtai
+	focus a akta outline asteche
+
+
+Free Estimate
+---------------------
+Desktop--->
+
+1. ager motoi
+
+
+
+Contact
+---------------------
+Desktop--->
+
+1. https://prnt.sc/uuc3qb
+	kono container use hobena full-width hobe, then left and right a padding hobe 80px kore
+
+
+
+
+House Details
+---------------------
+Desktop--->
+
+
+1. https://prnt.sc/uuc5sa
+	sprite icon hobe
+
+2. https://prnt.sc/uuc69r
+	hover korle bg white and color blue daw
+
+3. https://prnt.sc/uuc6ma
+	hover korle white color daw
+
+4. https://prnt.sc/uuc812
+	font-size 15px daw . 16 rakhle design ar moto look ta astechena. container ar width komanote dimenton akare font-size gulo komate hobe
+
+5. https://prnt.sc/uuca9f
+	next korle blank thake
+
+6. https://prnt.sc/uucbq5
+	hover effect lagbe, innerpage a ami korechi dekhe nite paro
+
+7. https://prnt.sc/uuccny
+	right a jabe aro . r akta percentage a thakbe, px a na
+
+8. https://prnt.sc/uuceyw
+	ata maybe link hobe, a tag. 
+
+
+
+N.B---> fix ses hole browser cehck dite hobe valo kore.
