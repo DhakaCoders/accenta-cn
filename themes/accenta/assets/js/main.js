@@ -275,6 +275,20 @@ if( $('.contact-info-slider').length ){
 }
 
 
+
+
+if( $('.homeSlider').length ){
+    $('.homeSlider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+}
 /*----- End of Noyon -----*/
 
 if (windowWidth <= 767) {
