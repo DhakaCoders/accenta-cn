@@ -279,7 +279,7 @@ if( $('.contact-info-slider').length ){
 
 if( $('.homeSlider').length ){
     $('.homeSlider').slick({
-      dots: false,
+      dots: true,
       arrows: false,
       infinite: true,
       autoplay: true,
@@ -287,8 +287,29 @@ if( $('.homeSlider').length ){
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
+      customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a class="dot">'+i+'</a>';
+      },
     });
 }
+
+
+
+if (windowWidth <= 1199) {
+    $('.hdr-humberger .line-icon').on('click', function(e){
+      $('.mobile-hdr').addClass('opacity-1');
+      $('.bdoverlay').addClass('active');
+      $('body').addClass('active-scroll-off');
+      $(this).addClass('active-collapse');
+    });
+    $('.close-btn').on('click', function(e){
+      $('.bdoverlay').removeClass('active');
+      $('.mobile-hdr').removeClass('opacity-1');
+      $('body').removeClass('active-scroll-off');
+      $('.line-icon').removeClass('active-collapse');
+    });
+  }
 /*----- End of Noyon -----*/
 
 if (windowWidth <= 767) {
