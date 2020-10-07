@@ -134,8 +134,8 @@
 }
 
 .get-touch-sec-wrap{
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .get-touch-sec{
 	background: #1D2B5B;
@@ -315,6 +315,18 @@
 	    padding-top: 65px;
 	    padding-bottom: 80px;
 	}
+	.wzw-team-grd-item{
+		position: relative;
+	}
+	.wzw-team-grd-item:after{
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 45px;
+		height: 2px;
+		width: 72px;
+		background: #fff;
+	}
 	
 }
 
@@ -353,6 +365,10 @@
 	.wzw-teams-sec {
 	    padding-top: 50px;
 	    padding-bottom: 70px;
+	}
+	.get-touch-sec-wrap {
+	    padding-left: 0px;
+	    padding-right: 0px;
 	}
 }
 

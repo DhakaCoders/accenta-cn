@@ -71,6 +71,18 @@
 	width: 300px;
 	background: #F9F9F9;
 }
+.vacatures-grd-item-title:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: -40px;
+	display: block;
+	height: 2px;
+	width: 0;
+	background: rgba(255,255,255,0.05);
+	transition: width 0.5s;
+}
+
 .vacatures-grd-item-title a{
 	color: #1D2B5B;
 }
@@ -130,7 +142,10 @@
 	color: #fff;
 }
 .vacatures-grd-item:hover .vacatures-grd-item-title:after{
-	background: rgba(255,255,255,0.05);
+	content: none;
+}
+.vacatures-grd-item:hover .vacatures-grd-item-title:before{
+	width: 100%;
 }
 .vacatures-grd-item:hover .vacatures-grd-item-des strong{
 	color: #fff;
@@ -198,6 +213,7 @@
 	}
 	.vacatures-grd-items ul li{
 		width: 50%;
+		padding-bottom: 40px;
 	}
 	.vacatures-grd-items ul li:nth-child(3n+1) {
 	    clear: none;
@@ -254,7 +270,14 @@
 }
 
 @media(max-width: 479px){
-
+	.vacatures-grd-item-title:after{
+		width: 250px;
+	}
+	.ftr-btm-designby a,
+	.ftr-btm-menu ul li a,
+	.ftr-copywrite p{
+		font-size: 12px;
+	}
 
 }
 
