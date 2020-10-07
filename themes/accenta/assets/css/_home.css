@@ -272,7 +272,7 @@
 .psearch-form-fields .submit button:after{
 	content: '';
 	position: absolute;
-	right: -1px;
+	right: -1px!important;
 	top: 50%;
 	transform: translateY(-50%);
 	background: #fff;
@@ -283,4 +283,42 @@
 }
 
 
+
+
+.slick-slider ul.slick-dots {
+    position: absolute;
+    height: 16px;
+    line-height: 0;
+    padding: 0!important;
+    right: 150px;
+    bottom: 50px;
+    width: 168px;
+}
+.slick-slider .slick-dots li{
+	background: transparent!important;
+	margin: 0 20px!important;
+}
+.slick-slider .slick-dots li.slick-active{
+	background: transparent!important;
+}
+.slick-slider .slick-dots li a{
+	color: rgba(255, 255, 255, 0.5)!important;
+}
+.slick-slider .slick-dots li.slick-active a{
+	color: #fff!important;
+}
+
+/*.slick-slider .slick-dots li button:before{
+    content: '1';
+    font-size: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+}*/
 
