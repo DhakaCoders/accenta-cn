@@ -279,6 +279,9 @@
 	right: 32px;
 }
 
+
+
+
 .slick-slider ul.slick-dots {
     position: absolute;
     height: 16px;
@@ -301,7 +304,6 @@
 .slick-slider .slick-dots li.slick-active a{
 	color: #fff!important;
 }
-
 
 
 
