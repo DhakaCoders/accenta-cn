@@ -713,6 +713,9 @@
 	.usp-grd-item{
 		height: initial;
 	}
+	.usp-grd-item:after{
+		content: none;
+	}
 }
 
 @media(max-width: 575px){
