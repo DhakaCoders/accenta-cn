@@ -1,5 +1,6 @@
 Uw droomhuis nog niet gevonden? 
----------------------
+--------------------------------------
+--------------------------------------
 Desktop--->
 
 1. https://prnt.sc/uubmwu
@@ -13,26 +14,77 @@ Desktop--->
 	focus a akta outline asteche
 
 
+Responsive---->
+
+1. Done
+
+
+
+
+
 Free Estimate
----------------------
+------------------------------------
+-----------------------------------
 Desktop--->
 
 1. ager motoi
 
 
+Responsive---->
+
+1. Done
+
+
 
 Contact
----------------------
+---------------------------------
+-----------------------------------
 Desktop--->
 
 1. https://prnt.sc/uuc3qb
 	kono container use hobena full-width hobe, then left and right a padding hobe 80px kore
 
 
+new--->
+1. https://prnt.sc/uvkwum
+	desktop a grd gulo slide hobena, 3 grd rakho extra ta badh daw
+
+2. https://prnt.sc/uvky76
+	atar height mileni 
+
+
+Responsive-->
+1. https://prnt.sc/uvl184
+ 1399px a left and right 40px daw, 
+ 1199px 20px
+
+2. https://prnt.sc/uvl2sn
+	1199px a 10px 10px daw, tahole ul tateo -10px dite hobe
+
+3. https://prnt.sc/uvl50b
+	always 1px besi dite hoy, bcoz break ta 1px pore hoy. 
+	tai 991px a break lagle 992 dite hobe
+
+	ii) 991px a dots true koro
+
+
+
+
+4.  https://prnt.sc/uvl7p2
+	i) dots lagbe
+	ii) arrow gulo niche nambe
+	responsive designta follow kore fix kore felo
+
+	N.B.--- ai common code ta responsive.css a gie 767px a koro. tahole kew jodi 767px a dots true kore and arrow true kore, tahole peye jabe amon
+
+
+
+
 
 
 House Details
----------------------
+--------------------------------------
+-------------------------------------
 Desktop--->
 
 
@@ -59,6 +111,45 @@ Desktop--->
 
 8. https://prnt.sc/uuceyw
 	ata maybe link hobe, a tag. 
+
+
+
+New--->
+
+1. https://prnt.sc/uvlbm7
+	hover korle transition lagbe
+
+2. ager fix ---> 5. https://prnt.sc/uuca9f
+	next korle blank thake
+
+3. https://prnt.sc/uvldqd
+	click korle uporer img ta change hobe.
+
+	goto project a 'maisondeg project' watch-details.html a dekhe nite paro , oikhane kora ache
+
+4. i) https://prnt.sc/uvlf4c
+	hover korle img ta upore uthe jasche, overflow lagbe
+   ii) https://prnt.sc/uvlfnu
+   	hover korle icon tao scale hosche, only img ta scale hobe.
+
+   	inner page thake help nite paro. oikhane kora ache
+
+
+ 5. https://prnt.sc/uvlgpe
+ 	sprite hobe
+
+
+
+Responsive--->
+
+1.  https://prnt.sc/uvlo4u
+ 	ai page ar responsive content gulo mileni , atar moto hobe.
+ 	responsive desing ta dekhe kore felo
+
+
+
+
+
 
 
 
