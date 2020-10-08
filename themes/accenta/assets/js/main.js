@@ -193,15 +193,16 @@ if( $('.contact-info-slider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            dots: true,
             infinite: true,
           }
         },
         {
-          breakpoint: 575,
+          breakpoint: 576,
           settings: {
             dots: true,
             arrows: true,
