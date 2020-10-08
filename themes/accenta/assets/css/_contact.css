@@ -452,7 +452,7 @@ estimate-list-sec-wrp
 	#googlemap {
 	    height: 580px;
 	}
-	.contact-info-slider.slick-slider ul.slick-dots {
+	.contact-info-slider.slick-slider ul.slick-dots{
 	    padding: 0 5px!important;
 	    margin-top: 0 !important;
 	    width: 100% !important;
@@ -576,7 +576,7 @@ estimate-list-sec-wrp
 	}
 	.contact-info-wrp .fl-next:hover i svg,
 	.contact-info-wrp .fl-prev:hover i svg{
-		fill: #151e3f;
+		fill: #000 !important;
 	}
 	.contact-page-entry-title {
 	    font-size: 24px;

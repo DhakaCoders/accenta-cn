@@ -182,6 +182,7 @@ if( $('#googlemap').length ){
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
+
 if( $('.contact-info-slider').length ){
     $('.contact-info-slider').slick({
       dots: false,
@@ -220,51 +221,53 @@ if( $('.contact-info-slider').length ){
     });
 }
 
-
-$('.hu-dtls-gallery-slider').slick({
+$('.slider-single').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
   fade: true,
   prevArrow: $('.fl-prv-nxt .fl-prev'),
   nextArrow: $('.fl-prv-nxt .fl-next'),
-  asNavFor: '.hu-dtls-gallery-pg-slider'
+  asNavFor: '.slider-nav'
 });
-$('.hu-dtls-gallery-pg-slider').slick({
+$('.slider-nav').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.hu-dtls-gallery-slider',
-  arrows: false,
+  asNavFor: '.slider-single',
   dots: false,
+  arrows: false,
+  //centerMode: true,
+  focusOnSelect: true,
   responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots:false,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    }
+  ]
 });
+
+
 
 
 

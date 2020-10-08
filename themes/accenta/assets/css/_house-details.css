@@ -188,6 +188,8 @@
 	opacity: 0.5;
 }
 
+
+
 /*
 ----------------------
 hu-dtls-rgt-con
@@ -424,6 +426,7 @@ hu-dtls-rgt-con
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+	z-index: 2;
 }
 .hu-dtls-download-btn a:hover{
 	background:#1D2B5B;
@@ -482,7 +485,7 @@ hu-dtls-rgt-con
     color: #1D2B5B !important;
 }
 .hu-dtls-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:after{
-	right: -1px;
+	right: 0;
 }
 .hu-dtls-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html {
     margin-bottom: 5px;
@@ -693,6 +696,10 @@ vn-price-filter
 	}
 	.hu-dtls-fancy-img-wrp{
 		height: 320px;
+	}
+	.hu-dtls-gallery-slider-cntlr .fl-next:hover i svg,
+	.hu-dtls-gallery-slider-cntlr .fl-prev:hover i svg {
+	    fill: #fff;
 	}
 
 }
