@@ -384,7 +384,7 @@ if (windowWidth <= 767){
       dots: true,
       arrows: false,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: false,
       speed: 300,
       slidesToShow: 1,
