@@ -830,6 +830,45 @@ Gallery design
 	cursor: pointer;
 	margin: 0 15px;
 }
+.recentlyAddedSliderPrevNext span:hover svg{
+	fill: #8489A8!important;
+}
+
+.valuation-fixed-btn{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	width: 200px;
+	height: 116px;
+	z-index: 200;
+	display: none;
+}
+.valuation-fixed-btn a{
+	display: block;
+	background: #D9A61E;
+	color: #fff;
+	position: relative;
+	height: 100%;
+	text-align: center;
+	padding: 20px 10px 
+}
+.valuation-fixed-btn a:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	height: 1px;
+	width: 108px;
+	background: #fff;
+	z-index: 10;
+}
+.valuation-fixed-btn a i{
+	display: block;
+	padding-bottom: 10px;
+}
+.valuation-fixed-btn span{
+	font-size: 20px;
+}
 
 @media(max-width: 1499px){
 	.rgt-white-bg{

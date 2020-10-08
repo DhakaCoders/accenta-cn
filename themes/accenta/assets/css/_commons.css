@@ -365,3 +365,12 @@ form .dropdown-menu li a{
 .act-tranparent-btn:after{
 	background: #fff!important;
 }
+
+.act-tranparent-btn:hover{
+	background: #fff!important;
+	color: #1D2B5B!important;
+}
+
+.act-tranparent-btn:hover:after {
+    background: #1D2B5B!important;
+}
