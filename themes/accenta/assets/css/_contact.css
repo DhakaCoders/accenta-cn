@@ -378,58 +378,6 @@ estimate-list-sec-wrp
 .estimate-form-sec-wrp .cr-contact-form-block-wrp{
 	padding-top: 0;
 }
-.estimate-list-wrp{
-	background: #1D2B5B;
-	overflow: hidden;
-}
-.EstimateListSlider .EstimateListSlideItem{
-	display: none;
-}
-.EstimateListSlider .EstimateListSlideItem:first-child{
-	display: block;
-}
-.EstimateListSlider.slick-initialized .EstimateListSlideItem{
-	display: block;
-}
-.estimate-list-inr{
-	text-align: center;
-	padding: 60px 30px;
-	position: relative;
-}
-.estimate-list-inr:after{
-	content: "";
-	position: absolute;
-	bottom: 0;
-	width: 1px;
-	height: 140px;
-	background: #fff;
-	right: 0;
-}
-.EstimateListSlideItem:last-child .estimate-list-inr:after{
-	content: none;
-}
-.EstimateListSlideItem:nth-child(2n+2) .estimate-list-inr:after{
-	bottom: auto;
-	top: 0;
-}
-.estimate-list-inr i{
-	display: block;
-}
-.estimate-list-inr i img{
-	display: inline-block;
-	vertical-align: baseline;
-}
-.estimate-list-inr span{
-	display: inline-block;
-	vertical-align: baseline;
-	font-size: 16px;
-	line-height: 18px;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	font-weight: 700;
-	padding-top: 15px;
-}
 
 
 /*
@@ -471,13 +419,6 @@ estimate-list-sec-wrp
 	}
 	#googlemap {
 	    height: 630px;
-	}
-	.estimate-list-inr span {
-	    font-size: 15px;
-	    line-height: 17px;
-	}
-	.estimate-list-inr {
-	    padding: 60px 20px;
 	}
 	.contact-google-map-wrp {
 	    padding: 0 20px;
@@ -662,29 +603,6 @@ estimate-list-sec-wrp
 	}
 	#googlemap {
 	    height: 530px;
-	}
-
-	.EstimateListSlider.slick-dotted.slick-slider{
-		margin-bottom: 45px;
-	}
-	.estimate-list-inr{
-		padding: 45px 20px 30px;
-	}
-	.EstimateListSlider.slick-slider ul.slick-dots {
-	    right: 0;
-	    bottom: -5px;
-	    width: 100%;
-	    left: 0;
-	}
-	.EstimateListSlider.slick-slider .slick-dots li{
-		background:#34416b !important;
-		margin: 0 5px !important;
-	}
-	.EstimateListSlider.slick-slider .slick-dots li.slick-active{
-		background:#dcdce4 !important;
-	}
-	.estimate-list-inr:after{
-		content: none;
 	}
 	.contact-form-wrp .wpforms-field-container .wpforms-field select,
 	.contact-form-wrp .wpforms-field-select select{

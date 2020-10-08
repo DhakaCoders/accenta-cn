@@ -267,51 +267,6 @@ $('.hu-dtls-gallery-pg-slider').slick({
 });
 
 
-if( $('.EstimateListSlider').length ){
-    $('.EstimateListSlider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            dots: false,
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-
-          }
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            dots: true,
-            arrows: false,
-            autoplay:false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-
-          }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
 
 
 
