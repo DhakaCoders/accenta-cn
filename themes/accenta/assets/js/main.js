@@ -186,7 +186,7 @@ if( $('.contact-info-slider').length ){
     $('.contact-info-slider').slick({
       dots: false,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,
@@ -205,6 +205,8 @@ if( $('.contact-info-slider').length ){
           settings: {
             dots: true,
             arrows: true,
+            prevArrow: $('.fl-info-prv-nxt .fl-prev'),
+            nextArrow: $('.fl-info-prv-nxt .fl-next'),
             slidesToShow: 1,
             slidesToScroll: 1
 
