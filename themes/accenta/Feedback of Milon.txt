@@ -136,7 +136,7 @@ New--->
 
 
  5. https://prnt.sc/uvlgpe
- 	sprite hobe
+ 	sprite hobe <-----sprite dite ie te file icon ta show kore na----->
 
 
 
@@ -147,6 +147,9 @@ Responsive--->
  	responsive desing ta dekhe kore felo
 
 
+
+<-----Ie browser fixing gula solve korte pari nai----->
+1.
 
 
 
