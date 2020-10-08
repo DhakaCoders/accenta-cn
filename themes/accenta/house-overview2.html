@@ -69,12 +69,26 @@
       </div>
     </div>
     <div class="hdr-rgt">
+      <div class="hdr-humberger show-hide">
+        <div class="line-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <div class="hdr-rgt-top">
         <div class="hdr-rgt-top-menu">
           <ul class="reset-list">
             <li><a href="#">Wie zijn we</a></li>
             <li><a href="#">Realisaties</a></li>
-            <li><a href="#">Onze troeven</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Onze troeven</a>
+              <ul class="sub-menu">
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+              </ul>
+            </li>
             <li><a href="#">Vacatures</a></li>
           </ul>
         </div>
@@ -96,10 +110,6 @@
         </div>
       </div>
       <nav class="main-nav">
-        <div class="closebtn show-md">
-          <span></span>
-          <span></span>
-        </div>
         <ul class="reset-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Te Koop</a></li>
@@ -116,6 +126,67 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+  <div class="mobile-hdr">
+    <div class="mbl-hdr-top">
+      <div class="mbl-hdr-lft">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="mbl-hdr-btn hdr-lft-btn-col hdr-lft-tell">
+          <a class="active" href="#">053/41.57.92</a>
+        </div>
+      </div>
+      <div class="close-btn-wrap">
+        <div class="close-btn">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mbl-menu">
+      <nav class="mbl-top-menu main-nav">
+        <ul class="reset-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Te Koop</a></li>
+          <li><a href="#">Te Huur</a></li>
+          <li><a href="#">Nieuwbouw</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Advies</a>
+            <ul class="sub-menu">
+              <li><a href="#">waardebepaling</a></li>
+              <li><a href="#">opstellen van verkoop-verhuurdossier</a></li>
+              <li><a href="#">aankoopadvies</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mbl-btm-menu">
+        <div class="hdr-rgt-top-menu">
+          <ul class="reset-list">
+            <li><a href="#">Wie zijn we</a></li>
+            <li><a href="#">Realisaties</a></li>
+            <li><a href="#">Onze troeven</a></li>
+            <li><a href="#">Vacatures</a></li>
+          </ul>
+        </div>
+        <div class="hdr-rgt-top-social">
+          <ul class="reset-list">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+        <div class="hdr-mbl-lan">
+          <ul class="reset-list">
+            <li  class="lang-active"><a href="#">NL</a></li>
+            <li><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -486,43 +557,49 @@
 </section>
 
 
-<section class="ftr-top-sec">
-  <div class="ftr-top-sec-inr">
-    <div class="ftr-top-grd-items">
-      <ul class="reset-list">
-        <li>
-          <div class="ftr-top-grd-item">
-            <i>
-              <img src="assets/images/ftr-top-grd-item-img.svg">
-            </i>
-            <strong>Gevarieerd aanbod</strong>
-          </div>
-        </li>
-        <li>
-          <div class="ftr-top-grd-item">
-            <i>
-              <img src="assets/images/ftr-top-grd-item-img.svg">
-            </i>
-            <strong>Persoonlijke aanpak</strong>
-          </div>
-        </li>
-        <li>
-          <div class="ftr-top-grd-item">
-            <i>
-              <img src="assets/images/ftr-top-grd-item-img.svg">
-            </i>
-            <strong>Flexibiliteit</strong>
-          </div>
-        </li>
-        <li>
-          <div class="ftr-top-grd-item">
-            <i>
-              <img src="assets/images/ftr-top-grd-item-img.svg">
-            </i>
-            <strong>Dynamisch team</strong>
-          </div>
-        </li>
-      </ul>
+<section class="usp-sec">
+  <div class="usp-sec-inr">
+    <div class="usp-grd-items xs-usp-slider clearfix">
+      <div class="usp-grd-item">
+        <div class="usp-grd-item-ctlr">
+          <i>
+            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
+              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
+            </svg>
+          </i>
+          <strong class="usp-grd-item-title">Gevarieerd aanbod</strong>
+        </div>
+      </div>
+      <div class="usp-grd-item">
+        <div class="usp-grd-item-ctlr">
+          <i>
+            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
+              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
+            </svg>
+          </i>
+          <strong class="usp-grd-item-title">Persoonlijke aanpak</strong>
+        </div>
+      </div>
+      <div class="usp-grd-item">
+        <div class="usp-grd-item-ctlr">
+          <i>
+            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
+              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
+            </svg>
+          </i>
+          <strong class="usp-grd-item-title">Flexibiliteit</strong>
+        </div>
+      </div>
+      <div class="usp-grd-item">
+        <div class="usp-grd-item-ctlr">
+          <i>
+            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
+              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
+            </svg>
+          </i>
+          <strong class="usp-grd-item-title">Dynamisch team</strong>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -535,7 +612,7 @@
           <div class="ftr-logo">
             <a href="#"><img src="assets/images/ftr-logo.png"></a>
           </div>
-          <div class="ftr-partner-policy">
+          <div class="ftr-partner-policy ftr-grd-item hide-sm">
             <div class="ftr-partner">
               <label>Vennootschap:</label>
               <strong>IMMO ACCENTA bvba</strong>
@@ -545,7 +622,7 @@
               <strong>730390160</strong>
             </div>
           </div>
-          <div class="ftr-vat-social-media">
+          <div class="ftr-vat-social-media ftr-grd-item hide-sm">
             <div class="ftr-vat">
               <label>BTW</label>
               <strong>BE 0473.360.889</strong>
@@ -559,6 +636,7 @@
             </div>
           </div>
           <div class="ftr-menu clearfix">
+            <h6 class="ftr-menu-title">Navigatie</h6>
             <ul class="reset-list">
               <li><a href="#">Te Koop</a></li>
               <li><a href="#">Te Huur</a></li>
@@ -572,76 +650,158 @@
               <li><a href="#">vacatures</a></li>
             </ul>
           </div>
-          <div class="ftr-language">
+          <div class="ftr-language hide-sm">
             <ul class="reset-list">
               <li class="lang-active"><a href="#">NL</a></li>
               <li><a href="#">English</a></li>
               <li><a href="#">Dutch</a></li>
             </ul>
           </div>
+          <div class="ftr-menu xs-contact show-sm">
+            <h6 class="ftr-menu-title">Contact</h6>
+            <ul class="reset-list clearfix">
+              <li>
+                <div class="ftr-contact-grd-item ftr-grd-item">
+                  <div class="ftr-contact-location">
+                    <label>Accenta Vastgoed Affilgem</label>
+                    <strong>Brusselbaan 110, 1790 Affligem</strong>
+                  </div>
+                  <div class="ftr-contact-tel">
+                    <label>Telefoon</label>
+                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
+                  </div>
+                  <div class="ftr-contact-mail">
+                    <label>E-mailadres</label>
+                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ftr-contact-grd-item ftr-grd-item">
+                  <div class="ftr-contact-location">
+                    <label>Accenta Vastgoed herne</label>
+                    <strong>Ninoofsesteenweg 4A, 1540 Herne</strong>
+                  </div>
+                  <div class="ftr-contact-tel">
+                    <label>Telefoon</label>
+                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
+                  </div>
+                  <div class="ftr-contact-mail">
+                    <label>E-mailadres</label>
+                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ftr-contact-grd-item ftr-grd-item">
+                  <div class="ftr-contact-location">
+                    <label>Accenta Vastgoed Ninove</label>
+                    <strong>Nederwijk 4, 9400 Ninove</strong>
+                  </div>
+                  <div class="ftr-contact-tel">
+                    <label>Telefoon</label>
+                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
+                  </div>
+                  <div class="ftr-contact-mail">
+                    <label>E-mailadres</label>
+                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="ftr-contact">
-          <ul class="reset-list">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-contact hide-sm">
+          <ul class="reset-list clearfix">
             <li>
-              <div class="ftr-contact-grd-item">
+              <div class="ftr-contact-grd-item ftr-grd-item">
                 <div class="ftr-contact-location">
                   <label>Accenta Vastgoed Affilgem</label>
                   <strong>Brusselbaan 110, 1790 Affligem</strong>
                 </div>
                 <div class="ftr-contact-tel">
                   <label>Telefoon</label>
-                  <strong><a href="#">053/41.57.92</a></strong>
+                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
                 </div>
                 <div class="ftr-contact-mail">
                   <label>E-mailadres</label>
-                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
                 </div>
               </div>
             </li>
             <li>
-              <div class="ftr-contact-grd-item">
+              <div class="ftr-contact-grd-item ftr-grd-item">
                 <div class="ftr-contact-location">
                   <label>Accenta Vastgoed herne</label>
                   <strong>Ninoofsesteenweg 4A, 1540 Herne</strong>
                 </div>
                 <div class="ftr-contact-tel">
                   <label>Telefoon</label>
-                  <strong><a href="#">053/41.57.92</a></strong>
+                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
                 </div>
                 <div class="ftr-contact-mail">
                   <label>E-mailadres</label>
-                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
                 </div>
               </div>
             </li>
             <li>
-              <div class="ftr-contact-grd-item">
+              <div class="ftr-contact-grd-item ftr-grd-item">
                 <div class="ftr-contact-location">
                   <label>Accenta Vastgoed Ninove</label>
                   <strong>Nederwijk 4, 9400 Ninove</strong>
                 </div>
                 <div class="ftr-contact-tel">
                   <label>Telefoon</label>
-                  <strong><a href="#">053/41.57.92</a></strong>
+                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
                 </div>
                 <div class="ftr-contact-mail">
                   <label>E-mailadres</label>
-                  <strong><a href="#">info@immoaccenta.be</a></strong>
+                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
                 </div>
               </div>
             </li>
           </ul>
         </div>
+        <div class="ftr-pvpsm ftr-grd-item show-sm">
+          <div class="ftr-partner">
+            <label>Vennootschap:</label>
+            <strong>IMMO ACCENTA bvba</strong>
+          </div>
+          <div class="ftr-vat">
+            <label>BTW</label>
+            <strong>BE 0473.360.889</strong>
+          </div>
+          <div class="ftr-policy">
+            <label>Polisnr. verzekering:</label>
+            <strong>730390160</strong>
+          </div>
+          <div class="ftr-socilas-media">
+            <label>Volg ons op:</label>
+            <ul class="reset-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="ftr-content">
           <div class="ftr-content-inr">
-            <ul class="reset-list">
+            <ul class="reset-list clearfix">
               <li>
                 <div class="ftr-content-ctlr">
                   <div class="ftr-content-img">
                     <img src="assets/images/ftr-content-img-01.png">
                   </div>
                   <div class="ftr-des">
-                    <p>Onderworpen aan de deontologische code BIV <br> Toezichthoudende autoriteit: Beroepsinstituut <br> van Vastgoedmakelaars (BIV), <br> Luxemburgstraat 16B, 1000 Brussel.</p>
+                    <p>Onderworpen aan de deontologische code BIV Toezichthoudende autoriteit: Beroepsinstituut van Vastgoedmakelaars (BIV), Luxemburgstraat 16B, 1000 Brussel.</p>
                   </div>
                 </div>
               </li>
@@ -669,6 +829,10 @@
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="ftr-bottom">
           <div class="ftr-btm-inr">
             <div class="ftr-copywrite">
