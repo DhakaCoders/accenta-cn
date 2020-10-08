@@ -720,10 +720,19 @@
 	.usp-grd-item:after{
 		content: none;
 	}
+	.usp-sec .slick-dotted.slick-slider {
+	    margin-bottom: 40px;
+	}
+	.usp-sec .slick-slider ul.slick-dots{
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -10px;
+	}
 	.usp-sec .slick-slider .slick-dots li{
 		width: 12px!important;
     	height: 12px!important;
     	background: rgba(255, 255, 255, 0.1)!important;
+    	margin: 0 5px!important;
 	}
 	.usp-sec .slick-slider .slick-dots li.slick-active {
 	    background: rgba(255, 255, 255, 0.84)!important;
