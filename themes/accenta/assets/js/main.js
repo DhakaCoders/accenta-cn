@@ -380,7 +380,7 @@ if (windowWidth <= 767) {
 }
 
 
-if (windowWidth <= 767){
+if (windowWidth <= 639){
   if( $('.xs-usp-slider').length ){
     $('.xs-usp-slider').slick({
       dots: true,
