@@ -182,29 +182,33 @@ if( $('#googlemap').length ){
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
+
 if( $('.contact-info-slider').length ){
     $('.contact-info-slider').slick({
       dots: false,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            dots: true,
             infinite: true,
           }
         },
         {
-          breakpoint: 575,
+          breakpoint: 576,
           settings: {
             dots: true,
             arrows: true,
+            prevArrow: $('.fl-info-prv-nxt .fl-prev'),
+            nextArrow: $('.fl-info-prv-nxt .fl-next'),
             slidesToShow: 1,
             slidesToScroll: 1
 
@@ -217,98 +221,55 @@ if( $('.contact-info-slider').length ){
     });
 }
 
-
-$('.hu-dtls-gallery-slider').slick({
+$('.slider-single').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
   fade: true,
   prevArrow: $('.fl-prv-nxt .fl-prev'),
   nextArrow: $('.fl-prv-nxt .fl-next'),
-  asNavFor: '.hu-dtls-gallery-pg-slider'
+  asNavFor: '.slider-nav'
 });
-$('.hu-dtls-gallery-pg-slider').slick({
+$('.slider-nav').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.hu-dtls-gallery-slider',
-  arrows: false,
+  asNavFor: '.slider-single',
   dots: false,
+  arrows: false,
+  //centerMode: true,
+  focusOnSelect: true,
   responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots:false,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    }
+  ]
 });
 
 
-if( $('.EstimateListSlider').length ){
-    $('.EstimateListSlider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            dots: false,
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
 
-          }
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            dots: true,
-            arrows: false,
-            autoplay:false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
 
-          }
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
 
 
 
@@ -385,13 +346,13 @@ if (windowWidth <= 767) {
 }
 
 
-if (windowWidth <= 767){
+if (windowWidth <= 639){
   if( $('.xs-usp-slider').length ){
     $('.xs-usp-slider').slick({
       dots: true,
       arrows: false,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: false,
       speed: 300,
       slidesToShow: 1,

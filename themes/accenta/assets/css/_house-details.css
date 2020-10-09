@@ -188,6 +188,8 @@
 	opacity: 0.5;
 }
 
+
+
 /*
 ----------------------
 hu-dtls-rgt-con
@@ -222,10 +224,16 @@ hu-dtls-rgt-con
 	margin: 0 5px;
 	cursor: pointer;
 	background:#fff;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .fl-next:hover,
 .fl-prev:hover{
 	background:#1D2B5B;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .fl-next:hover i svg,
 .fl-prev:hover i svg{
@@ -271,14 +279,19 @@ hu-dtls-rgt-con
 	margin-bottom: 25px;
 }
 .hu-dtls-fancy-img-wrp{
-	padding-top: 15px;
+	margin-top: 15px;
 	overflow: hidden;
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+	height: 515px;
 }
 .hu-dtls-fancy-img{
-	position: relative;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 .hu-dtls-fancy-img a{
     display: block;
@@ -293,13 +306,21 @@ hu-dtls-rgt-con
 	right: 0;
 	background: linear-gradient(0deg, rgba(29, 43, 91, 0.6), rgba(29, 43, 91, 0.6)),
 }
-.hu-dtls-fancy-img span{
+.hu-dtls-video-play-cntlr{
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1;
 }
 .hu-dtls-list-wrp{
 	padding-top: 100px;
@@ -398,19 +419,14 @@ hu-dtls-rgt-con
 	width: 22px;
 	height: 1px;
 }
-.hu-dtls-download-btn a:before{
-	content: "";
+.hu-dtls-download-btn a i{
 	position: absolute;
 	left: 17px;
 	top: 50%;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
-	background:url(../images/file-icon.svg);
-	background-size: 29px 29px;
-	background-repeat: no-repeat;
-	width: 29px;
-	height: 29px;
+	z-index: 2;
 }
 .hu-dtls-download-btn a:hover{
 	background:#1D2B5B;
@@ -419,8 +435,8 @@ hu-dtls-rgt-con
 .hu-dtls-download-btn a:hover:after{
 	background:#fff;
 }
-.hu-dtls-download-btn a:hover:before{
-	background:url(../images/file-icon-hover.svg);
+.hu-dtls-download-btn a:hover i svg{
+	fill: #fff;
 }
 .hu-dtls-form-block{
 	background: #1D2B5B;
@@ -469,7 +485,7 @@ hu-dtls-rgt-con
     color: #1D2B5B !important;
 }
 .hu-dtls-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:after{
-	right: -1px;
+	right: 0;
 }
 .hu-dtls-form-block .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html {
     margin-bottom: 5px;
@@ -576,6 +592,9 @@ vn-price-filter
 	.hu-dtls-gallery-pg-slide-item-img {
 	    height: 160px !important;
 	}
+	.hu-dtls-fancy-img-wrp{
+		height: 450px;
+	}
 
 }
 
@@ -634,6 +653,9 @@ vn-price-filter
 	.hu-dtls-gallery-pg-slide-item-img {
 	    height: 140px !important;
 	}
+	.hu-dtls-fancy-img-wrp{
+		height: 380px;
+	}
 	
 }
 
@@ -672,6 +694,13 @@ vn-price-filter
 	.hu-dtls-gallery-pg-slide-item-img {
 	    height: 110px !important;
 	}
+	.hu-dtls-fancy-img-wrp{
+		height: 320px;
+	}
+	.hu-dtls-gallery-slider-cntlr .fl-next:hover i svg,
+	.hu-dtls-gallery-slider-cntlr .fl-prev:hover i svg {
+	    fill: #fff;
+	}
 
 }
 
@@ -702,7 +731,7 @@ vn-price-filter
 	.hu-dtls-sidebar-tp-dsc-title {
 	    font-size: 26px;
 	    line-height: 1.2;
-	    margin-bottom: 20px;
+	    margin-bottom: 10px;
 	}
 
 	.hu-dtls-sidebar-btm-btn a{
@@ -720,7 +749,10 @@ vn-price-filter
 	    padding: 25px 20px;
 	}
 	.hu-dtls-list-wrp {
-	    padding-top: 50px;
+	    padding-top: 60px;
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    padding-bottom: 20px;
 	}
 	.hu-dtls-download-btn-wrp {
 	    padding-top: 40px;
@@ -735,10 +767,11 @@ vn-price-filter
 	    margin-bottom: 20px;
 	}
 	.hu-dtls-form-head span{
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 	}
-	.hu-dtls-map-wrp #googlemap {
-	    height: 300px;
+	.hu-dtls-map-wrp #googlemap{
+	    height: 280px;
+	    margin-top: 60px;
 	}
 	.hu-dtls-gallery-slider-item{
 		height: 280px !important;
@@ -771,6 +804,57 @@ vn-price-filter
 	}
 	.hu-dtls-gallery-slider-wrp{
 		margin-bottom: 30px;
+		margin-left:-10px;
+		margin-right: -10px; 
+	}
+	.hu-dtls-two-part-sec-wrp {
+	    padding-top: 45px;
+	}
+	.hu-dtls-gallery-slider-pagination {
+	    margin: 10px -9px 0;
+	}
+	.hu-dtls-sidebar-tp-wrp{
+	    padding: 30px 15px 30px;
+	}
+	.hu-dtls-download-btn-wrp,
+	.hu-dtls-dsc,
+	.hu-dtls-map-wrp #googlemap,
+	.hu-dtls-sidebar-tp-wrp{
+	    margin-left: 5px;
+	    margin-right: 5px;
+	}
+	.hu-dtls-sidebar-tp-dsc span{
+		padding-bottom: 10px;
+	}
+	.hu-dtls-sidebar-tp-dsc p {
+	    margin-bottom: 25px;
+	}
+
+	.hu-dtls-dsc {
+	    padding-top: 40px;
+	}
+	.hu-dtls-fancy-img-cntlr{
+		margin: 0 -20px;
+	}
+	.hu-dtls-fancy-img-wrp{
+		margin-top: 30px;
+		height: 250px;
+	}
+	.hu-dtls-video-play-cntlr i svg{
+		width: 62px;
+		height: 62px;
+	}
+	.hu-dtls-list-item {
+	    padding-bottom: 10px;
+	    padding-right: 0;
+	}
+	.hu-dtls-download-btn a:after{
+		content: none;
+	}
+	.hu-dtls-form-block {
+	    padding: 30px 15px;
+	    margin-left: -10px;
+	    margin-right: -10px;
 	}
 
 }
