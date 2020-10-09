@@ -411,6 +411,54 @@ $('.recentlyAddedPagiSlider').slick({
 });
 
 
+$('.recentlyAddedSlider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  prevArrow: $('.recentlyAddedSliderCntlr .ras-prev'),
+  nextArrow: $('.recentlyAddedSliderCntlr .ras-next'),
+  asNavFor: '.recentlyAddedPagiSlider'
+});
+$('.recentlyAddedPagiSlider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.recentlyAddedSlider',
+  dots: false,
+  arrows: false,
+  //centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    }
+  ]
+});
+
+
+
 
 
 if( $('.dftServiceModuleSlider').length ){
@@ -486,6 +534,17 @@ if( $('.teamModuleGrdsSlider').length ){
       ]
     });
 }
+
+
+
+$('.xs-recentlyAddedSlider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  //prevArrow: $('.xs-recentlyAddedSliderCntlr .ras-prev'),
+  //nextArrow: $('.xs-recentlyAddedSliderCntlr .ras-next')
+});
 
 
 /*----- End of Rannojit -----*/
