@@ -298,7 +298,7 @@ if( $('.homeSlider').length ){
       },
       responsive: [
         {
-          breakpoint: 575,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
