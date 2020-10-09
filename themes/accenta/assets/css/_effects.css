@@ -11,7 +11,7 @@ a,input,img,textarea,button,svg{
 }
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
 .dft-rent-module-item:hover .dft-rent-module-item-fea-img,
-.team-grd-item:hover .team-grd-item-fea-img > div
+.team-grd-item:hover .team-grd-item-fea-img > div,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
