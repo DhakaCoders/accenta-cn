@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
-    padding: 50px 0;
+    padding: 50px 50px;
 }
 .banner-title{
 	letter-spacing: 0.1em;
@@ -317,12 +317,20 @@
 
 
 /*responsive*/
+@media(max-width: 1699px){
+	.banner-title{
+		font-size: 58px;
+	}
+}
 @media(max-width: 1599px){
 	
 }
 @media(max-width: 1499px){
 	.h-slider-banner{
 		padding: 0 60px;
+	}
+	.banner-title{
+		font-size: 52px;
 	}
 }
 @media(max-width: 1399px){
@@ -334,7 +342,7 @@
 		line-height: 1;
 	}
 	.banner-title{
-		font-size: 60px;
+		font-size: 48px;
 	}
 }
 @media(max-width: 1299px){
@@ -348,7 +356,7 @@
 		font-size: 76px;
 	}
 	.banner-title{
-		font-size: 55px;
+		font-size: 45px;
 	}
 	.page-bnr-cntlr-inr:after{
 		left: 120px;
@@ -375,7 +383,7 @@
 		height: 230px;
 	}
 	.banner-title{
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.page-bnr-cntlr-inr:after{
 		left: 90px;
@@ -410,11 +418,8 @@
 	.page-banner{
 		height: 200px;
 	}
-	.page-banner-title-cntlr{
-		top: 40px;
-	}
 	.banner-title{
-		font-size: 45px;
+		font-size: 34px;
 	}
 	.page-bnr-cntlr-inr:after{
 		left: 60px;
@@ -444,10 +449,10 @@
 		height: 150px;
 	}
 	.page-banner-title-cntlr{
-		top: 40px;
+		top: 20px;
 	}
 	.banner-title{
-		font-size: 40px;
+		font-size: 30px;
 	}
 	.bnr-breadcum{
 		display: none;
@@ -486,11 +491,8 @@
 	.page-banner-title-cntlr{
 		top: 25px;
 	}
-	.page-banner{
-		height: 125px;
-	}
 	.banner-title{
-		font-size: 36px;
+		font-size: 25px;
 	}
 	.page-bnr-cntlr-inr:after{
 		content: none;
