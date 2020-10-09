@@ -583,6 +583,8 @@
 	    width: 100%;
 	    margin: 0 auto;
 	    text-align: center;
+	    padding-left: 20px;
+	    padding-right: 20px;
 	}
 	.ftr-btm-cont-img,
 	.ftr-btm-grd-col-2{
