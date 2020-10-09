@@ -258,8 +258,14 @@
 		width: 100%;
 		margin: 0 auto;
 	}
-	.vacatures-grd-items {
-	    padding-bottom: 0;
+	.vacatures-grd-item-title {
+	    font-size: 25px;
+	}
+	.vacatures-grd-item-des {
+	    padding: 20px 20px 30px 20px;
+	}
+	.vacatures-grd-item-des strong{
+		padding-left: 85px;
 	}
 }
 
