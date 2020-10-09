@@ -727,7 +727,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.mobile-hdr{
 		display: block;
 		max-width: 320px;
-		padding: 0 0 45px 0;
+		padding: 0 0 0 0;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -755,6 +755,15 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	}
 	.mobile-hdr-inr{
 		position: relative;
+		padding: 130px 0 0 0;
+		height: 100%;
+		width: 100%;
+	}
+	.mbl-menu{
+		overflow-y: scroll;
+		height: 100%;
+		width: 100%;
+		padding-bottom: 45px;
 	}
 	.mbl-hdr-top{
 		position: absolute;
@@ -822,12 +831,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		-ms-transition: all 0.5s;
 		-webkit-transition: all 0.5s
 	}
-	.mbl-menu{
-		padding-top: 132px;
-		overflow-y: scroll;
-		height: 100%;
-		width: 100%;
-	}
+	
 	.mbl-menu-cntlr .hdr-lft-btn-col{
 		margin-bottom: 30px;
 	}
