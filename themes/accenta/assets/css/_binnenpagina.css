@@ -702,25 +702,6 @@ Gallery design
 /* home code */
 
 
-.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
-	content: "";
-	position: absolute;
-	right: 0;
-	bottom: 45px;
-	height: 4px;
-	width: 175px;
-	background: #fff;
-}
-.beautiful-house-des .house-item-btn{
-	padding-top: 45px;
-}
-.beautiful-house-des .house-item-btn a{
-	background: #1D2B5B;
-	color: #fff;
-}
-.beautiful-house-des .house-item-btn a:after{
-	background: #fff;
-}
 
 
 .recently-added-sec{
