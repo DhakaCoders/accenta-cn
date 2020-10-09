@@ -14,7 +14,7 @@
 	background: #ccc;
 
 }
-.h-slider-banner-cntrl:before{
+.hm-bnr-line:before{
 	content: "";
 	position: absolute;
 	left: 159px;
@@ -46,6 +46,7 @@
 	width: 100%;
 	margin: auto;
 	text-align: center;
+	z-index: 10;
 }
 .h-slider-banner-desc-sub-title{
 	color: #FFFFFF;
@@ -459,7 +460,7 @@
 }
 @media(max-width: 575px){
 	.h-slider-banner-cntrl:after,
-	.h-slider-banner-cntrl:before{
+	.hm-bnr-line:before{
 		content: none;
 	}
 	.h-slider-item{

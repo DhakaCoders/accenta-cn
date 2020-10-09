@@ -691,6 +691,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 }
 
 @media(max-width: 1199px){
+	body.active-scroll-off{
+		overflow: hidden;
+	}
 	.header {
 		padding-right: 0;
 	}
