@@ -263,6 +263,7 @@ Gallery design
 .dft-rent-module{
 	display: flex;
 	justify-content: center;
+	margin: 0 -12px;
 }
 .dft-rent-module-item-col{
 	width: 50%;
@@ -504,6 +505,15 @@ Gallery design
 	.team-grd-item-fea-img {
 	    height: 300px;
 	}
+	.dft-rent-module{
+		margin: 0 -10px;
+	}
+	.dft-rent-module-item-col{
+		padding: 0 10px 20px;
+	}
+	.tmhdr-title{
+		font-size: 32px;
+	}
 }
 @media(max-width: 850px){
 
@@ -565,6 +575,12 @@ Gallery design
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.dft-contact-info-slider .contact-info-slide-item{
+		padding-bottom: 20px;
+	}
+	.tmhdr-title{
+		font-size: 27px;
+	}
 }
 
 
@@ -583,7 +599,30 @@ Gallery design
 	.ms-video-play-cntlr i svg{
 		width: 100%;
 	}
-
+	.dftServiceModuleSlider, .dftJobModuleSlider{
+		margin-left: 0!important;
+		margin-right: 0!important;
+	}
+	.dftServiceModuleSlideItem{
+		padding-bottom: 30px;
+	}
+	.team-grd-item{
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.teamModuleGrdsSlider{
+		margin-left: 0!important;
+		margin-right: 0!important;
+	}
+	.dft-contact-info-slider .contact-info-dsc-nnr{
+		padding-left: 30px;
+	}
+	.dft-contact-info-slider .contact-info-dsc-tp:after {
+	    left: -30px;
+	}
 }
 
 
@@ -672,6 +711,16 @@ Gallery design
 	.ms-video-play-cntlr i{
 		max-width: 62px;
 	}
+	.tmhdr-title{
+		font-size: 25px;
+	}
+	.team-grd-item-des{
+		padding: 14px 0 20px;
+	}
+	.dft-contact-info-slider .contact-info-slider {
+	    margin-left: 0px!important;
+	    margin-right: 0px!important;
+	}
 }
 
 
@@ -679,7 +728,13 @@ Gallery design
 	.ac-fancy-module{
 		height: 250px;
 	}
-	
+	.dft-contact-info-slider .contact-info-dsc-nnr {
+	    padding-left: 24px;
+	    padding-right: 20px;
+	}
+	.dft-contact-info-slider .contact-info-dsc-tp:after {
+	    left: -24px;
+	}
 }
 
 
@@ -830,7 +885,7 @@ Gallery design
 	width: 200px;
 	height: 116px;
 	z-index: 200;
-	display: none;
+	
 }
 .valuation-fixed-btn a{
 	display: block;
@@ -840,6 +895,9 @@ Gallery design
 	height: 100%;
 	text-align: center;
 	padding: 20px 10px 
+}
+.valuation-fixed-btn a:hover{
+	background: #b98a0c;
 }
 .valuation-fixed-btn a:after{
 	content: "";
@@ -882,6 +940,13 @@ Gallery design
 	.recentlyAddedPagiSlideItem > div {
 	    height: 400px;
 	}
+	.valuation-fixed-btn {
+	    width: 160px;
+	    height: 116px;
+	}
+	.valuation-fixed-btn span {
+	    font-size: 16px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -911,6 +976,9 @@ Gallery design
 	}
 	.recentlyAddedPagiSlideItem {
 	    padding: 0 10px;
+	}
+	.valuation-fixed-btn {
+	    display: none;
 	}
 }
 
