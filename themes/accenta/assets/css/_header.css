@@ -727,8 +727,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.mobile-hdr{
 		display: block;
 		max-width: 320px;
-		width: 100%;
-		padding: 0 0 45px 0;
+		padding: 0 0 0 0;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -739,6 +738,10 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		-webkit-transition: all 0.5s ease-out;
 		transition: all 0.5s ease-out;
 		background: #fff;
+
+		/*overflow-y: scroll;
+		height: 100%;
+		width: 100%;*/
 	}
 	.mobile-hdr.opacity-1 {
 		opacity: 1;
@@ -749,6 +752,24 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		-ms-transition: all 0.5s ease-out;
 		-webkit-transition: all 0.5s ease-out;
 		transition: all 0.5s ease-out;
+	}
+	.mobile-hdr-inr{
+		position: relative;
+		padding: 130px 0 0 0;
+		height: 100%;
+		width: 100%;
+	}
+	.mbl-menu{
+		overflow-y: scroll;
+		height: 100%;
+		width: 100%;
+		padding-bottom: 45px;
+	}
+	.mbl-hdr-top{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
 	}
 	.mbl-hdr-lft .logo{
 		width: initial;
@@ -810,11 +831,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		-ms-transition: all 0.5s;
 		-webkit-transition: all 0.5s
 	}
-	.mbl-menu{
-		overflow-y: scroll;
-		height: 100%;
-		width: 100%;
-	}
+	
 	.mbl-menu-cntlr .hdr-lft-btn-col{
 		margin-bottom: 30px;
 	}
