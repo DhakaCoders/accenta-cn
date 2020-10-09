@@ -339,15 +339,15 @@
 		margin-bottom: 23px;
 	}
 	.house-item-sub-title{
-		font-size: 14px;
+		font-size: 13px;
 		margin-bottom: 15px;
 	}
 	.house-item-title{
-		font-size: 25px;
+		font-size: 23px;
 		margin-bottom: 12px;
 	}
 	.house-item-prize{
-		font-size: 20px;
+		font-size: 19px;
 		margin-bottom: 22px;
 	}
 	.house-blue-item-btn a{
@@ -371,6 +371,12 @@
 	.house-view-items-contlr > ul > li{
 		width: 50%;
 	}
+	.house-item-img-hover > ul:after{
+		height: 60px;
+	}
+	.house-item-img-hover > ul > li{
+		padding: 8px 0;
+	}
 	.house-item-title{
 		font-size: 26px;
 	}
@@ -391,6 +397,9 @@
 	.house-item-img-cntlr{
 		height: 220px;
 	}
+	.house-item-img-hover{
+		padding-top: 20px;
+	}
 	.house-item-title{
 		font-size: 25px;
 	}
@@ -399,6 +408,10 @@
 	}
 }
 @media(max-width: 639px){
+	.house-view-items-contlr > ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.house-view-items-contlr > ul > li{
 		width: 100%;
 		padding: 0;

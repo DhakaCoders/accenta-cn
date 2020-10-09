@@ -64,6 +64,7 @@
 	display: flex;
 	align-items: center;
 	padding: 55px 60px;
+	position: relative;
 }
 .vacancy-hadding-title{
 	font-weight: 900;
@@ -71,9 +72,14 @@
 	margin-bottom: 0;
 	line-height: 1;
 	margin-right: auto;
+	padding-right: 20px;
+	padding-right: 115px;
 }
 .vacancy-socials{
-	margin-left: auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 60px;
 
 }
 .vacancy-socials > ul{
@@ -233,6 +239,9 @@
 	.vacancy-hadding {
 	    padding: 45px 45px;
 	}
+	.vacancy-socials{
+		right: 45px;
+	}
 	.vacancy-hadding-title {
 	    font-size: 32px;
 	}
@@ -274,6 +283,9 @@
 	}
 	.vacancy-hadding {
 	    padding: 35px 35px;
+	}
+	.vacancy-socials{
+		right: 35px;
 	}
 	.vacancy-hadding-title {
 	    font-size: 30px;
@@ -317,6 +329,9 @@
 	}
 	.vacancy-hadding {
 	    padding: 30px 20px;
+	}
+	.vacancy-socials{
+		right: 20px;
 	}
 	.vacancy-hadding-title {
 	    font-size: 28px;
@@ -385,11 +400,17 @@
 	.vacancy-desc-title{
 		font-size: 20px;
 	}
+	.vacancy-hadding-title{
+		padding-right: 73px;
+	}
 	.vacancy-desc-top > ul {
 	    display: inherit;
 	}
 	.vacancy-desc-top > ul > li {
 	    padding-bottom: 15px;
+	}
+	.vacancy-desc-top > ul > li:last-child{
+		padding-bottom: 0;
 	}
 	.vacancy-desc-top > ul > li:after {
 	    top: 20%;

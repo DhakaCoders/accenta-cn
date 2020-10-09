@@ -780,6 +780,7 @@ Gallery design
 	text-transform: uppercase;
 	color: #8489A8;
 	margin-bottom: 10px;
+	font-weight: 400;
 
 }
 .rai-title{
@@ -787,6 +788,7 @@ Gallery design
 	font-size: 30px;
 	line-height: 1.2;
 	text-transform: initial;
+	font-weight: 400;
 }
 .recentlyAddedItem ul li{
 	display: inline-block;
@@ -855,6 +857,10 @@ Gallery design
 }
 .valuation-fixed-btn span{
 	font-size: 20px;
+}
+
+.recently-added-sec-xs-cntlr{
+	background: #1D2B5B;
 }
 
 @media(max-width: 1499px){
@@ -930,18 +936,92 @@ Gallery design
 	.recently-added-sec-btm{
 		padding-bottom: 10px;
 	}
+	.recently-added-sec-xs-cntlr{
+		padding: 55px 0 33px;
+	}
+	.rasl-title{
+		display: block;
+		text-align: center;
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
+	.xs-recentlyAddedSlideItem-fea-img{
+		position: relative;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+	.xs-recentlyAddedSlideItem-fea-img div{
+		width: 100%;
+		height: 100%;
+	}
+	.xs-recentlyAddedSlideItem-fea-img:after{
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 100%;
+		height: 28px;
+		width: 1px;
+		background: #fff; 
+	}
+	.xs-recentlyAddedSlideItem-des,
+	.recentlyAddedItemBtn{
+		text-align: center;
+	}
+	.recentlyAddedItemBtn a{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.recentlyAddedSliderPrevNext{
+		position: static;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+	}
+	.recentlyAddedItem ul li span{
+		color: #fff;
+	}
+	.recentlyAddedItem strong{
+		line-height: 1.4;
+	}
+
+	.beautiful-house-sec.hm-beautiful-house-sec-cntlr{
+		padding-bottom: 60px;
+	}
 }
 
 @media(max-width: 575px){
-	
-
+	.recentlyAddedItem ul li{
+		display: block;
+		text-align: center;
+	}
+	.act-fea-col{
+		justify-content: center;
+	}
+	.xs-recentlyAddedSliderCntlr{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.xs-recentlyAddedSlideItem-des{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 270px;
+	}
 }
 
 @media(max-width: 479px){
-
-
+	.rasl-title{
+		font-size: 32px;
+	}
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 250px;
+	}
 }
 
 @media(max-width: 359px){
-
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 200px;
+	}
 }
