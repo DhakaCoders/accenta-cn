@@ -711,7 +711,9 @@ Gallery design
 	width: 175px;
 	background: #fff;
 }
-
+.beautiful-house-des .house-item-btn{
+	padding-top: 45px;
+}
 .beautiful-house-des .house-item-btn a{
 	background: #1D2B5B;
 	color: #fff;
@@ -734,6 +736,7 @@ Gallery design
 .recently-added-sec-lft{
 	padding-top: 95px;
 	position: relative;
+	padding-right: 20px;
 }
 .recently-added-sec-lft:after{
 	content: "";
@@ -766,6 +769,9 @@ Gallery design
 }
 .recently-added-sec-btm{
 	overflow: hidden;
+	margin-top: -60px;
+	position: relative;
+	z-index: 10;
 }
 .recentlyAddedPagiSlider{
 	margin: 0 -17px!important;
@@ -877,25 +883,72 @@ Gallery design
 }
 
 @media(max-width: 1399px){
-
+	.rgt-white-bg {
+	    width: 60px;
+	}
+	.recentlyAddedPagiSlider {
+	    margin: 0 -12px!important;
+	}
+	.recentlyAddedPagiSlideItem {
+	    padding: 0 12px;
+	}
+	.recentlyAddedPagiSlideItem > div {
+	    height: 400px;
+	}
 }
 
 @media(max-width: 1299px){
-
+	.rgt-white-bg {
+	    width: 30px;
+	}
 }
 
 @media(max-width: 1199px){
-	
-
+	.rgt-white-bg {
+	    width: 20px;
+	}
+	.rasl-title{
+		font-size: 48px;
+	}
+	.rai-title{
+		font-size: 27px;
+	}
+	.rgt-white-bg{
+		display: none;
+	}
+	.recentlyAddedPagiSlideItem > div {
+	    height: 300px;
+	}
+	.recentlyAddedPagiSlider {
+	    margin: 0 -10px!important;
+	}
+	.recentlyAddedPagiSlideItem {
+	    padding: 0 10px;
+	}
 }
 
 @media(max-width: 991px){
-	
+	.rasl-title {
+	    font-size: 37px;
+	}
+	.rai-title {
+	    font-size: 24px;
+	}
+	.recentlyAddedItem strong {
+	    font-size: 15px;
+	    line-height: 1.2;
+	    margin-bottom: 6px;
+	}
+	.recently-added-sec-btm{
+		margin-top: -50px;
+	}
 	
 }
 
 @media(max-width: 767px){
-	
+	.recently-added-sec-btm{
+		padding-bottom: 10px;
+	}
 }
 
 @media(max-width: 575px){

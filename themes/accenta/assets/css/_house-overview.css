@@ -141,13 +141,14 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: #8489A8;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4;
+	display: block;
 }
 .house-item-title{
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 36px;
-	
+	display: block;
 	text-transform: capitalize;
 	margin-bottom: 16px;
 }
@@ -160,7 +161,7 @@
 }
 .house-item-prize{
 	display: inline-block;
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 1;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
@@ -172,7 +173,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 57px;
-	width: 185px;
+	width: 180px;
 	line-height: 1;
 	margin-bottom: 0;
 	color: #1D2B5B;
@@ -212,7 +213,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 563px;
 }
 .house-blue-item-icon{
 	margin-bottom: 47px;
@@ -338,15 +338,15 @@
 		margin-bottom: 23px;
 	}
 	.house-item-sub-title{
-		font-size: 15px;
+		font-size: 14px;
 		margin-bottom: 15px;
 	}
 	.house-item-title{
-		font-size: 27px;
+		font-size: 25px;
 		margin-bottom: 12px;
 	}
 	.house-item-prize{
-		font-size: 22px;
+		font-size: 20px;
 		margin-bottom: 22px;
 	}
 	.house-blue-item-btn a{
@@ -373,7 +373,7 @@
 		width: 50%;
 	}
 	.house-item-title{
-		font-size: 27px;
+		font-size: 26px;
 	}
 	.house-item-img-cntlr{
 		height: 260px;
@@ -391,6 +391,9 @@
 	}
 	.house-item-img-cntlr{
 		height: 220px;
+	}
+	.house-item-title{
+		font-size: 25px;
 	}
 	.pagination-cntlr{
 		padding: 45px 0 60px 0;
@@ -411,7 +414,7 @@
 		text-align: center;
 	}
 	.house-blue-item{
-		min-height: 464px;
+		min-height: 460px;
 	}
 	.house-item-img-cntlr{
 		height: 220px;

@@ -656,6 +656,9 @@ vn-price-filter
 	.hu-dtls-fancy-img-wrp{
 		height: 380px;
 	}
+	.hu-dtls-gallery-slider-wrp {
+	    margin-bottom: 40px;
+	}
 	
 }
 

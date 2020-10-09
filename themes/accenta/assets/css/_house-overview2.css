@@ -1,6 +1,24 @@
 .secound-house-item-desc .house-item-title{
 	margin-bottom: 0;
 }
-.secound-house-blue-item{
-	min-height: 438px;
+
+@media(max-width: 991px){
+	.secound-house-blue-item .house-blue-item-icon{
+		margin-bottom: 32px;
+	}
+	.secound-house-blue-item .house-blue-item-title{
+		margin-bottom: 30px;
+	}
+
+	
+}
+@media(max-width: 767px){
+	.secound-house-blue-item .house-blue-item-title{
+		font-size: 24px;
+	}	
+}
+@media(max-width: 639px){
+	.secound-house-blue-item{
+		min-height: 350px;
+	}	
 }

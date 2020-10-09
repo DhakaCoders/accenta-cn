@@ -170,9 +170,12 @@
 	color: #fff;
 }
 .bnr-breadcum > ul > li > a:hover{
-	color: #1D2B5B;
+	color: #8489A8;
 }
 /**/
+.h-slider-banner-desc form{
+	padding: 0 20px;
+}
 .psearch-form-modiule{
 	padding: 30px 20px 10px 20px;
 	background: rgba(255, 255, 255, 0.25);
@@ -401,7 +404,7 @@
 		margin-right: auto;
 		float: none;
 		max-width: 100%;
-		width: 150px;
+		width: 233px;
 	}
 
 	.page-banner{
@@ -418,6 +421,7 @@
 		height: 60px;
 	}
 	.bnr-breadcum{
+		max-width: 560px;
 		padding: 12px 0;
 	}
 	.bnr-breadcum > ul > li{
