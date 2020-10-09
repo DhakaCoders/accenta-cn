@@ -363,100 +363,68 @@ if (windowWidth <= 639){
 
 
 /*----- End of Shoriful -----*/
+if( $('.xs-recentlyAddedSlider').length ){
+  $('.xs-recentlyAddedSlider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    prevArrow: $('.xs-recentlyAddedSliderCntlr .ras-prev'),
+    nextArrow: $('.xs-recentlyAddedSliderCntlr .ras-next')
+  });
 
-$('.recentlyAddedSlider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  prevArrow: $('.recentlyAddedSliderCntlr .ras-prev'),
-  nextArrow: $('.recentlyAddedSliderCntlr .ras-next'),
-  asNavFor: '.recentlyAddedPagiSlider'
-});
-$('.recentlyAddedPagiSlider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.recentlyAddedSlider',
-  arrows: false,
-  dots: false,
-  responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots:false,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+}
+
+
+
+if( $('.recentlyAddedSlider').length ){
+
+  $('.recentlyAddedSlider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    prevArrow: $('.recentlyAddedSliderCntlr .ras-prev'),
+    nextArrow: $('.recentlyAddedSliderCntlr .ras-next'),
+    asNavFor: '.recentlyAddedPagiSlider'
+  });
+  $('.recentlyAddedPagiSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.recentlyAddedSlider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-});
-
-
-$('.recentlyAddedSlider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  prevArrow: $('.recentlyAddedSliderCntlr .ras-prev'),
-  nextArrow: $('.recentlyAddedSliderCntlr .ras-next'),
-  asNavFor: '.recentlyAddedPagiSlider'
-});
-$('.recentlyAddedPagiSlider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.recentlyAddedSlider',
-  dots: false,
-  arrows: false,
-  //centerMode: true,
-  focusOnSelect: true,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false
+        }
       }
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false
-      }
-    }
-  ]
-});
+    ]
+  });
 
-
+}
 
 
 
@@ -536,14 +504,6 @@ if( $('.teamModuleGrdsSlider').length ){
 
 
 
-$('.xs-recentlyAddedSlider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  //prevArrow: $('.xs-recentlyAddedSliderCntlr .ras-prev'),
-  //nextArrow: $('.xs-recentlyAddedSliderCntlr .ras-next')
-});
 
 
 /*----- End of Rannojit -----*/
