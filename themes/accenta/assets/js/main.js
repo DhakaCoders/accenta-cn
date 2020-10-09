@@ -236,7 +236,6 @@ $('.slider-nav').slick({
   asNavFor: '.slider-single',
   dots: false,
   arrows: false,
-  //centerMode: true,
   focusOnSelect: true,
   responsive: [
     {
@@ -247,7 +246,7 @@ $('.slider-nav').slick({
       }
     },
     {
-      breakpoint: 575,
+      breakpoint: 576,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
