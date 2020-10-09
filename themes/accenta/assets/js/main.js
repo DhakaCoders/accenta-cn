@@ -207,8 +207,8 @@ if( $('.contact-info-slider').length ){
           settings: {
             dots: true,
             arrows: true,
-            prevArrow: $('.fl-info-prv-nxt .fl-prev'),
-            nextArrow: $('.fl-info-prv-nxt .fl-next'),
+            //prevArrow: $('.fl-info-prv-nxt .fl-prev'),
+            //nextArrow: $('.fl-info-prv-nxt .fl-next'),
             slidesToShow: 1,
             slidesToScroll: 1
 
@@ -491,6 +491,15 @@ if( $('.teamModuleGrdsSlider').length ){
       responsive: [
         {
           breakpoint: 768,
+          settings: {
+            dots: true,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 640,
           settings: {
             dots: true,
             arrows: true,
