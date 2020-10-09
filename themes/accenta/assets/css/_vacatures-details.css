@@ -63,7 +63,7 @@
 .vacancy-hadding{
 	display: flex;
 	align-items: center;
-	padding: 55px 60px;
+	padding: 55px 170px 55px 60px;
 	position: relative;
 }
 .vacancy-hadding-title{
@@ -73,7 +73,6 @@
 	line-height: 1;
 	margin-right: auto;
 	padding-right: 20px;
-	padding-right: 115px;
 }
 .vacancy-socials{
 	position: absolute;
@@ -237,7 +236,7 @@
 	    margin-bottom: 40px;
 	}
 	.vacancy-hadding {
-	    padding: 45px 45px;
+	    padding: 45px 150px 45px 45px;
 	}
 	.vacancy-socials{
 		right: 45px;
@@ -282,7 +281,7 @@
 	    margin-bottom: 30px;
 	}
 	.vacancy-hadding {
-	    padding: 35px 35px;
+	    padding: 35px 140px 35px 35px;
 	}
 	.vacancy-socials{
 		right: 35px;
@@ -328,7 +327,7 @@
 	    padding-bottom: 60px;
 	}
 	.vacancy-hadding {
-	    padding: 30px 20px;
+	    padding: 30px 125px 30px 20px;
 	}
 	.vacancy-socials{
 		right: 20px;
@@ -400,9 +399,6 @@
 	.vacancy-desc-title{
 		font-size: 20px;
 	}
-	.vacancy-hadding-title{
-		padding-right: 73px;
-	}
 	.vacancy-desc-top > ul {
 	    display: inherit;
 	}
@@ -412,8 +408,11 @@
 	.vacancy-desc-top > ul > li:last-child{
 		padding-bottom: 0;
 	}
-	.vacancy-desc-top > ul > li:after {
-	    top: 20%;
+	.vacancy-desc-top > ul > li:after{
+		top: 23%;
+	}
+	.vacancy-desc-top > ul > li:last-child:after{
+		top: 40%;
 	}
 	.vacancy-desc-modiule:after {
 	    width: 250px;
@@ -421,6 +420,9 @@
 	}
 	.vacancy-socials > ul > li{
 		padding: 0 5px;
+	}
+	.vacancy-hadding{
+	    padding: 30px 90px 30px 20px;
 	}
 
 }

@@ -452,6 +452,9 @@
 	.pagination-cntlr{
 		padding: 40px 0 60px 0;
 	}
+	.house-item-img-hover{
+		padding-right: 30px;
+	}
 }
 @media(max-width: 479px){
 	
