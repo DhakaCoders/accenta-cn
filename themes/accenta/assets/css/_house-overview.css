@@ -425,6 +425,9 @@
 		margin-right: auto;
 		text-align: center;
 	}
+	.house-item-img-hover{
+		text-align: left;
+	}
 	.house-blue-item{
 		min-height: 460px;
 	}

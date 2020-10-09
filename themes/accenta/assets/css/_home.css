@@ -45,6 +45,7 @@
 	max-width: 1200px;
 	width: 100%;
 	margin: auto;
+	padding: 0 20px;
 	text-align: center;
 	z-index: 10;
 }
@@ -174,7 +175,6 @@
 }
 /**/
 .h-slider-banner-desc form{
-	padding: 0 20px;
 }
 .psearch-form-modiule{
 	padding: 30px 20px 10px 20px;
@@ -460,6 +460,19 @@
 	.page-bnr-cntlr-inr:after{
 		left: 45px;
 		height: 45px;
+	}
+	.hm-bnr-line:before{
+		left: 115px;
+		height: 95px;
+	}
+	.h-slider-banner-cntrl .slick-slider ul.slick-dots{
+		right: 107px!important;
+	}
+	.h-slider-banner-cntrl .slick-slider .slick-dots li{
+		margin: 0 15px!important;
+	}
+	.h-slider-banner-cntrl:after{
+		width: 95px;
 	}
 
 }
