@@ -263,6 +263,7 @@ Gallery design
 .dft-rent-module{
 	display: flex;
 	justify-content: center;
+	margin: 0 -12px;
 }
 .dft-rent-module-item-col{
 	width: 50%;
@@ -504,6 +505,12 @@ Gallery design
 	.team-grd-item-fea-img {
 	    height: 300px;
 	}
+	.dft-rent-module{
+		margin: 0 -10px;
+	}
+	.dft-rent-module-item-col{
+		padding: 0 10px 20px;
+	}
 }
 @media(max-width: 850px){
 
@@ -565,6 +572,7 @@ Gallery design
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 }
 
 
@@ -582,6 +590,10 @@ Gallery design
 	}
 	.ms-video-play-cntlr i svg{
 		width: 100%;
+	}
+	.dftServiceModuleSlider, .dftJobModuleSlider{
+		margin-left: 0!important;
+		margin-right: 0!important;
 	}
 
 }
@@ -830,7 +842,7 @@ Gallery design
 	width: 200px;
 	height: 116px;
 	z-index: 200;
-	display: none;
+	
 }
 .valuation-fixed-btn a{
 	display: block;
@@ -840,6 +852,9 @@ Gallery design
 	height: 100%;
 	text-align: center;
 	padding: 20px 10px 
+}
+.valuation-fixed-btn a:hover{
+	background: #b98a0c;
 }
 .valuation-fixed-btn a:after{
 	content: "";
@@ -882,6 +897,13 @@ Gallery design
 	.recentlyAddedPagiSlideItem > div {
 	    height: 400px;
 	}
+	.valuation-fixed-btn {
+	    width: 160px;
+	    height: 116px;
+	}
+	.valuation-fixed-btn span {
+	    font-size: 16px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -911,6 +933,9 @@ Gallery design
 	}
 	.recentlyAddedPagiSlideItem {
 	    padding: 0 10px;
+	}
+	.valuation-fixed-btn {
+	    display: none;
 	}
 }
 
