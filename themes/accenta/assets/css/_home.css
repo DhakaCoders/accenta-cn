@@ -170,7 +170,7 @@
 	color: #fff;
 }
 .bnr-breadcum > ul > li > a:hover{
-	color: #1D2B5B;
+	color: #8489A8;
 }
 /**/
 .h-slider-banner-desc form{
@@ -421,6 +421,7 @@
 		height: 60px;
 	}
 	.bnr-breadcum{
+		max-width: 560px;
 		padding: 12px 0;
 	}
 	.bnr-breadcum > ul > li{
