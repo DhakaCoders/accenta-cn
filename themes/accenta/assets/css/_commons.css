@@ -366,11 +366,13 @@ form .dropdown-menu li a{
 	background: #fff!important;
 }
 
-.act-tranparent-btn:hover{
+.act-tranparent-btn:hover,
+.beautiful-house-des .house-item-btn a:hover{
 	background: #fff!important;
 	color: #1D2B5B!important;
 }
 
-.act-tranparent-btn:hover:after {
+.act-tranparent-btn:hover:after,
+.beautiful-house-des .house-item-btn a:hover:after{
     background: #1D2B5B!important;
 }
