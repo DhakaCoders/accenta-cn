@@ -79,6 +79,20 @@ Responsive-->
 
 
 
+Responsive new----> 
+
+1. https://prnt.sc/uwaix3
+	lege geche. position static thakle ki bottom kaj korbe?
+	margin top daw ul tate
+
+2. i) https://prnt.sc/uwakha
+	ai gulo k positon absolute kora jabena. bcoz pagi te tokhon click kora jabena.
+	tai child gulo k just positon kore left and right a bosate hobe
+	ii) https://prnt.sc/uwam1t
+		r ul tate padding left and right dite hobe . jototuku prev and next button ta ache
+
+
+
 
 
 
@@ -145,6 +159,14 @@ Responsive--->
 1.  https://prnt.sc/uvlo4u
  	ai page ar responsive content gulo mileni , atar moto hobe.
  	responsive desing ta dekhe kore felo
+
+
+
+Responsive new---> 
+
+1. https://prnt.sc/uwb0ur
+	ai look ta 991px thakei hobe. jokhon grd 2 ta brk kore full kora holo.
+	
 
 
 
