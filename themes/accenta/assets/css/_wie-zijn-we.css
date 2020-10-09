@@ -211,7 +211,7 @@
 	content: "";
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 60px;
     height: 2px;
     width: 107px;
     background: #fff;
@@ -223,7 +223,7 @@
 	content: "";
 	position: absolute;
 	right: 0;
-	bottom: 45px;
+	bottom: 60px;
 	height: 4px;
 	width: 175px;
 	background: #fff;
@@ -387,6 +387,12 @@
 	    min-height: 500px;
 	    height: 100%;
 	}
+	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-right .wzw-team-grd-item:after{
+		bottom: 50px;
+	}
+	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
+		bottom: 50px;
+	}
 	
 }
 
@@ -514,5 +520,8 @@
 	}
 	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-right .wzw-team-grd-item:after{
 	    width: 80px;
+	}
+	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
+		width: 100px;
 	}
 }
