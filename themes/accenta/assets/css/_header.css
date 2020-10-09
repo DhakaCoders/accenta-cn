@@ -950,6 +950,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 }
 @media(max-width: 767px){
 	.header-inr{
+		height: 188px;
+	}
+	.header-inr{
 		padding-left: 75px;
 	}
 	.logo a{
