@@ -364,6 +364,13 @@ if (windowWidth <= 1199) {
       $('body').removeClass('active-scroll-off');
       $('.line-icon').removeClass('active-collapse');
     });
+     $('li.menu-item-has-children > a').on('click', function(e){
+      e.preventDefault();
+    //$('li.menu-item-has-children .sub-menu').slideUp(300);
+    $(this).toggleClass('sub-menu-active');
+    $(this).next().slideToggle(300);
+
+  });
   }
 /*----- End of Noyon -----*/
 

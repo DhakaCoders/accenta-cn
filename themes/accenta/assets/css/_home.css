@@ -218,9 +218,11 @@
 	padding-bottom: 0;
 	padding-left: 0;
 	margin-top: 0;
+	z-index: 33;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li{
 	padding: 0;
+	margin-bottom: 0;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu .inner{
 	overflow-y: initial;
@@ -232,6 +234,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px 0;
+	font-size: 14px;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-menu li a:hover{
 	background: #111a38;
@@ -282,26 +285,26 @@
 
 
 
-.slick-slider ul.slick-dots {
-    position: absolute;
-    height: 16px;
-    line-height: 0;
+.h-slider-banner-cntrl .slick-slider ul.slick-dots {
+    position: absolute!important;
+    height: 16px!important;
+    line-height: 0!important;
     padding: 0!important;
-    right: 150px;
-    bottom: 50px;
-    width: 168px;
+    right: 150px!important;
+    bottom: 50px!important;
+    width: 168px!important;
 }
-.slick-slider .slick-dots li{
+.h-slider-banner-cntrl .slick-slider .slick-dots li{
 	background: transparent!important;
 	margin: 0 20px!important;
 }
-.slick-slider .slick-dots li.slick-active{
+.h-slider-banner-cntrl .slick-slider .slick-dots li.slick-active{
 	background: transparent!important;
 }
-.slick-slider .slick-dots li a{
+.h-slider-banner-cntrl .slick-slider .slick-dots li a{
 	color: rgba(255, 255, 255, 0.5)!important;
 }
-.slick-slider .slick-dots li.slick-active a{
+.h-slider-banner-cntrl .slick-slider .slick-dots li.slick-active a{
 	color: #fff!important;
 }
 
