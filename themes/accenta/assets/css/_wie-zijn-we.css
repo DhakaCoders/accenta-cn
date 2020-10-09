@@ -388,7 +388,7 @@
 	    height: 100%;
 	}
 	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-right .wzw-team-grd-item:after{
-		bottom: 50px;
+		bottom: 47px;
 	}
 	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
 		bottom: 50px;
@@ -408,7 +408,7 @@
 	}
 	.beautiful-house-sec {
 	    padding-top: 50px;
-	    padding-bottom: 20px;
+	    padding-bottom: 40px;
 	}
 	.img-des-module .beautiful-house-title, 
 	.img-des-module .tips-ugly-title {
@@ -429,7 +429,7 @@
 	}
 	.tips-ugly-sec-inr {
 	    padding-top: 15px;
-	    padding-bottom: 20px;
+	    padding-bottom: 40px;
 	}
 	.wzw-teams-sec {
 	    padding-top: 50px;
@@ -479,6 +479,10 @@
 	}
 	.wzw-team-grd-item-title br{
 		display: block;
+	}
+	.hm-wzw-teams-sec-cntlr .wzw-team-grd-item-left .wzw-team-grd-item:after{
+		width: 80px;
+		height: 2px;
 	}
 }
 
