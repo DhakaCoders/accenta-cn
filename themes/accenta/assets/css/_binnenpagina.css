@@ -1006,16 +1006,22 @@ Gallery design
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 270px;
+	}
 }
 
 @media(max-width: 479px){
 	.rasl-title{
 		font-size: 32px;
 	}
-
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 250px;
+	}
 }
 
 @media(max-width: 359px){
-
+	.xs-recentlyAddedSlideItem-fea-img{
+		height: 200px;
+	}
 }
