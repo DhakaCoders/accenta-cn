@@ -109,20 +109,32 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $replaceArray = '';
+  $e_mailadres = get_field('emailadres', 'options');
+  $show_telefoon = get_field('telefoon', 'options');
+  $telefoon = trim(str_replace(phone_preg(), $replaceArray, $show_telefoon));
+?>
 <div class="bdoverlay"></div>
 <header class="header">
   <div class="header-inr">
     <div class="hdr-lft">
       <div class="logo">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images//logo.png"></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <?php echo $logo_tag; ?>
+        </a>
       </div>
       <div class="hdr-lft-btn">
-        <div class="hdr-lft-btn-col hdr-lft-tell">
-          <a class="active" href="tell:">053/41.57.92</a>
-        </div>
-        <div class="hdr-lft-btn-col hdr-lft-mail">
-          <a href="mail to:">info@immoaccenta.be</a>
-        </div>
+        <?php 
+        if( !empty( $show_telefoon ) ) printf('<div class="hdr-lft-btn-col hdr-lft-tell"><a class="active" href="tel:%s">%s</a></div>', $telefoon, $show_telefoon);
+        if( !empty( $e_mailadres ) ) printf('<div class="hdr-lft-btn-col hdr-lft-mail"><a href="mailto:%s">%s</a></div>', $e_mailadres, $e_mailadres);
+        ?>
       </div>
       <div class="hdr-humberger show-hide">
           <div class="line-icon">
@@ -135,19 +147,15 @@
     <div class="hdr-rgt">
       <div class="hdr-rgt-top">
         <div class="hdr-rgt-top-menu">
-          <ul class="reset-list">
-            <li><a href="#">Wie zijn we</a></li>
-            <li><a href="#">Realisaties</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">Onze troeven</a>
-              <ul class="sub-menu">
-                <li><a href="#">sub menu</a></li>
-                <li><a href="#">sub menu</a></li>
-                <li><a href="#">sub menu</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Vacatures</a></li>
-          </ul>
+          <?php 
+            $cmenuOptions = array( 
+                'theme_location' => 'cbv_top_menu', 
+                'menu_class' => 'reset-list',
+                'container' => 'topnav',
+                'container_class' => 'topnav'
+              );
+            wp_nav_menu( $cmenuOptions ); 
+          ?>
         </div>
         <div class="hdr-rgt-top-social">
           <ul class="reset-list">
@@ -167,21 +175,15 @@
         </div>
       </div>
       <nav class="main-nav">
-        <ul class="reset-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Te Koop</a></li>
-          <li><a href="#">Te Huur</a></li>
-          <li><a href="#">Nieuwbouw</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">Advies</a>
-            <ul class="sub-menu">
-              <li><a href="#">waardebepaling</a></li>
-              <li><a href="#">opstellen van verkoop-verhuurdossier</a></li>
-              <li><a href="#">aankoopadvies</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <?php 
+          $cmenuOptions = array( 
+              'theme_location' => 'cbv_main_menu', 
+              'menu_class' => 'reset-list',
+              'container' => 'cmnav',
+              'container_class' => 'cmainnav'
+            );
+          wp_nav_menu( $cmenuOptions ); 
+        ?>
       </nav>
     </div>
   </div>
@@ -190,8 +192,8 @@
       <div class="mbl-hdr-top">
         <div class="mbl-hdr-lft">
           <div class="logo">
-            <a href="#">
-              <img src="<?php echo THEME_URI; ?>/assets/images//logo.png" alt="">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <?php echo $logo_tag; ?>
             </a>
           </div>
           <div class="close-btn-wrap">
@@ -204,42 +206,30 @@
       </div>
       <div class="mbl-menu">
         <div class="mbl-menu-cntlr">
-          <div class="mbl-hdr-btn hdr-lft-btn-col hdr-lft-tell">
-            <a class="active" href="#">053/41.57.92</a>
-          </div>
+          <?php if( !empty( $show_telefoon ) ) printf('<div class="mbl-hdr-btn hdr-lft-btn-col hdr-lft-tell"><a class="active" href="tel:%s">%s</a></div>', $telefoon, $show_telefoon); ?>
           <div class="mbl-menu-inr">
             <nav class="mbl-top-menu main-nav">
-              <ul class="reset-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Te Koop</a></li>
-                <li><a href="#">Te Huur</a></li>
-                <li><a href="#">Nieuwbouw</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Advies</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">waardebepaling</a></li>
-                    <li><a href="#">opstellen van verkoop-verhuurdossier</a></li>
-                    <li><a href="#">aankoopadvies</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+            <?php 
+              $cmenuOptions = array( 
+                  'theme_location' => 'cbv_main_menu', 
+                  'menu_class' => 'reset-list',
+                  'container' => 'cmnav',
+                  'container_class' => 'cmainnav'
+                );
+              wp_nav_menu( $cmenuOptions ); 
+            ?>
             </nav>
             <div class="mbl-btm-menu">
               <div class="hdr-rgt-top-menu">
-                <ul class="reset-list">
-                  <li><a href="#">Wie zijn we</a></li>
-                  <li><a href="#">Realisaties</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Onze troeven</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">sub menu1</a></li>
-                      <li><a href="#">sub menu2</a></li>
-                      <li><a href="#">sub menu3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Vacatures</a></li>
-                </ul>
+                <?php 
+                  $cmenuOptions = array( 
+                      'theme_location' => 'cbv_top_menu', 
+                      'menu_class' => 'reset-list',
+                      'container' => 'topnav',
+                      'container_class' => 'topnav'
+                    );
+                  wp_nav_menu( $cmenuOptions ); 
+                ?>
               </div>
               <div class="hdr-rgt-top-social">
                 <ul class="reset-list">
