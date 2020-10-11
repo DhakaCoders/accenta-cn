@@ -1,48 +1,78 @@
+<?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+
+  $replaceArray = '';
+  $branches = get_field('branches', 'options');
+  $bwt = get_field('btw', 'options');
+  $vennootschap = get_field('vennootschap', 'options');
+  $polisnr = get_field('polisnr', 'options');
+  $fburl = get_field('facebook_url', 'options');
+  $insturl = get_field('instagram_url', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+?>
 <footer class="footer-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="ftr-top clearfix">
           <div class="ftr-logo">
-            <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images//ftr-logo.png"></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <?php echo $logo_tag; ?>
+            </a>
           </div>
           <div class="ftr-partner-policy ftr-grd-item hide-sm">
+            <?php if( !empty( $vennootschap ) ): ?>
             <div class="ftr-partner">
-              <label>Vennootschap:</label>
-              <strong>IMMO ACCENTA bvba</strong>
+              <label><?php _e( 'Vennootschap', 'accenta' ); ?>:</label>
+              <?php printf('<strong>%s</strong>', $vennootschap); ?>
             </div>
+            <?php endif; ?>
+            <?php if( !empty( $polisnr ) ): ?>
             <div class="ftr-policy">
-              <label>Polisnr. verzekering:</label>
-              <strong>730390160</strong>
+              <label><?php _e( 'Polisnr. verzekering', 'accenta' ); ?>:</label>
+              <?php printf('<strong>%s</strong>', $polisnr); ?>
             </div>
+            <?php endif; ?>
           </div>
           <div class="ftr-vat-social-media ftr-grd-item hide-sm">
             <div class="ftr-vat">
-              <label>BTW</label>
-              <strong>BE 0473.360.889</strong>
+              <label><?php _e( 'BTW', 'accenta' ); ?></label>
+              <?php if( !empty( $bwt ) ) printf('<strong>%s</strong>', $bwt); ?>
             </div>
             <div class="ftr-socilas-media">
-              <label>Volg ons op:</label>
+              <label><?php _e( 'Volg ons op', 'accenta' ); ?>:</label>
               <ul class="reset-list">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
+                <?php if(!empty($fburl)): ?>
+                <li><a href="<?php echo esc_url($fburl); ?>">Facebook</a></li>
+                <?php endif; if(!empty($twturl)): ?>
+                <li><a href="<?php echo esc_url($twturl); ?>">Instagram</a></li>
+                <?php endif; ?>
               </ul>
             </div>
           </div>
           <div class="ftr-menu clearfix">
-            <h6 class="ftr-menu-title">Navigatie</h6>
-            <ul class="reset-list">
-              <li><a href="#">Te Koop</a></li>
-              <li><a href="#">Te Huur</a></li>
-              <li><a href="#">Nieuwbouw</a></li>
-              <li><a href="#">Realisaties</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="reset-list">
-              <li><a href="#">Wie zijn we</a></li>
-              <li><a href="#">Onze Troven</a></li>
-              <li><a href="#">vacatures</a></li>
-            </ul>
+            <h6 class="ftr-menu-title"><?php _e( 'Navigatie', 'accenta' ); ?></h6>
+            <?php 
+                $fmenuOptions1 = array( 
+                    'theme_location' => 'cbv_fta_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions1 );
+                $fmenuOptions2 = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions2 );
+            ?>
           </div>
           <div class="ftr-language hide-sm">
             <ul class="reset-list">
@@ -51,134 +81,100 @@
               <li><a href="#">Dutch</a></li>
             </ul>
           </div>
+          <?php if( $branches ): ?>
           <div class="ftr-menu xs-contact show-sm">
-            <h6 class="ftr-menu-title">Contact</h6>
+            <h6 class="ftr-menu-title"><?php _e( 'Contact', 'accenta' ); ?></h6>
             <ul class="reset-list clearfix">
+              <?php foreach( $branches as $branche ): ?>
               <li>
                 <div class="ftr-contact-grd-item ftr-grd-item">
                   <div class="ftr-contact-location">
-                    <label>Accenta Vastgoed Affilgem</label>
-                    <strong>Brusselbaan 110, 1790 Affligem</strong>
+                    <label>Accenta Vastgoed <?php if( !empty( $branche['titel'] ) ) printf('%s', $branche['titel']); ?></label>
+                    <?php if( !empty( $branche['adres'] ) ) printf('<strong>%s</strong>', $branche['adres']); ?>
                   </div>
+                  <?php 
+                  if( !empty( $branche['telefoon'] ) ): 
+                    $telefoon = trim(str_replace(phone_preg(), $replaceArray, $branche['telefoon']));
+                  ?>
                   <div class="ftr-contact-tel">
-                    <label>Telefoon</label>
-                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
+                    <label><?php _e( 'Telefoon', 'accenta' ); ?></label>
+                    <strong><a href="tel:<?php echo $telefoon; ?>"><?php echo $branche['telefoon']; ?></a></strong>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty( $branche['emailadres'] ) ): ?>
                   <div class="ftr-contact-mail">
-                    <label>E-mailadres</label>
-                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
+                    <label><?php _e( 'E-mailadres', 'accenta' ); ?></label>
+                    <strong><a href="mailto:<?php echo $branche['emailadres']; ?>"><?php echo $branche['emailadres']; ?></a></strong>
                   </div>
+                  <?php endif; ?>
                 </div>
               </li>
-              <li>
-                <div class="ftr-contact-grd-item ftr-grd-item">
-                  <div class="ftr-contact-location">
-                    <label>Accenta Vastgoed herne</label>
-                    <strong>Ninoofsesteenweg 4A, 1540 Herne</strong>
-                  </div>
-                  <div class="ftr-contact-tel">
-                    <label>Telefoon</label>
-                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
-                  </div>
-                  <div class="ftr-contact-mail">
-                    <label>E-mailadres</label>
-                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="ftr-contact-grd-item ftr-grd-item">
-                  <div class="ftr-contact-location">
-                    <label>Accenta Vastgoed Ninove</label>
-                    <strong>Nederwijk 4, 9400 Ninove</strong>
-                  </div>
-                  <div class="ftr-contact-tel">
-                    <label>Telefoon</label>
-                    <strong><a href="tel:053415792">053/41.57.92</a></strong>
-                  </div>
-                  <div class="ftr-contact-mail">
-                    <label>E-mailadres</label>
-                    <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+        <?php if( $branches ): ?>
         <div class="ftr-contact hide-sm">
-          <ul class="reset-list clearfix">
-            <li>
-              <div class="ftr-contact-grd-item ftr-grd-item">
-                <div class="ftr-contact-location">
-                  <label>Accenta Vastgoed Affilgem</label>
-                  <strong>Brusselbaan 110, 1790 Affligem</strong>
+            <ul class="reset-list clearfix">
+              <?php foreach( $branches as $branche ): ?>
+              <li>
+                <div class="ftr-contact-grd-item ftr-grd-item">
+                  <div class="ftr-contact-location">
+                    <label>Accenta Vastgoed <?php if( !empty( $branche['titel'] ) ) printf('%s', $branche['titel']); ?></label>
+                    <?php if( !empty( $branche['adres'] ) ) printf('<strong>%s</strong>', $branche['adres']); ?>
+                  </div>
+                  <?php 
+                  if( !empty( $branche['telefoon'] ) ): 
+                    $telefoon = trim(str_replace(phone_preg(), $replaceArray, $branche['telefoon']));
+                  ?>
+                  <div class="ftr-contact-tel">
+                    <label><?php _e( 'Telefoon', 'accenta' ); ?></label>
+                    <strong><a href="tel:<?php echo $telefoon; ?>"><?php echo $branche['telefoon']; ?></a></strong>
+                  </div>
+                  <?php endif; ?>
+                  <?php if( !empty( $branche['emailadres'] ) ): ?>
+                  <div class="ftr-contact-mail">
+                    <label><?php _e( 'E-mailadres', 'accenta' ); ?></label>
+                    <strong><a href="mailto:<?php echo $branche['emailadres']; ?>"><?php echo $branche['emailadres']; ?></a></strong>
+                  </div>
+                  <?php endif; ?>
                 </div>
-                <div class="ftr-contact-tel">
-                  <label>Telefoon</label>
-                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
-                </div>
-                <div class="ftr-contact-mail">
-                  <label>E-mailadres</label>
-                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="ftr-contact-grd-item ftr-grd-item">
-                <div class="ftr-contact-location">
-                  <label>Accenta Vastgoed herne</label>
-                  <strong>Ninoofsesteenweg 4A, 1540 Herne</strong>
-                </div>
-                <div class="ftr-contact-tel">
-                  <label>Telefoon</label>
-                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
-                </div>
-                <div class="ftr-contact-mail">
-                  <label>E-mailadres</label>
-                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="ftr-contact-grd-item ftr-grd-item">
-                <div class="ftr-contact-location">
-                  <label>Accenta Vastgoed Ninove</label>
-                  <strong>Nederwijk 4, 9400 Ninove</strong>
-                </div>
-                <div class="ftr-contact-tel">
-                  <label>Telefoon</label>
-                  <strong><a href="tel:053415792">053/41.57.92</a></strong>
-                </div>
-                <div class="ftr-contact-mail">
-                  <label>E-mailadres</label>
-                  <strong><a href="mailto:info@immoaccenta.be">info@immoaccenta.be</a></strong>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <?php endforeach; ?>
+            </ul>          
         </div>
+        <?php endif; ?>
         <div class="ftr-pvpsm ftr-grd-item show-sm">
-          <div class="ftr-partner">
-            <label>Vennootschap:</label>
-            <strong>IMMO ACCENTA bvba</strong>
-          </div>
-          <div class="ftr-vat">
-            <label>BTW</label>
-            <strong>BE 0473.360.889</strong>
-          </div>
-          <div class="ftr-policy">
-            <label>Polisnr. verzekering:</label>
-            <strong>730390160</strong>
-          </div>
+            <?php if( !empty( $vennootschap ) ): ?>
+            <div class="ftr-partner">
+              <label><?php _e( 'Vennootschap', 'accenta' ); ?>:</label>
+              <?php printf('<strong>%s</strong>', $vennootschap); ?>
+            </div>
+            <?php endif; ?>
+            <div class="ftr-vat">
+              <label>BTW</label>
+              <?php if( !empty( $bwt ) ) printf('<strong>%s</strong>', $bwt); ?>
+            </div>
+            <?php if( !empty( $polisnr ) ): ?>
+            <div class="ftr-policy">
+              <label><?php _e( 'Polisnr. verzekering', 'accenta' ); ?>:</label>
+              <?php printf('<strong>%s</strong>', $polisnr); ?>
+            </div>
+            <?php endif; ?>
+
           <div class="ftr-socilas-media">
-            <label>Volg ons op:</label>
+            <label><?php _e( 'Volg ons op', 'accenta' ); ?>:</label>
             <ul class="reset-list">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
+                <?php if(!empty($fburl)): ?>
+                <li><a href="<?php echo esc_url($fburl); ?>">Facebook</a></li>
+                <?php endif; if(!empty($twturl)): ?>
+                <li><a href="<?php echo esc_url($twturl); ?>">Instagram</a></li>
+                <?php endif; ?>
             </ul>
           </div>
         </div>
@@ -236,14 +232,18 @@
         <div class="ftr-bottom">
           <div class="ftr-btm-inr">
             <div class="ftr-copywrite">
-              <p>&copy; 2020 Immo Accenta BVBA. All Rights Reserved.</p>
+              <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>
             </div>
             <div class="ftr-btm-menu">
-              <ul class="reset-list">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookie policy</a></li>
-                <li><a href="#">Sitemap</a></li>
-              </ul>
+            <?php 
+              $copymenuOptions = array( 
+                  'theme_location' => 'cbv_copyright_menu', 
+                  'menu_class' => 'reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $copymenuOptions ); 
+            ?>  
             </div>
             <div class="ftr-btm-designby">
               <a href="#">webdesign by conversal</a>
