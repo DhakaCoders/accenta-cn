@@ -49,8 +49,8 @@
               <ul class="reset-list">
                 <?php if(!empty($fburl)): ?>
                 <li><a href="<?php echo esc_url($fburl); ?>">Facebook</a></li>
-                <?php endif; if(!empty($twturl)): ?>
-                <li><a href="<?php echo esc_url($twturl); ?>">Instagram</a></li>
+                <?php endif; if(!empty($insturl)): ?>
+                <li><a href="<?php echo esc_url($insturl); ?>">Instagram</a></li>
                 <?php endif; ?>
               </ul>
             </div>
@@ -172,8 +172,8 @@
             <ul class="reset-list">
                 <?php if(!empty($fburl)): ?>
                 <li><a href="<?php echo esc_url($fburl); ?>">Facebook</a></li>
-                <?php endif; if(!empty($twturl)): ?>
-                <li><a href="<?php echo esc_url($twturl); ?>">Instagram</a></li>
+                <?php endif; if(!empty($insturl)): ?>
+                <li><a href="<?php echo esc_url($insturl); ?>">Instagram</a></li>
                 <?php endif; ?>
             </ul>
           </div>
