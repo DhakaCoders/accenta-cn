@@ -108,12 +108,19 @@ Containers
 .container-sm{
 	max-width: 952px;
 }
-
-.block-950{
-	max-width: 950px;
+.block-950,
+.block-1200{
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.block-950{
+	max-width: 950px;
+
+}
+
+.block-1200{
+	max-width: 1200px;
 }
 
 

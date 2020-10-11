@@ -2,9 +2,16 @@
 	overflow: hidden;
 	position: relative;
 }
+
 .default-page-con {
 	padding-bottom: 80px;
 	padding-top: 72px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.default-page-con .usp-sec{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .fl-dft-overflow-controller {
@@ -572,8 +579,8 @@ Gallery design
 		height: 450px;
 	}
 	.innerpage-con-wrap .usp-sec{
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.dft-contact-info-slider .contact-info-slide-item{
 		padding-bottom: 20px;
@@ -622,6 +629,11 @@ Gallery design
 	}
 	.dft-contact-info-slider .contact-info-dsc-tp:after {
 	    left: -30px;
+	}
+	.dftServiceModuleSlideItem, .dftJobModuleSlideItem,
+	.teamModuleGrdsSlideItem{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 

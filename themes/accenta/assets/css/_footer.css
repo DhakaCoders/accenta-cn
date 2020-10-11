@@ -723,6 +723,9 @@
 	.usp-grd-item:after{
 		content: none;
 	}
+	.usp-grd-item{
+		padding-bottom: 10px;
+	}
 }
 
 @media(max-width: 575px){
