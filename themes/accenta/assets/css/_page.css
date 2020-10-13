@@ -37,3 +37,9 @@
 .sitemap ol li{
 	padding-left: 25px;
 }
+.page-404.text-center {
+    padding: 120px 0;
+}
+.page-404.text-center h3 {
+    font-size: 20px;
+}
