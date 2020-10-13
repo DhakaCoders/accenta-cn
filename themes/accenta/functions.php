@@ -21,7 +21,10 @@ if( !function_exists('cbv_theme_setup') ){
         if(function_exists('add_theme_support')) {
             add_theme_support('category-thumbnails');
         }
-        add_image_size( 'bloggrid', 346, 230, true );
+        add_image_size( 'cbvgrid', 586, 288, true );
+        add_image_size( 'dfpageg1', 476, 464, true );
+        add_image_size( 'dfpageg2', 950, 576, true );
+        add_image_size( 'dfpageg3', 464, 300, true );
         add_image_size( 'pagebanner', 1270, 250, true );
         add_image_size( 'hmqcknopbig', 474, 600, true );
         add_image_size( 'hmqcknopsmll', 472, 286, true );

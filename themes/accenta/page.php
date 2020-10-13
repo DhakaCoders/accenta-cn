@@ -31,8 +31,8 @@
     </div>
     <?php 
       }elseif( get_row_layout() == 'quickknops' ){
-      $afbeelding1 = !empty(get_sub_field('afbeeldingen_1'))? cbv_get_image_src( get_sub_field('afbeeldingen_1') ): '';
-      $afbeelding2 = !empty(get_sub_field('afbeeldingen_2'))? cbv_get_image_src( get_sub_field('afbeeldingen_2') ): '';
+      $afbeelding1 = !empty(get_sub_field('afbeeldingen_1'))? cbv_get_image_src( get_sub_field('afbeeldingen_1', 'cbvgrid') ): '';
+      $afbeelding2 = !empty(get_sub_field('afbeeldingen_2'))? cbv_get_image_src( get_sub_field('afbeeldingen_2', 'cbvgrid') ): '';
       $knop1 = !empty(get_sub_field('knop_1'))? get_sub_field('knop_1'): 'javascript:void()';
       $knop2 = !empty(get_sub_field('knop_2'))? get_sub_field('knop_2'): 'javascript:void()';
 
@@ -88,7 +88,7 @@
     <?php 
       }elseif( get_row_layout() == 'poster' ){ 
       $fc_poster = get_sub_field('afbeeldingen');
-      $postersrc = cbv_get_image_src($fc_poster, 'dfpageg1');
+      $postersrc = cbv_get_image_src($fc_poster, 'dfpageg2');
       $fc_videourl = get_sub_field('video_url');
       if( !empty($postersrc) ):
     ?>
@@ -144,7 +144,7 @@
           <?php
             $housesrc = '';
             foreach( $houses as $house ):
-              if( !empty($house['afbeeldingen']) ) $housesrc = cbv_get_image_src($house['afbeeldingen'], 'dfpageg1');
+              if( !empty($house['afbeeldingen']) ) $housesrc = cbv_get_image_src($house['afbeeldingen'], 'dfpageg3');
               $fcknop = !empty($house['knop'])? $house['knop']: 'javascript:void()';
           ?>
           <div class="dftServiceModuleSlideItem">
@@ -325,7 +325,7 @@
               $biv = get_field('positie', get_the_ID());
               $thumb_id = get_post_thumbnail_id(get_the_ID());
               if(!empty($thumb_id)){
-                $teamthumb = cbv_get_image_src($thumb_id, 'bloggrid');
+                $teamthumb = cbv_get_image_src($thumb_id);
               } else {
                 $teamthumb = '';
               }

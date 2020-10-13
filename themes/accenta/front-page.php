@@ -204,7 +204,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                   <div class="recentlyAddedItem">
@@ -243,7 +243,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                   <div class="recentlyAddedItem">
@@ -282,7 +282,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                 </div>
@@ -380,7 +380,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                 </div>
@@ -427,7 +427,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                 </div>
@@ -474,14 +474,14 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="xs-recentlyAddedSlideItem">
                 <div class="xs-recentlyAddedSlideItem-fea-img">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-04.jpg);">
+                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);">
                   </div>
                 </div>
                 <div class="xs-recentlyAddedSlideItem-des">
@@ -521,7 +521,7 @@
                       </li>
                     </ul>
                     <div class="recentlyAddedItemBtn">
-                      <a class="act-btn act-tranparent-btn" href="#">Meer info</a>
+                      <a class="act-btn act-tranparent-btn" href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
                     </div>
                   </div>
                 </div>
