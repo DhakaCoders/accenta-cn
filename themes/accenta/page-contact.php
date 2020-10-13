@@ -9,24 +9,7 @@ $thisID = get_the_ID();
   $form = get_field('formsec', $thisID);
   $google_map = get_field('googlemap', $thisID);
 ?>
-<section class="page-bnr-cntlr">
-  <div class="page-bnr-cntlr-inr">
-    <div class="page-banner">
-      <div class="inline-bg page-banner-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//banner.jpg');">
-      </div>
-      <div class="page-banner-title-cntlr">
-        <h1 class="banner-title">Contact</h1>
-      </div>
-      <div class="bnr-breadcum">
-      <ul class="reset-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Binnenpagina</a></li>
-        <li><a href="#">Binnenpagina</a></li>
-      </ul>
-    </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/page', 'banner'); ?>
 <?php 
   $replaceArray = '';
   $branches = get_field('branches', 'options');

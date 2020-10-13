@@ -1,27 +1,34 @@
 <?php get_header(); ?>
+<?php  
+  $hshowhide_slide = get_field('showhide_slider', HOMEID);
+  $hslides = get_field('home_slider', HOMEID);
+  $slidesec = get_field('slidesec', HOMEID);
+  if($hshowhide_slide):
+?>
 <section class="h-slider-banner">
   <div class="h-slider-banner-cntrl">
+    <?php if($hslides){ ?>
     <span class="hm-bnr-line"></span>
     <div class="h-slider homeSlider">
+    <?php
+      $i = 1;
+      foreach( $hslides as $hslide ): 
+      $slideposter = !empty($hslide['afbeelding'])? $hslide['afbeelding']: '';
+    ?>
       <div class="h-slider-item-cntlr">
-        <div class="h-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//h-banner.jpg');">
+        <div class="h-slider-item inline-bg" style="background: url('<?php echo $slideposter; ?>');">
           
         </div>
       </div>
-      <div class="h-slider-item-cntlr">
-        <div class="h-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//h-banner.jpg');">
-          
-        </div>
-      </div>
-      <div class="h-slider-item-cntlr">
-        <div class="h-slider-item inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//h-banner.jpg');">
-          
-        </div>
-      </div>
+      <?php $i++; endforeach; ?>
     </div>
     <div class="h-slider-banner-desc">
-      <h4 class="h-slider-banner-desc-sub-title">Wij helpen u bij het vinden van uw</h4>
-      <h1 class="h-slider-banner-desc-title">prachtige huis</h1>
+      <?php 
+        if( $slidesec ): 
+           if( !empty($slidesec['subtitel']) ) printf( '<h4 class="h-slider-banner-desc-sub-title">%s</h4>', $slidesec['subtitel'] ); 
+           if( !empty($slidesec['titel']) ) printf( '<h1 class="h-slider-banner-desc-title">%s</h1>', $slidesec['titel'] ); 
+        endif; 
+      ?>
       <form action="">
         <div class="psearch-form-modiule">
           <div class="psearch-form">
@@ -74,25 +81,26 @@
         </div>
       </form>
     </div>
+    <?php } ?>
   </div>
 </section>
+<?php endif; ?>
+<?php
+  $showhide_quickknop = get_field('showhide_quickknop', HOMEID);
+  $quickknops = get_field('quickknops', HOMEID);
+  if( $showhide_quickknop ):
+    if( $quickknops ):
+      $afbeelding1 = !empty($quickknops['afbeelding1'])? cbv_get_image_src( $quickknops['afbeelding1'], 'hmqcknopbig' ): '';
+      $afbeelding2 = !empty($quickknops['afbeelding2'])? cbv_get_image_src( $quickknops['afbeelding2'], 'hmqcknopsmll' ): '';
+      $afbeelding3 = !empty($quickknops['afbeelding3'])? cbv_get_image_src( $quickknops['afbeelding3'], 'hmqcknopsmll' ): '';
+      $knop1 = !empty($quickknops['knop1'])? $quickknops['knop1']: 'javascript:void()';
+      $knop2 = !empty($quickknops['knop2'])? $quickknops['knop2']: 'javascript:void()';
+      $knop3 = !empty($quickknops['knop3'])? $quickknops['knop3']: 'javascript:void()';
 
-
-
-<section class="main-content">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
-
-        </div>
-      </div>
-  </div>    
-</section>
-
-
+      $titel1 = !empty($quickknops['titel_1'])? $quickknops['titel_1']: '';
+      $titel2 = !empty($quickknops['titel_2'])? $quickknops['titel_2']: '';
+      $titel3 = !empty($quickknops['titel_3'])? $quickknops['titel_3']: '';
+?>
 <section class="wzw-teams-sec hm-wzw-teams-sec-cntlr">
   <div class="container">
     <div class="row">
@@ -102,12 +110,12 @@
             <div class="wzw-team-grd-item-left mHc">
               <div class="wzw-team-grd-item">
                 <div class="wzw-team-grd-item-ctlr">
-                  <a class="overlay-link" href="#"></a>
-                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//wzw-team-grd-item-img-04.jpg');">
+                  <a class="overlay-link" href="<?php echo $knop1; ?>"></a>
+                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo $afbeelding1; ?>');">
                     
                   </div>
                   <div class="wzw-team-grd-item-des">
-                    <h3 class="wzw-team-grd-item-title"><a href="#">Te koop</a></h3>
+                    <h3 class="wzw-team-grd-item-title"><a href="<?php echo $knop1; ?>"><?php echo $titel1; ?></a></h3>
                   </div>
                 </div>
               </div>
@@ -115,23 +123,23 @@
             <div class="wzw-team-grd-item-right mHc">
               <div class="wzw-team-grd-item">
                 <div class="wzw-team-grd-item-ctlr">
-                  <a class="overlay-link" href="#"></a>
-                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//wzw-team-grd-item-img-05.jpg');">
+                  <a class="overlay-link" href="<?php echo $knop2; ?>"></a>
+                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo $afbeelding2; ?>');">
                     
                   </div>
                   <div class="wzw-team-grd-item-des">
-                    <h3 class="wzw-team-grd-item-title"><a href="#">Te Huur</a></h3>
+                    <h3 class="wzw-team-grd-item-title"><a href="<?php echo $knop2; ?>"><?php echo $titel2; ?></a></h3>
                   </div>
                 </div>
               </div>
               <div class="wzw-team-grd-item">
                 <div class="wzw-team-grd-item-ctlr">
-                  <a class="overlay-link" href="#"></a>
-                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images//wzw-team-grd-item-img-06.jpg');">
+                  <a class="overlay-link" href="<?php echo $knop3; ?>"></a>
+                  <div class="wzw-team-grd-item-img inline-bg" style="background: url('<?php echo $afbeelding3; ?>');">
                     
                   </div>
                   <div class="wzw-team-grd-item-des">
-                    <h3 class="wzw-team-grd-item-title"><a href="#">Realisaties</a></h3>
+                    <h3 class="wzw-team-grd-item-title"><a href="<?php echo $knop3; ?>"><?php echo $titel3; ?></a></h3>
                   </div>
                 </div>
               </div>
@@ -142,7 +150,8 @@
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
 
 <section class="recently-added-sec">
   <div class="hide-sm">
@@ -302,16 +311,16 @@
     <div class="recently-added-sec-btm">
       <div class="recently-added-pagi-slider recentlyAddedPagiSlider">
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-01.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-02.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-02.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-03.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-03.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-01.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);"></div>
         </div>
       </div>
     </div> 
@@ -331,7 +340,7 @@
             <div class="xs-recentlyAddedSlider">
               <div class="xs-recentlyAddedSlideItem">
                 <div class="xs-recentlyAddedSlideItem-fea-img">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-01.jpg);">
+                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);">
                   </div>
                 </div>
                 <div class="xs-recentlyAddedSlideItem-des">
@@ -378,7 +387,7 @@
               </div>
               <div class="xs-recentlyAddedSlideItem">
                 <div class="xs-recentlyAddedSlideItem-fea-img">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-02.jpg);">
+                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-02.jpg);">
                   </div>
                 </div>
                 <div class="xs-recentlyAddedSlideItem-des">
@@ -425,7 +434,7 @@
               </div>
               <div class="xs-recentlyAddedSlideItem">
                 <div class="xs-recentlyAddedSlideItem-fea-img">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-03.jpg);">
+                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-03.jpg);">
                   </div>
                 </div>
                 <div class="xs-recentlyAddedSlideItem-des">
@@ -472,7 +481,7 @@
               </div>
               <div class="xs-recentlyAddedSlideItem">
                 <div class="xs-recentlyAddedSlideItem-fea-img">
-                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images//recently-added-pagi-slide-img-04.jpg);">
+                  <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-04.jpg);">
                   </div>
                 </div>
                 <div class="xs-recentlyAddedSlideItem-des">
@@ -545,87 +554,52 @@
 
 
 <div class="valuation-fixed-btn">
-  <a href="#">
+  <a href="<?php echo esc_url(home_url('waardebepaling')); ?>">
     <i>
       <svg class="home-icon-svg" width="35" height="35" viewBox="0 0 35 35" fill="#fff">
         <use xlink:href="#home-icon-svg"></use>
       </svg>
     </i>
-    <span>Waardebepaling</span>
+    <span><?php _e( 'Waardebepaling', THEME_NAME ); ?></span>
   </a>
 </div>
+<?php
+  $hshowhide_overons = get_field('showhide_overons', HOMEID);
+  $hoverons = get_field('home_overons', HOMEID);
+  if( $hshowhide_overons ):
+    if( $hoverons ):
+    $deshoversrc = '';
+    if(!empty($hoverons['afbeelding']))
+      $deshoversrc = cbv_get_image_src($hoverons['afbeelding'], 'aboutgrid');
 
+?>
 <section class="beautiful-house-sec hm-beautiful-house-sec-cntlr">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="beautiful-house-sec-inr img-des-module clearfix">
-          <div class="beutiful-house-img inline-bg order-2" style="background: url('<?php echo THEME_URI; ?>/assets/images//beautiful-house-img.jpg');"></div>
+          <div class="beutiful-house-img inline-bg order-2" style="background: url('<?php echo $deshoversrc; ?>');"></div>
           <div class="beautiful-house-des order-1">
             <h2 class="beautiful-house-title">
-              <span>Wij helpen u bij het vinden van uw</span> 
-              <strong>prachtige huis</strong>
+              <?php 
+                if( !empty($hoverons['subtitel']) ) printf('<span>%s</span>', $hoverons['subtitel']);
+                if( !empty($hoverons['titel']) ) printf('<strong>%s</strong>', $hoverons['titel']);
+              ?>
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat dolor nunc dignissim neque. Volutpat, et, sapien a vitae enim consectetur egestas nisl, in. Amet in amet malesuada vel eu. Egestas consequat viverra eget turpis et ut enim ut. Cursus bibendum nunc sollicitudin nunc dictum diam.</p> 
-            <p>Sed ultrices pretium pellentesque pretium euismod lorem. Sed nisl mattis aliquet blandit commodo at amet eu. Dui accumsan tortor posuere arcu proin nec a, cursus risus. Tristique leo scelerisque in ut malesuada nisl, mauris. Leo enim dictumst magna vulputate.</p>
-            <div class="house-item-btn">
-              <a href="#">Meer info</a>
-            </div>
+            <?php 
+              if( !empty($hoverons['beschrijving']) ) echo wpautop( $hoverons['beschrijving'] );
+              $knop4 = $hoverons['knop'];
+              if( is_array( $knop4 ) &&  !empty( $knop4['url'] ) ){
+                  printf('<div class="house-item-btn"><a href="%s" target="%s">%s</a></div>', $knop4['url'], $knop4['target'], $knop4['title']); 
+              }
+            ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-<section class="usp-sec">
-  <div class="usp-sec-inr">
-    <div class="usp-grd-items xs-usp-slider clearfix">
-      <div class="usp-grd-item">
-        <div class="usp-grd-item-ctlr">
-          <i>
-            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
-              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
-            </svg>
-          </i>
-          <strong class="usp-grd-item-title">Gevarieerd aanbod</strong>
-        </div>
-      </div>
-      <div class="usp-grd-item">
-        <div class="usp-grd-item-ctlr">
-          <i>
-            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
-              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
-            </svg>
-          </i>
-          <strong class="usp-grd-item-title">Persoonlijke aanpak</strong>
-        </div>
-      </div>
-      <div class="usp-grd-item">
-        <div class="usp-grd-item-ctlr">
-          <i>
-            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
-              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
-            </svg>
-          </i>
-          <strong class="usp-grd-item-title">Flexibiliteit</strong>
-        </div>
-      </div>
-      <div class="usp-grd-item">
-        <div class="usp-grd-item-ctlr">
-          <i>
-            <svg class="ftr-top-grd-item-img-svg" width="42" height="42" viewBox="0 0 42 42" fill="#fff">
-              <use xlink:href="#ftr-top-grd-item-img-svg"></use>
-            </svg>
-          </i>
-          <strong class="usp-grd-item-title">Dynamisch team</strong>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php endif; ?>
+<?php endif; ?>
+<?php get_template_part('templates/section', 'usp'); ?>
 <?php get_footer(); ?>

@@ -147,6 +147,9 @@
 .vacancy-desc-modiule:last-of-type:after{
 	content: none;
 }
+.vacancy-desc-modiule.modiule-lessbar:after{
+	content: none;
+}
 .vacancy-desc-title{
 	font-size: 30px;
 	line-height: 1;
@@ -168,7 +171,7 @@
 }
 
 .vacancy-desc-btn a,
-.vacancy-desc-modiule > a{
+.vacancy-modiule-knop > a{
 	display: flex;
 	align-items: center;
 	justify-content: center;

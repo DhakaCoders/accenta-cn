@@ -22,6 +22,10 @@ if( !function_exists('cbv_theme_setup') ){
             add_theme_support('category-thumbnails');
         }
         add_image_size( 'bloggrid', 346, 230, true );
+        add_image_size( 'pagebanner', 1270, 250, true );
+        add_image_size( 'hmqcknopbig', 474, 600, true );
+        add_image_size( 'hmqcknopsmll', 472, 286, true );
+        add_image_size( 'aboutgrid', 572, 600, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -55,7 +59,6 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/popper.php' );
     include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
-    include_once( THEME_DIR . '/enq-scripts/stick.sidebar.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
     include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
@@ -106,17 +109,6 @@ add_post_type_support( 'page', 'excerpt' );
 
 add_filter('use_block_editor_for_post', '__return_false');
 
-function searchfilter($query) {
-    if (is_search() && $query->is_main_query() && !is_admin() ) {
-        //$query->set('post_type',array('post'));
-        $query->set( 'posts_per_page', 2 );
-        $query->set( 'orderby', 'modified' );
-    }
-return $query;
-}
- 
-add_filter('pre_get_posts','searchfilter');
-
 function defer_parsing_of_js ( $url ) {
     if ( FALSE === strpos( $url, '.js' ) ) return $url;
     if ( strpos( $url, 'jquery.js' ) || strpos( $url, 'jquery-migrate.min.js' ) ) return $url;
@@ -155,37 +147,6 @@ function custom_body_classes($classes){
 }
 // call the filter for the body class
 add_filter('body_class', 'custom_body_classes');
-
-
-/**
-ACF - Custom rule for WOO attribues
-*/
-// Adds a custom rule type.
-add_filter( 'acf/location/rule_types', function( $choices ){
-    $choices[ __("Other",'acf') ]['wc_prod_attr'] = 'WC Product Attribute';
-    return $choices;
-} );
-
-// Adds custom rule values.
-add_filter( 'acf/location/rule_values/wc_prod_attr', function( $choices ){
-    foreach ( wc_get_attribute_taxonomies() as $attr ) {
-        $pa_name = wc_attribute_taxonomy_name( $attr->attribute_name );
-        $choices[ $pa_name ] = $attr->attribute_label;
-    }
-    return $choices;
-} );
-
-// Matching the custom rule.
-add_filter( 'acf/location/rule_match/wc_prod_attr', function( $match, $rule, $options ){
-    if ( isset( $options['taxonomy'] ) ) {
-        if ( '==' === $rule['operator'] ) {
-            $match = $rule['value'] === $options['taxonomy'];
-        } elseif ( '!=' === $rule['operator'] ) {
-            $match = $rule['value'] !== $options['taxonomy'];
-        }
-    }
-    return $match;
-}, 10, 3 );
 
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
 

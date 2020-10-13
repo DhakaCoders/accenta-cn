@@ -160,7 +160,9 @@
 .vacatures-grd-item:hover .vacatures-grd-item-des > a:after{
 	background: #fff;
 }
-
+.pagination-cntlr .page-numbers li:before {
+    content: none;
+}
 
 @media(max-width: 1499px){
 

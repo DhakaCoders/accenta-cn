@@ -120,6 +120,7 @@
   $e_mailadres = get_field('emailadres', 'options');
   $show_telefoon = get_field('telefoon', 'options');
   $telefoon = trim(str_replace(phone_preg(), $replaceArray, $show_telefoon));
+  $fburl = get_field('facebook_url', 'options');
 ?>
 <div class="bdoverlay"></div>
 <header class="header">
@@ -157,11 +158,15 @@
             wp_nav_menu( $cmenuOptions ); 
           ?>
         </div>
+        
         <div class="hdr-rgt-top-social">
+          <?php if( !empty($fburl) ): ?>
           <ul class="reset-list">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="<?php echo $fburl; ?>"><i class="fab fa-facebook-f"></i></a></li>
           </ul>
+          <?php endif; ?>
         </div>
+        
         <div class="hdr-rgt-top-lan">
           <div class="fl-lang reset-slect">
             <div class="fl-lang-cntlr">
@@ -232,9 +237,11 @@
                 ?>
               </div>
               <div class="hdr-rgt-top-social">
-                <ul class="reset-list">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
+                <?php if( !empty($fburl) ): ?>
+                  <ul class="reset-list">
+                    <li><a href="<?php echo $fburl; ?>"><i class="fab fa-facebook-f"></i></a></li>
+                  </ul>
+                <?php endif; ?>
               </div>
               <div class="hdr-mbl-lan">
                 <ul class="reset-list">

@@ -28,13 +28,13 @@
           <div class="ftr-partner-policy ftr-grd-item hide-sm">
             <?php if( !empty( $vennootschap ) ): ?>
             <div class="ftr-partner">
-              <label><?php _e( 'Vennootschap', 'accenta' ); ?>:</label>
+              <label><?php _e( 'Vennootschap', THEME_NAME ); ?>:</label>
               <?php printf('<strong>%s</strong>', $vennootschap); ?>
             </div>
             <?php endif; ?>
             <?php if( !empty( $polisnr ) ): ?>
             <div class="ftr-policy">
-              <label><?php _e( 'Polisnr. verzekering', 'accenta' ); ?>:</label>
+              <label><?php _e( 'Polisnr. verzekering', THEME_NAME ); ?>:</label>
               <?php printf('<strong>%s</strong>', $polisnr); ?>
             </div>
             <?php endif; ?>
@@ -56,7 +56,7 @@
             </div>
           </div>
           <div class="ftr-menu clearfix">
-            <h6 class="ftr-menu-title"><?php _e( 'Navigatie', 'accenta' ); ?></h6>
+            <h6 class="ftr-menu-title"><?php _e( 'Navigatie', THEME_NAME ); ?></h6>
             <?php 
                 $fmenuOptions1 = array( 
                     'theme_location' => 'cbv_fta_menu', 
@@ -83,7 +83,7 @@
           </div>
           <?php if( $branches ): ?>
           <div class="ftr-menu xs-contact show-sm">
-            <h6 class="ftr-menu-title"><?php _e( 'Contact', 'accenta' ); ?></h6>
+            <h6 class="ftr-menu-title"><?php _e( 'Contact', THEME_NAME ); ?></h6>
             <ul class="reset-list clearfix">
               <?php foreach( $branches as $branche ): ?>
               <li>
@@ -133,13 +133,13 @@
                     $telefoon = trim(str_replace(phone_preg(), $replaceArray, $branche['telefoon']));
                   ?>
                   <div class="ftr-contact-tel">
-                    <label><?php _e( 'Telefoon', 'accenta' ); ?></label>
+                    <label><?php _e( 'Telefoon', THEME_NAME ); ?></label>
                     <strong><a href="tel:<?php echo $telefoon; ?>"><?php echo $branche['telefoon']; ?></a></strong>
                   </div>
                   <?php endif; ?>
                   <?php if( !empty( $branche['emailadres'] ) ): ?>
                   <div class="ftr-contact-mail">
-                    <label><?php _e( 'E-mailadres', 'accenta' ); ?></label>
+                    <label><?php _e( 'E-mailadres', THEME_NAME ); ?></label>
                     <strong><a href="mailto:<?php echo $branche['emailadres']; ?>"><?php echo $branche['emailadres']; ?></a></strong>
                   </div>
                   <?php endif; ?>
@@ -152,7 +152,7 @@
         <div class="ftr-pvpsm ftr-grd-item show-sm">
             <?php if( !empty( $vennootschap ) ): ?>
             <div class="ftr-partner">
-              <label><?php _e( 'Vennootschap', 'accenta' ); ?>:</label>
+              <label><?php _e( 'Vennootschap', THEME_NAME ); ?>:</label>
               <?php printf('<strong>%s</strong>', $vennootschap); ?>
             </div>
             <?php endif; ?>
@@ -162,13 +162,13 @@
             </div>
             <?php if( !empty( $polisnr ) ): ?>
             <div class="ftr-policy">
-              <label><?php _e( 'Polisnr. verzekering', 'accenta' ); ?>:</label>
+              <label><?php _e( 'Polisnr. verzekering', THEME_NAME ); ?>:</label>
               <?php printf('<strong>%s</strong>', $polisnr); ?>
             </div>
             <?php endif; ?>
 
           <div class="ftr-socilas-media">
-            <label><?php _e( 'Volg ons op', 'accenta' ); ?>:</label>
+            <label><?php _e( 'Volg ons op', THEME_NAME ); ?>:</label>
             <ul class="reset-list">
                 <?php if(!empty($fburl)): ?>
                 <li><a href="<?php echo esc_url($fburl); ?>">Facebook</a></li>
@@ -180,35 +180,54 @@
         </div>
       </div>
     </div>
+    <?php 
+      $block1 = get_field('block_1', 'options');
+      $block2 = get_field('block_2', 'options');
+      $block3 = get_field('block_3', 'options');
+    ?>
+    <?php if( !empty($block1)  OR !empty($block2) OR !empty($block3)): ?>
     <div class="row">
       <div class="col-md-12">
         <div class="ftr-content">
           <div class="ftr-content-inr">
             <ul class="reset-list clearfix">
+              <?php if( $block1 ): ?>
               <li>
                 <div class="ftr-content-ctlr ftr-btm-grd-col-1 mHc">
                   <div class="ftr-btm-cont-img">
                     <div class="ftr-content-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images//ftr-content-img-01.png">
+                      <?php
+                        if( !empty($block1['afbeelding']) ){
+                          echo cbv_get_image_tag($block1['afbeelding']);
+                        }
+                      ?>
                     </div>
                     <div class="ftr-des">
-                      <p>Onderworpen aan de deontologische code BIV Toezichthoudende autoriteit: Beroepsinstituut van Vastgoedmakelaars (BIV), Luxemburgstraat 16B, 1000 Brussel.</p>
+                      <?php if( !empty($block1['beschrijving']) ) echo wpautop($block1['beschrijving']); ?>
                     </div>
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
+              <?php if( $block2 ): ?>
               <li>
                 <div class="ftr-content-ctlr ftr-btm-grd-col-2 mHc">
                   <div class="ftr-btm-cont-img">
                     <div class="ftr-content-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images//ftr-content-img-02.png">
+                      <?php
+                        if( !empty($block2['afbeelding']) ){
+                          echo cbv_get_image_tag($block2['afbeelding']);
+                        }
+                      ?>
                     </div>
                     <div class="ftr-des">
-                      <p>Lid van de Confederatie van <br> Immobiliënberoepen Vlaanderen</p>
+                      <?php if( !empty($block2['beschrijving']) ) echo wpautop($block2['beschrijving']); ?>
                     </div>
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
+              <?php if( $block3 ): ?>
               <li>
                 <div class="ftr-content-ctlr ftr-btm-grd-col-3 mHc">
                   <div class="ftr-btm-cont-img">
@@ -216,17 +235,18 @@
                       <!-- <img src="<?php echo THEME_URI; ?>/assets/images//ftr-content-img-01.png"> -->
                     </div>
                     <div class="ftr-des">
-                      <strong>Erkend vastgoedmakelaar-bemiddelaar</strong>
-                      <p>Kurt Muylaert - BIV 501370 - België <br> Sofie Muylaert - BIV 507261 - België <br> Sophie Van Bellinghen - BIV 501370 - België</p>
+                      <?php if( !empty($block3['beschrijving']) ) echo wpautop($block3['beschrijving']); ?>
                     </div>
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <?php endif; ?>
     <div class="row">
       <div class="col-md-12">
         <div class="ftr-bottom">

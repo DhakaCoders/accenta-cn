@@ -309,10 +309,16 @@ cr-contact-form-block-wrp
     background-repeat: no-repeat !important;
     background-position: 98.3% center !important;
 }
+.contact-form-wrp .wpforms-field-container .wpforms-field-d2-select{
+	width: 50% !important;
+}
 .contact-form-wrp .wpforms-field-container .wpforms-field-d2-select select{
 	background-position: 96% center !important;
 }
-
+.wpforms-container-full .wpforms-form .wpforms-required-label {
+    color: #9095A6 !important;
+    font-weight: normal !important;
+}
 
 /*
 --------------------
@@ -580,6 +586,9 @@ estimate-list-sec-wrp
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
 	    width: 100%;
 	    margin-bottom: 15px;
+	}
+	.contact-form-wrp .wpforms-field-container .wpforms-field-d2-select{
+		width: 100% !important;
 	}
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
 		height: 225px;
