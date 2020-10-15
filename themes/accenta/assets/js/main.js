@@ -266,21 +266,6 @@ $('.slider-nav').slick({
   ]
 });
 
-
-
-
-
-
-
-
-/*----- End of Milon -----*/
-
-
-
-
-
-
-
 if( $('.homeSlider').length ){
     $('.homeSlider').slick({
       dots: true,
@@ -333,7 +318,6 @@ if (windowWidth <= 1199) {
 
   });
   }
-/*----- End of Noyon -----*/
 
 if (windowWidth <= 767) {
   $('.ftr-menu h6').on('click', function(){
@@ -511,22 +495,5 @@ if( $('.teamModuleGrdsSlider').length ){
       ]
     });
 }
-
-
-
-
-
-/*----- End of Rannojit -----*/
-
-
-
-
-
-
-
-    new WOW().init();
-
-
-
 
 })(jQuery);

@@ -155,6 +155,14 @@ cr-contact-form-block-wrp
 	color: #9095A6;
     margin-bottom: 10px;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
+	color: #D9534F;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: right;
+	letter-spacing: 0.02em;
+	text-transform: none;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .MinTimeField{
 	width: 33.3333%;
 }

@@ -34,3 +34,12 @@ a:hover{
 	text-decoration: none;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #1D2B5B;
+}
+
+::selection {
+  color: #fff;
+  background: #1D2B5B;
+}
