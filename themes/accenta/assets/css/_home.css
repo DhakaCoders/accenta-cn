@@ -199,13 +199,14 @@
 	padding-top: 9px;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
-	font-weight: 500;
+	font-weight: 400;
 	color: #9095A6;
 	text-transform: uppercase;
 }
 .psearch-form-fields .pfm-item .bootstrap-select .dropdown-toggle{
 	min-height: 57px;
     border-radius: initial;
+    padding: 8px 15px;
 }
 .psearch-form-fields .pfm-item .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 100%;
