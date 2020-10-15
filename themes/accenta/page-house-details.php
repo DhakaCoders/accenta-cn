@@ -3,7 +3,26 @@
   Template Name: House Details
 */
 get_header(); 
+$standaardbanner = THEME_URI.'/assets/images/banner.jpg';
 ?>
+<section class="page-bnr-cntlr">
+  <div class="page-bnr-cntlr-inr">
+    <div class="page-banner">
+      <div class="inline-bg page-banner-bg" style="background: url('<?php echo $standaardbanner; ?>');">
+      </div>
+      <div class="page-banner-title-cntlr">
+        <h1 class="banner-title">Te koop</h1>
+      </div>
+      <div class="bnr-breadcum">
+        <ul class="reset-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Te Koop</a></li>
+          <li><a href="#">Hourse Details</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="hu-dtls-two-part-sec-wrp">
   <div class="container">
     <div class="row">

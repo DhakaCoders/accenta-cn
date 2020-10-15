@@ -270,7 +270,7 @@
             ?>  
             </div>
             <div class="ftr-btm-designby">
-              <a href="#">webdesign by conversal</a>
+              <a target="_blank" href="https://www.conversal.be/">webdesign by conversal</a>
             </div>
           </div>
         </div>

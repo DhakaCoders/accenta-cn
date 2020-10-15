@@ -189,7 +189,8 @@
 	position: relative;
 	margin-bottom: 55px;
 }
-.vacancy-desc-modiule > a:hover{
+.vacancy-desc-modiule > a:hover,
+.vacancy-modiule-knop > a:hover{
 	background: #121c3e;
 }
 .vacancy-desc-modiule > a:after{

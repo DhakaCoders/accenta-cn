@@ -10,8 +10,7 @@ a,input,img,textarea,button,svg{
 	-webkit-transition: all 0.5s;
 }
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
-.dft-rent-module-item:hover .dft-rent-module-item-fea-img,
-.team-grd-item:hover .team-grd-item-fea-img > div,
+.dft-rent-module-item:hover .dft-rent-module-item-fea-img
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

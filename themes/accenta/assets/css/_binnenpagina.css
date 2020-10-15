@@ -830,6 +830,12 @@ Gallery design
 .recentlyAddedPagiSlideItem > div{
 	height: 428px;
 	width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.recentlyAddedPagiSlideItem.slick-current.slick-active > div{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 .recentlyAddedSliderCntlr{
 	max-width: 520px;
@@ -937,6 +943,16 @@ Gallery design
 	.rgt-white-bg{
 		width: 80px;
 	}
+	.valuation-fixed-btn {
+	    width: 150px;
+	    height: 110px;
+	}
+	.valuation-fixed-btn span {
+	    font-size: 16px;
+	}
+	.valuation-fixed-btn a i{
+		padding-bottom: 5px;
+	}
 }
 
 @media(max-width: 1399px){
@@ -951,13 +967,6 @@ Gallery design
 	}
 	.recentlyAddedPagiSlideItem > div {
 	    height: 400px;
-	}
-	.valuation-fixed-btn {
-	    width: 160px;
-	    height: 116px;
-	}
-	.valuation-fixed-btn span {
-	    font-size: 16px;
 	}
 }
 

@@ -311,16 +311,16 @@
     <div class="recently-added-sec-btm">
       <div class="recently-added-pagi-slider recentlyAddedPagiSlider">
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01-color.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
           <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-02.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-03.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-03-color.jpg);"></div>
         </div>
         <div class="recentlyAddedPagiSlideItem">
-          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01.jpg);"></div>
+          <div style="background: url(<?php echo THEME_URI; ?>/assets/images/recently-added-pagi-slide-img-01-color.jpg);"></div>
         </div>
       </div>
     </div> 
