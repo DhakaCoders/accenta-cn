@@ -12,3 +12,6 @@ Text Domain: accenta
 */
 
 @import url('assets/css/main.css');
+.valuation-fixed-btn{
+	display: none;
+}

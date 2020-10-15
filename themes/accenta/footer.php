@@ -75,11 +75,15 @@
             ?>
           </div>
           <div class="ftr-language hide-sm">
-            <ul class="reset-list">
-              <li class="lang-active"><a href="#">NL</a></li>
-              <li><a href="#">EN</a></li>
-              <li><a href="#">FR</a></li>
-            </ul>
+            <div class="fl-lang reset-slect">
+              <div class="fl-lang-cntlr">
+                <ul class="reset-list hide-sm">
+                  <li  class="lang-active"><a href="#">NL</a></li>
+                  <li class=""><a href="#">EN</a></li>
+                  <li><a href="#">FR</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <?php if( $branches ): ?>
           <div class="ftr-menu xs-contact show-sm">

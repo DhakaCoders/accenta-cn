@@ -86,10 +86,7 @@
 	float: left;
 	width:  25.2222%;
 }
-.ftr-language{
-	float: left;
-	width:  5.375%;
-}
+
 
 .ftr-logo a{
 	display: inline-block;
@@ -181,6 +178,16 @@
 .ftr-socilas-media ul li a:hover{
 	color: #9095A6;
 }
+
+
+.ftr-language{
+	float: left;
+	width:  5.375%;
+}
+/*.ftr-language{
+	float: left;
+	width:  5.375%;
+}
 .ftr-language{
 	text-align: right;
 	position: relative;
@@ -258,7 +265,7 @@
 	opacity: 1!important;
 	padding-top: 0;
 	padding-right: 15px;
-}
+}*/
 
 
 .ftr-contact{
