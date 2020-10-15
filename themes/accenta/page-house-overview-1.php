@@ -17,11 +17,8 @@ get_header();
                   <div class="type pfm-item">
                     <select class="selectpicker" id="pstype" name="pstype">
                       <option value="*">Type</option>
-                      <option value="type1">Option 1</option>
-                      <option value="type2">Option 2</option>
-                      <option value="type3">Option 3</option>
-                      <option value="type4">Option 4</option>
-                      <option value="type5">Option 5</option>
+                      <option value="tekoop">Te Koop</option>
+                      <option value="tehuur">Te Huur</option>
                     </select>
                   </div>
                   <div class="locate pfm-item">
