@@ -132,7 +132,7 @@
         <div class="hdr-rgt-top-social">
           <?php if( !empty($fburl) ): ?>
           <ul class="reset-list">
-            <li><a href="<?php echo $fburl; ?>"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a target="_blank" href="<?php echo $fburl; ?>"><i class="fab fa-facebook-f"></i></a></li>
           </ul>
           <?php endif; ?>
         </div>

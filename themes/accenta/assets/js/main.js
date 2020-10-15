@@ -168,13 +168,13 @@ if( $('#googlemap').length ){
           mapTypeControl:false,
           scrollwheel: false,
 
-          zoomControl: false,
+          zoomControl: true,
           disableDefaultUI: true,
-          zoom:17,
+          zoom:13,
           streetViewControl: false,
           rotateControl: false,
           mapTypeId:google.maps.MapTypeId.ROADMAP,
-          styles : CustomMapStyles
+          //styles : CustomMapStyles
       };
       var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
     }
