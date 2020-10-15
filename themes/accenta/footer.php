@@ -77,8 +77,8 @@
           <div class="ftr-language hide-sm">
             <ul class="reset-list">
               <li class="lang-active"><a href="#">NL</a></li>
-              <li><a href="#">English</a></li>
-              <li><a href="#">Dutch</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">FR</a></li>
             </ul>
           </div>
           <?php if( $branches ): ?>
@@ -266,7 +266,7 @@
             ?>  
             </div>
             <div class="ftr-btm-designby">
-              <a href="#">webdesign by conversal</a>
+              <a target="_blank" href="https://www.conversal.be/">webdesign by conversal</a>
             </div>
           </div>
         </div>

@@ -14,7 +14,12 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-
+a{
+	color: #1D2B5B;
+}
+a:hover{
+	color: #0f193c;
+}
 body {
     background: #fff;
     color: #8489A8;;

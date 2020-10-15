@@ -67,7 +67,7 @@ get_header();
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="house-view-items-contlr">
+        <div class="house-view-items-contlr te-huur">
           <ul class="reset-list">
             <li>
               <div class="house-item mHc">
@@ -76,35 +76,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -120,35 +92,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -164,35 +108,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -208,35 +124,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -252,35 +140,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -307,35 +167,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -351,35 +183,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
@@ -395,35 +199,7 @@ get_header();
                     
                   </div>
                   <div class="house-item-img-btn">
-                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Meer info</a>
-                  </div>
-                  <div class="house-item-img-hover">
-                    <ul class="reset-list">
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-1-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-1-svg"></use>
-                          </svg>
-                        </i>
-                        <span>3 Slaapkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-2-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-2-svg"></use>
-                          </svg>
-                        </i>
-                        <span>2 Badkamers</span>
-                      </li>
-                      <li>
-                        <i>
-                          <svg class="hu-dtls-sidebar-btm-dsc-icon-3-svg" width="20" height="24" viewBox="0 0 20 24" fill="#fff">
-                            <use xlink:href="#hu-dtls-sidebar-btm-dsc-icon-3-svg"></use>
-                          </svg>
-                        </i>
-                        <span>200 m<sup>2</sup></span>
-                      </li>
-                    </ul>
+                    <a href="<?php echo esc_url(home_url('house-details')); ?>">Gerealiseerd</a>
                   </div>
                 </div>
                 <div class="house-item-desc secound-house-item-desc">
