@@ -146,6 +146,9 @@
 }
 .vacatures-grd-item:hover .vacatures-grd-item-title:before{
 	width: 100%;
+	transition: all 1s;
+	-ms-transition: all 1s;
+	-webkit-transition: all 1s;
 }
 .vacatures-grd-item:hover .vacatures-grd-item-des strong{
 	color: #fff;

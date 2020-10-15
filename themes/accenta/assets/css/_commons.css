@@ -388,3 +388,26 @@ form .dropdown-menu li a{
 .beautiful-house-des .house-item-btn a:hover:after{
     background: #1D2B5B!important;
 }
+
+
+/*slider break fix*/
+.teamModuleGrdsSlider .teamModuleGrdsSlideItem,
+.homeSlider .h-slider-item-cntlr{
+	display: none;
+}
+.teamModuleGrdsSlider .teamModuleGrdsSlideItem:first-child,
+.homeSlider .h-slider-item-cntlr:first-child{
+	display: block;
+}
+.teamModuleGrdsSlider.slick-initialized .teamModuleGrdsSlideItem,
+.homeSlider.slick-initialized .h-slider-item-cntlr{
+	display: block;
+}
+
+.teamModuleGrdsSlider .team-grd-item{
+	width: 33.3333%;
+}
+
+.teamModuleGrdsSlider.slick-initialized .team-grd-item{
+	width: 100%;
+}

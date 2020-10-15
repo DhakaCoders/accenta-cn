@@ -266,7 +266,9 @@ Gallery design
 
 /*extra*/
 
-
+.dft-contact-info-slider{
+	padding-top: 10px;
+}
 .dft-rent-module{
 	display: flex;
 	justify-content: center;
@@ -424,6 +426,15 @@ Gallery design
 .team-grd-item-des{
 	text-align: center;
 	padding: 42px 15px 20px;
+}
+.team-grd-item-des label{
+	display: block;
+	font-size: 14px;
+	line-height: 28px;
+	color: #8489A8;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 .team-grd-item-des strong{
 	display: block;

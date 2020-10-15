@@ -3,14 +3,14 @@ All Transitions
 */
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
 .dft-rent-module-item-fea-img,
-.team-grd-item-fea-img > div,
+.team-grd-item-fea-img > div,.vacatures-grd-item-des,
 a,input,img,textarea,button,svg{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
 .hu-dtls-fancy-img-wrp:hover .hu-dtls-fancy-img,
-.dft-rent-module-item:hover .dft-rent-module-item-fea-img
+.dft-rent-module-item:hover .dft-rent-module-item-fea-img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

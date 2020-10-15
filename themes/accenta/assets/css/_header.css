@@ -527,6 +527,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.hdr-lft-btn-col a{
 		width: 200px;
 	}
+	nav.main-nav > ul > li{
+		margin: 0 25px;
+	}
 }
 @media(max-width: 1499px){
 	.header {
@@ -635,6 +638,24 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.hdr-rgt-top-menu > ul > li > a {
 		font-size: 12px;
 		padding: 0 6px;
+	}
+	.h-slider-banner {
+	    margin-top: -58px!important;
+	}
+	nav.main-nav > ul > li > a{
+		padding-bottom: 11px;
+		display: block;
+	}
+	nav.main-nav > ul > li {
+	    padding-bottom: 0;
+	}
+	nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu:before {
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-bottom: 7px solid #1D2B5B;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:after{
+		top: 8px;
 	}
 }
 
@@ -832,10 +853,12 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	.mbl-top-menu > ul > li > a{
 		padding: 0 15px!important;
     	font-size: 16px!important;
+    	position: relative;
 	}
 	.mbl-top-menu > ul > li > a:after{
 		transform: rotate(-90deg)!important;
-		top: 5px!important;
+		top: 7px!important;
+		right: 0!important;
 		width: 11px!important;
 		height: 7px!important;
 	}
@@ -889,12 +912,18 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	}
 	nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu,
 	.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu{
-		position: initial;
+		position: static;
 		min-width: 100%;
+		width: 100%;
 		opacity: 1;
 		transform: initial;
 		margin-top: 10px;
 		display: none;
+		box-shadow: none;
+		transition: initial;
+	}
+	nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu:before{
+		content: none;
 	}
 	nav.main-nav > ul > li.menu-item-has-children a.sub-menu-active,
 	.hdr-rgt-top-menu > ul > li.menu-item-has-children a.sub-menu-active{
@@ -925,6 +954,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 	nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li > a:after,
 	.hdr-rgt-top-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a:after{
 		content: none;
+	}
+	nav.main-nav > ul > li > a{
+		display: inline-block;
 	}
 }
 @media(max-width: 991px){

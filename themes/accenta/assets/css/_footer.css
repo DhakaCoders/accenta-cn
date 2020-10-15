@@ -399,7 +399,7 @@
 	content: "";
 	position: absolute;
 	top: 35%;
-	right: 0;
+	right: -1px;
 	transform: translate(-50%,-50%);
 	height: 12px;
 	width: 2px;
@@ -742,6 +742,20 @@
 	}
 	.show-xs{
 		display: block!important;
+	}
+	.ftr-top{
+		position: relative;
+		border: none;
+		padding-bottom: 15px;
+	}
+	.ftr-top:before{
+		content: "";
+		position: absolute;
+		left: -20px;
+		right: -20px;
+		height: 1px;
+		background: #EFEFEF;
+		bottom: 0;
 	}
 	
 
