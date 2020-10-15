@@ -105,6 +105,7 @@
 .hdr-rgt-top{
 	display: flex;
 	margin-bottom: 17px;
+	justify-content: flex-end;
 }
 .hdr-rgt-top-menu{
 	padding-right: 13px;
